@@ -164,6 +164,7 @@
     {
         VCResult *resultViewController = [segue destinationViewController];
         //resultViewController.strengthValue = @"5";
+        resultViewController.index = 1;
     }
 }
 

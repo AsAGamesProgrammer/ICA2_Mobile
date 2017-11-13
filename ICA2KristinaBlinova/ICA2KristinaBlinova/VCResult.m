@@ -27,7 +27,7 @@
     //Create a database instance
     heroDatabase* heroDB = [[heroDatabase alloc] init];
     //Query a database for a hero record
-    heroRecord *heroR = [heroDB getHeroByIndex:0];
+    heroRecord *heroR = [heroDB getHeroByIndex:self.index];
     
     //Assign hero record data to labels
     _strLbl.text = [@(heroR.strength) stringValue];
