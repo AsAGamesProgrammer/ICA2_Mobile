@@ -163,7 +163,7 @@
     if([segue.identifier isEqualToString:@"resultSegue"])
     {
         VCResult *resultViewController = [segue destinationViewController];
-        resultViewController.strengthValue = @"5";
+        //resultViewController.strengthValue = @"5";
     }
 }
 

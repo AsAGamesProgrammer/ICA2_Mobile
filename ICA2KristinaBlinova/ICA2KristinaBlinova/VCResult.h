@@ -11,5 +11,6 @@
 @interface VCResult : UIViewController
 
 @property (nonatomic, strong) NSString *strengthValue;
+@property (nonatomic) int index;
 
 @end

@@ -25,6 +25,9 @@
                                 <rect key="frame" x="367" y="798" width="35" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Keep"/>
+                                <connections>
+                                    <segue destination="FXa-MC-Dwu" kind="show" id="Ym4-YO-8q9"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amazon.png" translatesAutoresizingMaskIntoConstraints="NO" id="LUU-D8-cSV">
                                 <rect key="frame" x="264" y="134" width="240" height="353"/>
@@ -90,6 +93,9 @@
                                 <rect key="frame" x="346" y="851" width="77" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Discard"/>
+                                <connections>
+                                    <segue destination="gcQ-fH-y1f" kind="show" id="Py5-RE-sFZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbB-Cx-3d6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926.5625" y="-369.140625"/>
+            <point key="canvasLocation" x="1713" y="-352"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -149,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="187.5" y="-369.140625"/>
+            <point key="canvasLocation" x="960" y="-352"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ogt-Ay-4wu">
@@ -185,7 +191,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6d-2y-3j8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="316"/>
+            <point key="canvasLocation" x="188" y="348"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jmB-9J-Vyy">
+            <objects>
+                <viewController id="FXa-MC-Dwu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FIt-9q-qh0"/>
+                        <viewControllerLayoutGuide type="bottom" id="n8d-oj-pCf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k1e-2u-0GT">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-Oh-UWE">
+                                <rect key="frame" x="357" y="776" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <segue destination="gcQ-fH-y1f" kind="show" id="1fr-hD-7kr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7O-iG-Mdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="347"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hk7-sp-pMX">
@@ -265,4 +299,7 @@
         <image name="Amazon.png" width="698" height="1048"/>
         <image name="uuIDsh.jpg" width="1200" height="1000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Py5-RE-sFZ"/>
+    </inferredMetricsTieBreakers>
 </document>

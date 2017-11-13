@@ -7,6 +7,7 @@
 //
 
 #import "VCResult.h"
+#import "heroDatabase.h"
 
 @interface VCResult ()
 
@@ -23,7 +24,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    strLbl.text = strengthValue;
+    heroDatabase* heroDB = [[heroDatabase alloc] init];
+    heroRecord *heroR = [heroDB getHeroByIndex:0];
+    
+    strLbl.text = [@(heroR.strength) stringValue];
+    //strLbl.text = [@(heroR.agility) stringValue];
 }
 
 - (void)didReceiveMemoryWarning {
