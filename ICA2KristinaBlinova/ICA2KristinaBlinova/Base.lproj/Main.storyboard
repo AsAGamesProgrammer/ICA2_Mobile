@@ -102,6 +102,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="WMl-bG-5DH"/>
                     <connections>
+                        <outlet property="agilLbl" destination="A5l-SE-DGH" id="Ny4-1A-QbB"/>
+                        <outlet property="defLbl" destination="n6Q-RE-XZc" id="Jh2-fz-Fxo"/>
+                        <outlet property="intlLbl" destination="gud-de-83Z" id="jLh-Pi-tQm"/>
                         <outlet property="strLbl" destination="XJD-Or-0cX" id="nSi-Iz-BlD"/>
                     </connections>
                 </viewController>

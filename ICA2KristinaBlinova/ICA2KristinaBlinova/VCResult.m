@@ -11,24 +11,31 @@
 
 @interface VCResult ()
 
-@property (nonatomic, strong) IBOutlet UILabel *strLbl;
+@property (weak, nonatomic) IBOutlet UILabel *strLbl;
+@property (weak, nonatomic) IBOutlet UILabel *agilLbl;
+@property (weak, nonatomic) IBOutlet UILabel *intlLbl;
+@property (weak, nonatomic) IBOutlet UILabel *defLbl;
 
 @end
 
 @implementation VCResult
 
-@synthesize strengthValue;
-@synthesize strLbl;
-
+//----VIEW DID LOAD-------
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    //Create a database instance
     heroDatabase* heroDB = [[heroDatabase alloc] init];
+    //Query a database for a hero record
     heroRecord *heroR = [heroDB getHeroByIndex:0];
     
-    strLbl.text = [@(heroR.strength) stringValue];
-    //strLbl.text = [@(heroR.agility) stringValue];
+    //Assign hero record data to labels
+    _strLbl.text = [@(heroR.strength) stringValue];
+    _agilLbl.text = [@(heroR.agility) stringValue];
+    _intlLbl.text = [@(heroR.intelect) stringValue];
+    _defLbl.text = [@(heroR.defense) stringValue];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

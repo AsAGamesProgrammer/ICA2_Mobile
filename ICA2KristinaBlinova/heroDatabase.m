@@ -15,7 +15,7 @@
     heroRecord *newRecord = [[heroRecord alloc]init];
     
     
-    newRecord.strength = 3;
+    newRecord.strength = 5;
     newRecord.agility =2;
     newRecord.intelect = 3;
     newRecord.defense = 1;
