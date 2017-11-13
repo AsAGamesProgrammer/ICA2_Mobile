@@ -95,6 +95,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="WMl-bG-5DH"/>
+                    <connections>
+                        <outlet property="strLbl" destination="XJD-Or-0cX" id="nSi-Iz-BlD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbB-Cx-3d6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="-369"/>
+            <point key="canvasLocation" x="187.5" y="-369.140625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ogt-Ay-4wu">

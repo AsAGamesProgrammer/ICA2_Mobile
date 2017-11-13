@@ -10,13 +10,20 @@
 
 @interface VCResult ()
 
+@property (nonatomic, strong) IBOutlet UILabel *strLbl;
+
 @end
 
 @implementation VCResult
 
+@synthesize strengthValue;
+@synthesize strLbl;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    strLbl.text = strengthValue;
 }
 
 - (void)didReceiveMemoryWarning {

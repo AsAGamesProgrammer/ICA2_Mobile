@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>  //Camera
+#import "VCResult.h"
 //#import "VCResult.h"
 
 @interface ViewController () <AVCaptureMetadataOutputObjectsDelegate>
@@ -154,6 +155,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//SEQUE
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"resultSegue"])
+    {
+        VCResult *resultViewController = [segue destinationViewController];
+        resultViewController.strengthValue = @"5";
+    }
 }
 
 

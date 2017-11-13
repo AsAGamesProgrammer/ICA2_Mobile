@@ -10,4 +10,6 @@
 
 @interface VCResult : UIViewController
 
+@property (nonatomic, strong) NSString *strengthValue;
+
 @end
