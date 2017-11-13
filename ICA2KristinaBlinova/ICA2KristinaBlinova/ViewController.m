@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>  //Camera
+//#import "VCResult.h"
 
 @interface ViewController () <AVCaptureMetadataOutputObjectsDelegate>
 
@@ -117,15 +118,23 @@
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
         if([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) //check if an oject read is a valid qr code
         {
+            
+            
             //Proccess QR code on the main thread
             //Status label with QR value
             [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
+            
             //Video capture and display
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
             //Button title
             [_startBtn performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start" waitUntilDone:NO];
             _isReading=NO;
             
+            //NEXT SEGUE
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self performSegueWithIdentifier:@"resultSegue" sender:self];
+            });
+
         }
     }
 }
