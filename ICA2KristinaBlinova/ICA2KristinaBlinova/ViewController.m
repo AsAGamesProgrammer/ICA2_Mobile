@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>  //Camera
+//#import "VCResult.h"
 
 @interface ViewController () <AVCaptureMetadataOutputObjectsDelegate>
 
@@ -81,7 +82,7 @@
     dispatch_queue_t dispacthQueue;
     dispacthQueue = dispatch_queue_create("myQueue", NULL);
     [captureMetadataOutput setMetadataObjectsDelegate:self queue:dispacthQueue];
-    [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObject:AVMetadataObjectTypeQRCode]];
+    [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObject:AVMetadataObjectTypeUPCECode]];
     
     //!!!!!!!!!!!!!!!!!!!!//
     //CHANGE QR CODE FOR WHATEVER//
@@ -115,7 +116,7 @@
     {
         //Always interpret only the first captured object
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
-        if([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) //check if an oject read is a valid qr code
+        if([[metadataObj type] isEqualToString:AVMetadataObjectTypeUPCECode]) //check if an oject read is a valid qr code
         {
             //Proccess QR code on the main thread
             //Status label with QR value
@@ -126,6 +127,9 @@
             [_startBtn performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start" waitUntilDone:NO];
             _isReading=NO;
             
+            //NEXT SEGUE
+            //VCResult *myNewVC = [[VCResult alloc] init];
+            //[self presentModalViewController:myNewVC animated:YES];
         }
     }
 }

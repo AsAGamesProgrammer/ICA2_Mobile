@@ -13,6 +13,9 @@
 		86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E011FB1F1CF00B43293 /* Main.storyboard */; };
 		86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86187E041FB1F1CF00B43293 /* Assets.xcassets */; };
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
+		86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF11FB9E0A600B5CFE6 /* Amazon.png */; };
+		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
+		86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F49AF91FB9E30300B5CFE6 /* VCResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		86187E041FB1F1CF00B43293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86187E071FB1F1CF00B43293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86187E091FB1F1CF00B43293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
+		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
+		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
+		86F49AF91FB9E30300B5CFE6 /* VCResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +49,7 @@
 		86187DEC1FB1F1CF00B43293 = {
 			isa = PBXGroup;
 			children = (
+				86F49AF01FB9E08A00B5CFE6 /* Sprites */,
 				86187DF71FB1F1CF00B43293 /* ICA2KristinaBlinova */,
 				86187DF61FB1F1CF00B43293 /* Products */,
 			);
@@ -58,6 +66,8 @@
 		86187DF71FB1F1CF00B43293 /* ICA2KristinaBlinova */ = {
 			isa = PBXGroup;
 			children = (
+				86F49AF81FB9E30300B5CFE6 /* VCResult.h */,
+				86F49AF91FB9E30300B5CFE6 /* VCResult.m */,
 				86187DFE1FB1F1CF00B43293 /* ViewController.h */,
 				86187DFF1FB1F1CF00B43293 /* ViewController.m */,
 				86187E011FB1F1CF00B43293 /* Main.storyboard */,
@@ -77,6 +87,15 @@
 				86187DF91FB1F1CF00B43293 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86F49AF01FB9E08A00B5CFE6 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
+				86F49AF11FB9E0A600B5CFE6 /* Amazon.png */,
+			);
+			name = Sprites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,8 @@
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
+				86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */,
+				86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86187E001FB1F1CF00B43293 /* ViewController.m in Sources */,
+				86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */,
 				86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */,
 				86187DFA1FB1F1CF00B43293 /* main.m in Sources */,
 			);
@@ -314,6 +336,7 @@
 				86187E0E1FB1F1CF00B43293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
