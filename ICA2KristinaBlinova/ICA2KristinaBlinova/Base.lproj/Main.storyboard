@@ -141,6 +141,7 @@
                         <outlet property="previewView" destination="DBn-UR-4HV" id="4my-3J-ISr"/>
                         <outlet property="startBtn" destination="lpS-IE-4rg" id="OuN-7M-37p"/>
                         <outlet property="statusLbl" destination="S5k-vR-CAj" id="45S-mk-i3Y"/>
+                        <segue destination="jzx-fb-IJ9" kind="show" identifier="resultSegue" id="axl-hJ-E5V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
