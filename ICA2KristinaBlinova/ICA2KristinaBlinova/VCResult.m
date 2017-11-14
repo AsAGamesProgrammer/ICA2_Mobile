@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *agilLbl;
 @property (weak, nonatomic) IBOutlet UILabel *intlLbl;
 @property (weak, nonatomic) IBOutlet UILabel *defLbl;
+@property (weak, nonatomic) IBOutlet UILabel *indxLbl;
 
 @end
 
@@ -34,6 +35,7 @@
     _agilLbl.text = [@(heroR.agility) stringValue];
     _intlLbl.text = [@(heroR.intelect) stringValue];
     _defLbl.text = [@(heroR.defense) stringValue];
+    _indxLbl.text = [@(self.index) stringValue];
     
     
 }
