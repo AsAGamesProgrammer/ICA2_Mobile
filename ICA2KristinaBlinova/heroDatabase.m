@@ -14,7 +14,7 @@ NSArray *array;
 
 -(void) createHeroes
 {
-    //Record 0
+    //Record 0 - never called
     heroRecord *newRecord = [[heroRecord alloc]init];
     newRecord.strength = 5;
     newRecord.agility =2;

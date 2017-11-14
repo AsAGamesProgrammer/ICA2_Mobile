@@ -10,4 +10,6 @@
 
 @interface VCLobby : UIViewController
 
+@property (nonatomic) int currentHeroID;
+
 @end

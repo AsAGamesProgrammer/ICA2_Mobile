@@ -203,15 +203,15 @@
                                     <segue destination="57r-Hv-Rkl" kind="show" id="Bhb-rg-ofy"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3j-gG-Rys">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uuIDsh.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="h3j-gG-Rys">
                                 <rect key="frame" x="20" y="238" width="229" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5HU-dZ-70g">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uuIDsh.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5HU-dZ-70g">
                                 <rect key="frame" x="270" y="238" width="229" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opH-Oo-kyU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uuIDsh.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="opH-Oo-kyU">
                                 <rect key="frame" x="519" y="238" width="229" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -219,20 +219,32 @@
                                 <rect key="frame" x="27" y="589" width="222" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectFirst:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="Oo4-8Z-qci"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlm-pQ-FgL">
                                 <rect key="frame" x="270" y="589" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectSecond:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="eEn-pq-Dv1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-aU-i6C">
                                 <rect key="frame" x="519" y="589" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectThird:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="h63-cd-lp4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="firstImg" destination="h3j-gG-Rys" id="wpZ-o0-mtd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6d-2y-3j8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

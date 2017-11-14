@@ -8,6 +8,7 @@
 
 #import "VCResult.h"
 #import "heroDatabase.h"
+#import "VCLobby.h"
 
 @interface VCResult ()
 
@@ -44,6 +45,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"keepSegue"])
+    {
+        VCLobby *keepViewController = [segue destinationViewController];
+        //resultViewController.strengthValue = @"5";
+        keepViewController.currentHeroID= self.index;
+    }
+}
+
 
 /*
 #pragma mark - Navigation

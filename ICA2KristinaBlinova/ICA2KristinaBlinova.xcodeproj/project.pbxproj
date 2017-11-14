@@ -14,6 +14,7 @@
 		86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86187E041FB1F1CF00B43293 /* Assets.xcassets */; };
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
 		86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C1661D1FBAF98B0089F159 /* VCLobby.m */; };
+		86C166201FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 86C1661F1FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg */; };
 		86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF11FB9E0A600B5CFE6 /* Amazon.png */; };
 		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
 		86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F49AF91FB9E30300B5CFE6 /* VCResult.m */; };
@@ -34,6 +35,7 @@
 		86187E091FB1F1CF00B43293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86C1661C1FBAF98B0089F159 /* VCLobby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLobby.h; sourceTree = "<group>"; };
 		86C1661D1FBAF98B0089F159 /* VCLobby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLobby.m; sourceTree = "<group>"; };
+		86C1661F1FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "low-poly-colors-hd-motion-background-4.jpeg"; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
 		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
 		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		86F49AF01FB9E08A00B5CFE6 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				86C1661F1FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg */,
 				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
 				86F49AF11FB9E0A600B5CFE6 /* Amazon.png */,
 			);
@@ -175,6 +178,7 @@
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
+				86C166201FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg in Resources */,
 				86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */,
 				86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */,
 			);

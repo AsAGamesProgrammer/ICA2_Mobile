@@ -7,16 +7,41 @@
 //
 
 #import "VCLobby.h"
+#import "heroRecord.h"
+
 
 @interface VCLobby ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *firstImg;
 
 @end
 
 @implementation VCLobby
 
+//Button actions
+- (IBAction)selectFirst:(UIButton *)sender
+{
+    if(_currentHeroID >0)
+    {
+        _firstImg.image = [UIImage imageNamed:@"Amazon.png"];
+    }
+}
+
+- (IBAction)selectSecond:(UIButton *)sender
+{
+    
+}
+
+- (IBAction)selectThird:(UIButton *)sender
+{
+    
+}
+
+
+//VIEW DID LOAD
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
 }
 
 - (void)didReceiveMemoryWarning {
