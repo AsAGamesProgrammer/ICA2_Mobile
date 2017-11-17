@@ -86,7 +86,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Discard"/>
                                 <connections>
-                                    <segue destination="gcQ-fH-y1f" kind="show" identifier="discardSegue" id="Py5-RE-sFZ"/>
+                                    <action selector="discardPressed:" destination="jzx-fb-IJ9" eventType="touchUpInside" id="wxI-Fk-shj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Index" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg0-8k-kEl">
@@ -245,6 +245,8 @@
                     </view>
                     <connections>
                         <outlet property="firstImg" destination="h3j-gG-Rys" id="wpZ-o0-mtd"/>
+                        <outlet property="secondImg" destination="5HU-dZ-70g" id="Tba-dw-gIv"/>
+                        <outlet property="thirdImg" destination="opH-Oo-kyU" id="J8z-Di-ud5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6d-2y-3j8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -330,6 +332,6 @@
         <image name="uuIDsh.jpg" width="1200" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Py5-RE-sFZ"/>
+        <segue reference="u0L-Dm-4cG"/>
     </inferredMetricsTieBreakers>
 </document>

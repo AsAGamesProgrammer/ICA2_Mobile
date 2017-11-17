@@ -13,28 +13,38 @@
 @interface VCLobby ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *firstImg;
+@property (weak, nonatomic) IBOutlet UIImageView *secondImg;
+@property (weak, nonatomic) IBOutlet UIImageView *thirdImg;
 
 @end
 
 @implementation VCLobby
 
-//Button actions
+//BUTTON CLICKS
 - (IBAction)selectFirst:(UIButton *)sender
 {
-    if(_currentHeroID >0)
-    {
-        _firstImg.image = [UIImage imageNamed:@"Amazon.png"];
-    }
+    [self setNewHero:_firstImg];
 }
 
 - (IBAction)selectSecond:(UIButton *)sender
 {
-    
+    [self setNewHero:_secondImg];
 }
 
 - (IBAction)selectThird:(UIButton *)sender
 {
-    
+    [self setNewHero:_thirdImg];
+}
+
+//FUNCTIONALITY
+-(void) setNewHero:(UIImageView*)toImage
+{
+    if(_currentHeroID >0)
+    {
+        toImage.image = [UIImage imageNamed:@"Amazon.png"];
+    }
+    //Reset index
+    self.currentHeroID=-1;
 }
 
 

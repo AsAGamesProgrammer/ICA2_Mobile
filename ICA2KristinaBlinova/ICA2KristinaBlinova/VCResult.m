@@ -41,6 +41,9 @@
     
 }
 
+//BUTTONS
+
+//KEEP: Send update to the root and pop back to the lobby
 - (IBAction)keppPrssed:(UIButton *)sender
 {
     VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
@@ -49,14 +52,25 @@
 
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.navigationController popToViewController:keepViewController animated:YES];
-    //[self.navigationController popToRootViewControllerAnimated:NO];
 }
 
+//DISCARD: pop back to the lobby
+- (IBAction)discardPressed:(UIButton *)sender
+{
+    VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToViewController:keepViewController animated:YES];
+}
+
+
+//WARNING
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+//SEGUE
 //-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 //{
 //    if([segue.identifier isEqualToString:@"keepSegue"])
