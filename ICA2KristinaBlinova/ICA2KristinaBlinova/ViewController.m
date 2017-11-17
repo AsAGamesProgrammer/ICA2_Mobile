@@ -32,7 +32,7 @@
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 
-//@property (nonatomic)
+@property (nonatomic) int nextIndex;
 
 @end
 
@@ -128,6 +128,7 @@
             [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
             
             //TODO: Algorithm
+            _nextIndex = metadataObj.stringValue.length % 4;
             
             //Video capture and display
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
@@ -153,6 +154,8 @@
     _isReading=NO;
     
     _captureSession = nil;
+    
+    _nextIndex=0;
 }
 
 
@@ -170,7 +173,7 @@
         //resultViewController.strengthValue = @"5";
         
         //TODO: ADD A SUPER COOL ALGORITHM
-        resultViewController.index = 2;
+        resultViewController.index = _nextIndex+1;
     }
 }
 
