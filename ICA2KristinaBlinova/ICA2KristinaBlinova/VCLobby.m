@@ -7,7 +7,7 @@
 //
 
 #import "VCLobby.h"
-#import "heroRecord.h"
+
 
 
 @interface VCLobby ()
@@ -41,7 +41,7 @@
 {
     if(_currentHeroID >0)
     {
-        toImage.image = [UIImage imageNamed:@"Amazon.png"];
+        toImage.image = [UIImage imageNamed:_passedHeroRecord.imageName];
     }
     //Reset index
     self.currentHeroID=-1;

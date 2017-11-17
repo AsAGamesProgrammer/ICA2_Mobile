@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "heroRecord.h"
 
 @interface VCLobby : UIViewController
 
 @property (nonatomic) int currentHeroID;
+@property (nonatomic) heroRecord* passedHeroRecord;
+
 
 @end

@@ -11,6 +11,7 @@
 		860AC6F91FBF5166009153C6 /* Fighter.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F61FBF5166009153C6 /* Fighter.png */; };
 		860AC6FA1FBF5166009153C6 /* Knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F71FBF5166009153C6 /* Knight.png */; };
 		860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F81FBF5166009153C6 /* Paladin.png */; };
+		860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6FC1FBF5FA2009153C6 /* NoHero.png */; };
 		86187DFA1FB1F1CF00B43293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DF91FB1F1CF00B43293 /* main.m */; };
 		86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFC1FB1F1CF00B43293 /* AppDelegate.m */; };
 		86187E001FB1F1CF00B43293 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFF1FB1F1CF00B43293 /* ViewController.m */; };
@@ -30,6 +31,7 @@
 		860AC6F61FBF5166009153C6 /* Fighter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fighter.png; sourceTree = "<group>"; };
 		860AC6F71FBF5166009153C6 /* Knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knight.png; sourceTree = "<group>"; };
 		860AC6F81FBF5166009153C6 /* Paladin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paladin.png; sourceTree = "<group>"; };
+		860AC6FC1FBF5FA2009153C6 /* NoHero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoHero.png; sourceTree = "<group>"; };
 		86187DF51FB1F1CF00B43293 /* ICA2KristinaBlinova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICA2KristinaBlinova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86187DF91FB1F1CF00B43293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86187DFB1FB1F1CF00B43293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		86F49AF01FB9E08A00B5CFE6 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				860AC6FC1FBF5FA2009153C6 /* NoHero.png */,
 				860AC6F61FBF5166009153C6 /* Fighter.png */,
 				860AC6F71FBF5166009153C6 /* Knight.png */,
 				860AC6F81FBF5166009153C6 /* Paladin.png */,
@@ -186,6 +189,7 @@
 			files = (
 				860AC6F91FBF5166009153C6 /* Fighter.png in Resources */,
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
+				860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */,
 				860AC6FA1FBF5166009153C6 /* Knight.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,

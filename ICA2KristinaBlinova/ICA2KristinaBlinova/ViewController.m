@@ -157,14 +157,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-//SEQUE
+//SEGUE
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"resultSegue"])
     {
         VCResult *resultViewController = [segue destinationViewController];
         //resultViewController.strengthValue = @"5";
-        resultViewController.index = 1;
+        
+        //TODO: ADD A SUPER COOL ALGORITHM
+        resultViewController.index = 2;
     }
 }
 

@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *indxLbl;
 @property (weak, nonatomic) IBOutlet UIImageView *characterPreview;
 
+@property (weak, nonatomic) heroRecord* heroR;
+
 @end
 
 @implementation VCResult
@@ -30,15 +32,15 @@
     //Create a database instance
     heroDatabase* heroDB = [[heroDatabase alloc] init];
     //Query a database for a hero record
-    heroRecord *heroR = [heroDB getHeroByIndex:self.index];
+    _heroR = [heroDB getHeroByIndex:self.index];
     
     //Assign hero record data to labels
-    _strLbl.text = [@(heroR.strength) stringValue];
-    _agilLbl.text = [@(heroR.agility) stringValue];
-    _intlLbl.text = [@(heroR.intelect) stringValue];
-    _defLbl.text = [@(heroR.defense) stringValue];
+    _strLbl.text = [@(_heroR.strength) stringValue];
+    _agilLbl.text = [@(_heroR.agility) stringValue];
+    _intlLbl.text = [@(_heroR.intelect) stringValue];
+    _defLbl.text = [@(_heroR.defense) stringValue];
     _indxLbl.text = [@(self.index) stringValue];
-    _characterPreview.image = [UIImage imageNamed: heroR.imageName];
+    _characterPreview.image = [UIImage imageNamed: _heroR.imageName];
     
     
 }
@@ -50,6 +52,7 @@
 {
     VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     keepViewController.currentHeroID=self.index;
+    keepViewController.passedHeroRecord=_heroR;
     
 
     [self dismissViewControllerAnimated:YES completion:nil];
