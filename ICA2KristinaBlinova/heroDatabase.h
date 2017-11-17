@@ -13,6 +13,4 @@
 
 -(heroRecord*) getHeroByIndex:(int)index;
 
-
-
 @end

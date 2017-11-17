@@ -32,6 +32,8 @@
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 
+//@property (nonatomic)
+
 @end
 
 @implementation ViewController
@@ -124,6 +126,8 @@
             //Proccess QR code on the main thread
             //Status label with QR value
             [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
+            
+            //TODO: Algorithm
             
             //Video capture and display
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];

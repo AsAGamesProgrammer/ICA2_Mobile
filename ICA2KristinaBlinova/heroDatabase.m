@@ -12,35 +12,39 @@
 
 NSArray *array;
 
+//Create all heroes
 -(void) createHeroes
 {
-    //Record 0 - never called
-    heroRecord *newRecord = [[heroRecord alloc]init];
-    newRecord.strength = 5;
-    newRecord.agility =2;
-    newRecord.intelect = 3;
-    newRecord.defense = 1;
-    newRecord.imageName=@"Fighter.png";
     
-    //Record 1
-    heroRecord *newRecord1 = [[heroRecord alloc]init];
-    newRecord1.strength = 50;
-    newRecord1.agility =20;
-    newRecord1.intelect = 30;
-    newRecord1.defense = 10;
-    newRecord1.imageName = @"Knight.png";
-    
-    //Record 2
-    heroRecord *newRecord2 = [[heroRecord alloc]init];
-    newRecord2.strength = 500;
-    newRecord2.agility =200;
-    newRecord2.intelect = 300;
-    newRecord2.defense = 100;
-    newRecord2.imageName=@"Archer.png";
-    
-    array = @[newRecord, newRecord1, newRecord2];
+    array = @[[self createAHero:0 :0 :0 :0 :@"NoHero.png"],
+              [self createAHero:0 :0 :0 :100 :@"Amazon.png"],
+              [self createAHero:100 :0 :0 :0 :@"Fighter"],
+              [self createAHero:0 :100 :0 :0 :@"Archer"],
+              [self createAHero:0 :0 :100 :0 :@"Knight"]];
 }
 
+
+
+//Create one hero
+-(heroRecord*) createAHero
+                          :(NSInteger)str
+                          :(NSInteger)agl
+                          :(NSInteger)intl
+                          :(NSInteger)def
+                          :(NSString*)imgName
+{
+    heroRecord *newRecord = [[heroRecord alloc]init];
+    newRecord.strength = str;
+    newRecord.agility =agl;
+    newRecord.intelect = intl;
+    newRecord.defense = def;
+    newRecord.imageName = imgName;
+    return newRecord;
+
+}
+
+//Return a hero by index
+//TODO: try creating heroes differently e.g. database, not on every call
 -(heroRecord*) getHeroByIndex:(int)index
 {
     [self createHeroes];
