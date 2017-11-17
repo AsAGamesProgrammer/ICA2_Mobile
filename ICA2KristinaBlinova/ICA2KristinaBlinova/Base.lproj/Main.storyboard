@@ -108,7 +108,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Keep"/>
                                 <connections>
-                                    <segue destination="gcQ-fH-y1f" kind="show" identifier="keepSegue" id="FGu-st-qTN"/>
+                                    <action selector="keppPrssed:" destination="jzx-fb-IJ9" eventType="touchUpInside" id="VoK-bE-Q3z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,6 +121,7 @@
                         <outlet property="indxLbl" destination="ZcH-Sp-TkX" id="eHa-MP-duS"/>
                         <outlet property="intlLbl" destination="gud-de-83Z" id="jLh-Pi-tQm"/>
                         <outlet property="strLbl" destination="XJD-Or-0cX" id="nSi-Iz-BlD"/>
+                        <segue destination="gcQ-fH-y1f" kind="show" id="u0L-Dm-4cG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbB-Cx-3d6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -329,6 +330,6 @@
         <image name="uuIDsh.jpg" width="1200" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FGu-st-qTN"/>
+        <segue reference="Py5-RE-sFZ"/>
     </inferredMetricsTieBreakers>
 </document>

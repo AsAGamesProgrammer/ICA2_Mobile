@@ -41,20 +41,31 @@
     
 }
 
+- (IBAction)keppPrssed:(UIButton *)sender
+{
+    VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
+    keepViewController.currentHeroID=self.index;
+    
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToViewController:keepViewController animated:YES];
+    //[self.navigationController popToRootViewControllerAnimated:NO];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if([segue.identifier isEqualToString:@"keepSegue"])
-    {
-        VCLobby *keepViewController = [segue destinationViewController];
-        //resultViewController.strengthValue = @"5";
-        keepViewController.currentHeroID= self.index;
-    }
-}
+//-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if([segue.identifier isEqualToString:@"keepSegue"])
+//    {
+//        VCLobby *keepViewController = [segue destinationViewController];
+//        //resultViewController.strengthValue = @"5";
+//        keepViewController.currentHeroID= self.index;
+//    }
+//}
 
 
 /*
