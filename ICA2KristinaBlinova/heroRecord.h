@@ -15,5 +15,6 @@
 @property (nonatomic) NSInteger agility;
 @property (nonatomic) NSInteger intelect;
 @property (nonatomic) NSInteger defense;
+@property (nonatomic, strong) NSString* imageName;
 
 @end

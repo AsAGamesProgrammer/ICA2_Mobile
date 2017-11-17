@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860AC6F51FBF5020009153C6 /* Archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F41FBF5020009153C6 /* Archer.png */; };
+		860AC6F91FBF5166009153C6 /* Fighter.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F61FBF5166009153C6 /* Fighter.png */; };
+		860AC6FA1FBF5166009153C6 /* Knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F71FBF5166009153C6 /* Knight.png */; };
+		860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F81FBF5166009153C6 /* Paladin.png */; };
 		86187DFA1FB1F1CF00B43293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DF91FB1F1CF00B43293 /* main.m */; };
 		86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFC1FB1F1CF00B43293 /* AppDelegate.m */; };
 		86187E001FB1F1CF00B43293 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFF1FB1F1CF00B43293 /* ViewController.m */; };
@@ -14,7 +18,6 @@
 		86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86187E041FB1F1CF00B43293 /* Assets.xcassets */; };
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
 		86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C1661D1FBAF98B0089F159 /* VCLobby.m */; };
-		86C166201FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 86C1661F1FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg */; };
 		86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF11FB9E0A600B5CFE6 /* Amazon.png */; };
 		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
 		86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F49AF91FB9E30300B5CFE6 /* VCResult.m */; };
@@ -23,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		860AC6F41FBF5020009153C6 /* Archer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Archer.png; sourceTree = "<group>"; };
+		860AC6F61FBF5166009153C6 /* Fighter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fighter.png; sourceTree = "<group>"; };
+		860AC6F71FBF5166009153C6 /* Knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knight.png; sourceTree = "<group>"; };
+		860AC6F81FBF5166009153C6 /* Paladin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paladin.png; sourceTree = "<group>"; };
 		86187DF51FB1F1CF00B43293 /* ICA2KristinaBlinova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICA2KristinaBlinova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86187DF91FB1F1CF00B43293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86187DFB1FB1F1CF00B43293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,7 +42,6 @@
 		86187E091FB1F1CF00B43293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86C1661C1FBAF98B0089F159 /* VCLobby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLobby.h; sourceTree = "<group>"; };
 		86C1661D1FBAF98B0089F159 /* VCLobby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLobby.m; sourceTree = "<group>"; };
-		86C1661F1FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "low-poly-colors-hd-motion-background-4.jpeg"; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
 		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
 		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
@@ -109,7 +115,10 @@
 		86F49AF01FB9E08A00B5CFE6 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
-				86C1661F1FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg */,
+				860AC6F61FBF5166009153C6 /* Fighter.png */,
+				860AC6F71FBF5166009153C6 /* Knight.png */,
+				860AC6F81FBF5166009153C6 /* Paladin.png */,
+				860AC6F41FBF5020009153C6 /* Archer.png */,
 				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
 				86F49AF11FB9E0A600B5CFE6 /* Amazon.png */,
 			);
@@ -175,11 +184,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860AC6F91FBF5166009153C6 /* Fighter.png in Resources */,
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
+				860AC6FA1FBF5166009153C6 /* Knight.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
-				86C166201FBAFD3F0089F159 /* low-poly-colors-hd-motion-background-4.jpeg in Resources */,
+				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,
 				86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */,
+				860AC6F51FBF5020009153C6 /* Archer.png in Resources */,
 				86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

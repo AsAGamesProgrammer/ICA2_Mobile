@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *intlLbl;
 @property (weak, nonatomic) IBOutlet UILabel *defLbl;
 @property (weak, nonatomic) IBOutlet UILabel *indxLbl;
+@property (weak, nonatomic) IBOutlet UIImageView *characterPreview;
 
 @end
 
@@ -37,6 +38,7 @@
     _intlLbl.text = [@(heroR.intelect) stringValue];
     _defLbl.text = [@(heroR.defense) stringValue];
     _indxLbl.text = [@(self.index) stringValue];
+    _characterPreview.image = [UIImage imageNamed: heroR.imageName];
     
     
 }

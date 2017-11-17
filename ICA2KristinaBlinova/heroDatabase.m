@@ -20,6 +20,7 @@ NSArray *array;
     newRecord.agility =2;
     newRecord.intelect = 3;
     newRecord.defense = 1;
+    newRecord.imageName=@"Fighter.png";
     
     //Record 1
     heroRecord *newRecord1 = [[heroRecord alloc]init];
@@ -27,6 +28,7 @@ NSArray *array;
     newRecord1.agility =20;
     newRecord1.intelect = 30;
     newRecord1.defense = 10;
+    newRecord1.imageName = @"Knight.png";
     
     //Record 2
     heroRecord *newRecord2 = [[heroRecord alloc]init];
@@ -34,6 +36,7 @@ NSArray *array;
     newRecord2.agility =200;
     newRecord2.intelect = 300;
     newRecord2.defense = 100;
+    newRecord2.imageName=@"Archer.png";
     
     array = @[newRecord, newRecord1, newRecord2];
 }
