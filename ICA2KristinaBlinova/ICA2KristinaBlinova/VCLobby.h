@@ -14,7 +14,4 @@
 @property (nonatomic) int currentHeroID;
 @property (nonatomic) heroRecord* passedHeroRecord;
 
-@property (nonatomic) NSMutableArray *ownedHeroes;
-
-
 @end

@@ -16,6 +16,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *secondImg;
 @property (weak, nonatomic) IBOutlet UIImageView *thirdImg;
 
+@property (nonatomic) NSMutableArray *ownedHeroes;
+
+@property (weak, nonatomic) IBOutlet UIButton *fightBtn;
+
 @end
 
 @implementation VCLobby
@@ -41,8 +45,14 @@
 {
     if(_currentHeroID >0)
     {
+        //Set image of a chosen slot
         toImage.image = [UIImage imageNamed:_passedHeroRecord.imageName];
+        
+        //Add a hero to a array of owned heroes
         _ownedHeroes[atIndex]=_passedHeroRecord;
+        
+        //Enable fighting as more than one hero exists
+        _fightBtn.enabled=YES;
     }
     //Reset index
     self.currentHeroID=-1;
@@ -56,6 +66,8 @@
     heroRecord* emptyRecord = [[heroRecord alloc] init];
     _ownedHeroes = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
    
+    //Disable fighting as no heroes exist
+    _fightBtn.enabled=NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,7 +81,17 @@
     {
         VCFight *fightViewController = [segue destinationViewController];
 
-        fightViewController.heroes= _ownedHeroes;
+        //Create an array of existing heroes to avoid passing NO HERO slots
+        NSMutableArray* existingHeroes = [[NSMutableArray alloc] init];
+        
+        for(heroRecord* currentRecord in _ownedHeroes)
+        {
+            if(!(currentRecord.imageName == nil))
+                [existingHeroes addObject:currentRecord];
+        }
+        
+        if(existingHeroes.count>0)
+            fightViewController.heroes= existingHeroes;
     }
 }
 

@@ -245,6 +245,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="fightBtn" destination="r9W-ex-1lt" id="0Mx-iO-pYw"/>
                         <outlet property="firstImg" destination="h3j-gG-Rys" id="wpZ-o0-mtd"/>
                         <outlet property="secondImg" destination="5HU-dZ-70g" id="Tba-dw-gIv"/>
                         <outlet property="thirdImg" destination="opH-Oo-kyU" id="J8z-Di-ud5"/>
