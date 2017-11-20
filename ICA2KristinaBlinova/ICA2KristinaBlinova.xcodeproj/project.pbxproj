@@ -17,6 +17,10 @@
 		860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0F61FC31A9C007EEDD2 /* Orc.png */; };
 		860DA0FB1FC32772007EEDD2 /* Orc2.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0FA1FC32772007EEDD2 /* Orc2.png */; };
 		860DA0FD1FC3278B007EEDD2 /* Orc3.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0FC1FC3278B007EEDD2 /* Orc3.png */; };
+		860DA1311FC33CE6007EEDD2 /* sword.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA12D1FC33CE6007EEDD2 /* sword.png */; };
+		860DA1361FC33DCC007EEDD2 /* beltD.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA1331FC33DCC007EEDD2 /* beltD.png */; };
+		860DA1371FC33DCC007EEDD2 /* bookI.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA1341FC33DCC007EEDD2 /* bookI.png */; };
+		860DA1381FC33DCC007EEDD2 /* featherA.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA1351FC33DCC007EEDD2 /* featherA.png */; };
 		86187DFA1FB1F1CF00B43293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DF91FB1F1CF00B43293 /* main.m */; };
 		86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFC1FB1F1CF00B43293 /* AppDelegate.m */; };
 		86187E001FB1F1CF00B43293 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFF1FB1F1CF00B43293 /* ViewController.m */; };
@@ -44,6 +48,10 @@
 		860DA0F61FC31A9C007EEDD2 /* Orc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc.png; sourceTree = "<group>"; };
 		860DA0FA1FC32772007EEDD2 /* Orc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc2.png; sourceTree = "<group>"; };
 		860DA0FC1FC3278B007EEDD2 /* Orc3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc3.png; sourceTree = "<group>"; };
+		860DA12D1FC33CE6007EEDD2 /* sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sword.png; path = ICA2KristinaBlinova/sword.png; sourceTree = "<group>"; };
+		860DA1331FC33DCC007EEDD2 /* beltD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beltD.png; sourceTree = "<group>"; };
+		860DA1341FC33DCC007EEDD2 /* bookI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookI.png; sourceTree = "<group>"; };
+		860DA1351FC33DCC007EEDD2 /* featherA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = featherA.png; sourceTree = "<group>"; };
 		86187DF51FB1F1CF00B43293 /* ICA2KristinaBlinova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICA2KristinaBlinova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86187DF91FB1F1CF00B43293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86187DFB1FB1F1CF00B43293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +116,17 @@
 			name = Orcs;
 			sourceTree = "<group>";
 		};
+		860DA1321FC33CF1007EEDD2 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				860DA1331FC33DCC007EEDD2 /* beltD.png */,
+				860DA1341FC33DCC007EEDD2 /* bookI.png */,
+				860DA1351FC33DCC007EEDD2 /* featherA.png */,
+				860DA12D1FC33CE6007EEDD2 /* sword.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		86187DEC1FB1F1CF00B43293 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +183,7 @@
 		86F49AF01FB9E08A00B5CFE6 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				860DA1321FC33CF1007EEDD2 /* Icons */,
 				860DA0FE1FC327D1007EEDD2 /* Orcs */,
 				860DA0F91FC31B31007EEDD2 /* Additional */,
 				860DA0F81FC31B1D007EEDD2 /* Heroes */,
@@ -230,9 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860DA1381FC33DCC007EEDD2 /* featherA.png in Resources */,
+				860DA1371FC33DCC007EEDD2 /* bookI.png in Resources */,
 				860AC6F91FBF5166009153C6 /* Fighter.png in Resources */,
 				860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */,
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
+				860DA1361FC33DCC007EEDD2 /* beltD.png in Resources */,
 				860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */,
 				860AC6FA1FBF5166009153C6 /* Knight.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
@@ -240,6 +263,7 @@
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
 				860DA0FD1FC3278B007EEDD2 /* Orc3.png in Resources */,
 				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,
+				860DA1311FC33CE6007EEDD2 /* sword.png in Resources */,
 				86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */,
 				860AC6F51FBF5020009153C6 /* Archer.png in Resources */,
 				86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */,

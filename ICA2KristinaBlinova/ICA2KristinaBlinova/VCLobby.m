@@ -22,7 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *secondBtn;
 @property (weak, nonatomic) IBOutlet UIButton *thirdBtn;
 
-
 //Records of all the owned heroes
 @property (nonatomic) NSMutableArray *ownedHeroes;
 
@@ -31,6 +30,7 @@
 
 //Label whch appears when u place your hero
 @property (weak, nonatomic) IBOutlet UILabel *placeLbl;
+
 
 @end
 
@@ -90,11 +90,12 @@
         //Allow fighting
         _fightBtn.enabled=true;
         
+        //SET A TABLE HERE
+        
     }
     //Reset index
     self.currentHeroID=-1;
 }
-
 
 //VIEW DID LOAD
 - (void)viewDidLoad {
