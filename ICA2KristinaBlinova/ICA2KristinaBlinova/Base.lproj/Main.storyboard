@@ -278,6 +278,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ovu-On-8Bn" appends="YES" id="ti2-Mk-RNt"/>
+                                    <outletCollection property="gestureRecognizers" destination="Jpu-PP-l1N" appends="YES" id="xj0-Py-NcG"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -288,9 +289,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhi-eo-gBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="ovu-On-8Bn">
+                <swipeGestureRecognizer direction="left" id="ovu-On-8Bn">
                     <connections>
-                        <action selector="swipeHero:" destination="57r-Hv-Rkl" id="EVL-pU-3sz"/>
+                        <action selector="swipeHeroLeft:" destination="57r-Hv-Rkl" id="f6Q-OH-qIS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Jpu-PP-l1N">
+                    <connections>
+                        <action selector="swipeHeroRight:" destination="57r-Hv-Rkl" id="qVm-GF-7tx"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

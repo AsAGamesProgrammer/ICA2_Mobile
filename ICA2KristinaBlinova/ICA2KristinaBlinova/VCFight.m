@@ -19,7 +19,9 @@
 
 @implementation VCFight
 
-- (IBAction)swipeHero:(UISwipeGestureRecognizer *)sender
+//GESTURES
+//Swipe right
+- (IBAction)swipeHeroRight:(UISwipeGestureRecognizer *)sender
 {
     //Load next hero
     if(_currentHeroNumber + 1 <_totalHeroNumber)
@@ -31,8 +33,25 @@
         _currentHeroNumber=0;
     }
     
-    heroRecord* firstRecord = _heroes[_currentHeroNumber];
-    _heroImg.image = [UIImage imageNamed:firstRecord.imageName];
+    heroRecord* record = _heroes[_currentHeroNumber];
+    _heroImg.image = [UIImage imageNamed:record.imageName];
+}
+
+//Swipe left
+- (IBAction)swipeHeroLeft:(UISwipeGestureRecognizer *)sender
+{
+    //Load next hero
+    if(_currentHeroNumber >0)
+    {
+        _currentHeroNumber--;
+    }
+    else
+    {
+        _currentHeroNumber=_totalHeroNumber-1;
+    }
+    
+    heroRecord* record = _heroes[_currentHeroNumber];
+    _heroImg.image = [UIImage imageNamed:record.imageName];
 }
 
 //VIEW DID LOAD
