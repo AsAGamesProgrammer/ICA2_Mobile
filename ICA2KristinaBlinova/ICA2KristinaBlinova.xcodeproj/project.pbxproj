@@ -15,6 +15,8 @@
 		860DA0F21FC31984007EEDD2 /* VCFight.m in Sources */ = {isa = PBXBuildFile; fileRef = 860DA0F11FC31984007EEDD2 /* VCFight.m */; };
 		860DA0F51FC31A10007EEDD2 /* VCMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */; };
 		860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0F61FC31A9C007EEDD2 /* Orc.png */; };
+		860DA0FB1FC32772007EEDD2 /* Orc2.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0FA1FC32772007EEDD2 /* Orc2.png */; };
+		860DA0FD1FC3278B007EEDD2 /* Orc3.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0FC1FC3278B007EEDD2 /* Orc3.png */; };
 		86187DFA1FB1F1CF00B43293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DF91FB1F1CF00B43293 /* main.m */; };
 		86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFC1FB1F1CF00B43293 /* AppDelegate.m */; };
 		86187E001FB1F1CF00B43293 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFF1FB1F1CF00B43293 /* ViewController.m */; };
@@ -40,6 +42,8 @@
 		860DA0F31FC31A10007EEDD2 /* VCMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMainMenu.h; sourceTree = "<group>"; };
 		860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMainMenu.m; sourceTree = "<group>"; };
 		860DA0F61FC31A9C007EEDD2 /* Orc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc.png; sourceTree = "<group>"; };
+		860DA0FA1FC32772007EEDD2 /* Orc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc2.png; sourceTree = "<group>"; };
+		860DA0FC1FC3278B007EEDD2 /* Orc3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc3.png; sourceTree = "<group>"; };
 		86187DF51FB1F1CF00B43293 /* ICA2KristinaBlinova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICA2KristinaBlinova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86187DF91FB1F1CF00B43293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86187DFB1FB1F1CF00B43293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +96,16 @@
 				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
 			);
 			name = Additional;
+			sourceTree = "<group>";
+		};
+		860DA0FE1FC327D1007EEDD2 /* Orcs */ = {
+			isa = PBXGroup;
+			children = (
+				860DA0F61FC31A9C007EEDD2 /* Orc.png */,
+				860DA0FA1FC32772007EEDD2 /* Orc2.png */,
+				860DA0FC1FC3278B007EEDD2 /* Orc3.png */,
+			);
+			name = Orcs;
 			sourceTree = "<group>";
 		};
 		86187DEC1FB1F1CF00B43293 = {
@@ -150,9 +164,9 @@
 		86F49AF01FB9E08A00B5CFE6 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				860DA0FE1FC327D1007EEDD2 /* Orcs */,
 				860DA0F91FC31B31007EEDD2 /* Additional */,
 				860DA0F81FC31B1D007EEDD2 /* Heroes */,
-				860DA0F61FC31A9C007EEDD2 /* Orc.png */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -222,7 +236,9 @@
 				860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */,
 				860AC6FA1FBF5166009153C6 /* Knight.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
+				860DA0FB1FC32772007EEDD2 /* Orc2.png in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
+				860DA0FD1FC3278B007EEDD2 /* Orc3.png in Resources */,
 				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,
 				86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */,
 				860AC6F51FBF5020009153C6 /* Archer.png in Resources */,

@@ -19,7 +19,7 @@
 
 @implementation VCFight
 
-//GESTURES
+//------------------GESTURES-----------------
 //Swipe right
 - (IBAction)swipeHeroRight:(UISwipeGestureRecognizer *)sender
 {
@@ -52,6 +52,13 @@
     
     heroRecord* record = _heroes[_currentHeroNumber];
     _heroImg.image = [UIImage imageNamed:record.imageName];
+}
+
+//------------------BUTTONS------------------
+//Retreat
+- (IBAction)retreatClick:(UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //VIEW DID LOAD

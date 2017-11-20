@@ -281,6 +281,19 @@
                                     <outletCollection property="gestureRecognizers" destination="Jpu-PP-l1N" appends="YES" id="xj0-Py-NcG"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKd-jE-2T6">
+                                <rect key="frame" x="359" y="927" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Retreat"/>
+                                <connections>
+                                    <action selector="retreatClick:" destination="57r-Hv-Rkl" eventType="touchUpInside" id="L7Y-aG-fqD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR1-9t-uFm">
+                                <rect key="frame" x="362" y="889" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FIGHT"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -318,7 +331,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KiD-2T-m7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1350" y="316"/>
+            <point key="canvasLocation" x="-1358" y="347"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="PJy-Vd-XVM">
@@ -355,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iuX-Ip-vW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-613.28125" y="315.8203125"/>
+            <point key="canvasLocation" x="-602" y="347"/>
         </scene>
     </scenes>
     <resources>
