@@ -10,4 +10,6 @@
 
 @interface VCFight : UIViewController
 
+@property (nonatomic) NSMutableArray* heroes;
+
 @end

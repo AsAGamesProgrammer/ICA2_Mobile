@@ -7,6 +7,7 @@
 //
 
 #import "VCFight.h"
+#import "heroRecord.h"
 
 @interface VCFight ()
 
@@ -16,9 +17,13 @@
 
 @implementation VCFight
 
+//VIEW DID LOAD
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //Test
+    heroRecord* firstRecord = _heroes[0];
+    _heroImg.image = [UIImage imageNamed:firstRecord.imageName];
 }
 
 - (void)didReceiveMemoryWarning {

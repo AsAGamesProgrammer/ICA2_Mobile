@@ -7,7 +7,7 @@
 //
 
 #import "VCLobby.h"
-
+#import "VCFight.h"
 
 
 @interface VCLobby ()
@@ -61,6 +61,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"fightSegue"])
+    {
+        VCFight *fightViewController = [segue destinationViewController];
+
+        fightViewController.heroes= _ownedHeroes;
+    }
 }
 
 /*
