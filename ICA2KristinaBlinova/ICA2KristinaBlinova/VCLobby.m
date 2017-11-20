@@ -23,25 +23,26 @@
 //BUTTON CLICKS
 - (IBAction)selectFirst:(UIButton *)sender
 {
-    [self setNewHero:_firstImg];
+    [self setNewHero:_firstImg atArray:0];
 }
 
 - (IBAction)selectSecond:(UIButton *)sender
 {
-    [self setNewHero:_secondImg];
+    [self setNewHero:_secondImg atArray:1];
 }
 
 - (IBAction)selectThird:(UIButton *)sender
 {
-    [self setNewHero:_thirdImg];
+    [self setNewHero:_thirdImg atArray:2];
 }
 
 //FUNCTIONALITY
--(void) setNewHero:(UIImageView*)toImage
+-(void) setNewHero:(UIImageView*)toImage atArray:(int)atIndex
 {
     if(_currentHeroID >0)
     {
         toImage.image = [UIImage imageNamed:_passedHeroRecord.imageName];
+        _ownedHeroes[atIndex]=_passedHeroRecord;
     }
     //Reset index
     self.currentHeroID=-1;
@@ -51,6 +52,9 @@
 //VIEW DID LOAD
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    heroRecord* emptyRecord = [[heroRecord alloc] init];
+    _ownedHeroes = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
    
 }
 
