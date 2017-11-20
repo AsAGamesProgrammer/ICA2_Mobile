@@ -31,10 +31,13 @@
 //Label whch appears when u place your hero
 @property (weak, nonatomic) IBOutlet UILabel *placeLbl;
 
-
 @end
 
 @implementation VCLobby
+
+//VARIABLES
+NSArray* tableData;
+NSArray* icons;
 
 //BUTTON CLICKS
 - (IBAction)selectFirst:(UIButton *)sender
@@ -109,7 +112,11 @@
     _fightBtn.enabled=NO;
     
     //Set label to no placing heroes
-    _placeLbl.hidden=YES;
+    [self enablePlaceMode:NO];
+    
+    //Table
+    tableData = [NSArray arrayWithObjects: @"Item 1", @"Item 2", @"Item 3", @"Item 4", nil];
+    icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
     
 }
 
@@ -136,6 +143,33 @@
         if(existingHeroes.count>0)
             fightViewController.heroes= existingHeroes;
     }
+}
+
+//--------------------------------------------------------------------------------
+//TABLE FUNCTIONS
+
+//Number of rows
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [tableData count];
+}
+
+//Each row display
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"heroStats";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    
+    //Choose a picture
+    cell.imageView.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
+    return cell;
 }
 
 /*

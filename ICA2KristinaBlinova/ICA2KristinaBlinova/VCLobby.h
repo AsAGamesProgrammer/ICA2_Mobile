@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "heroRecord.h"
 
-@interface VCLobby : UIViewController
+@interface VCLobby : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic) int currentHeroID;
 @property (nonatomic) heroRecord* passedHeroRecord;
