@@ -270,10 +270,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orc.png" translatesAutoresizingMaskIntoConstraints="NO" id="YUV-Eb-WNS">
                                 <rect key="frame" x="306" y="227" width="442" height="442"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoHero.png" translatesAutoresizingMaskIntoConstraints="NO" id="pC9-cb-ybe">
                                 <rect key="frame" x="76" y="380" width="204" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ovu-On-8Bn" appends="YES" id="ti2-Mk-RNt"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -283,6 +288,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhi-eo-gBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="ovu-On-8Bn">
+                    <connections>
+                        <action selector="swipeHero:" destination="57r-Hv-Rkl" id="EVL-pU-3sz"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="187.5" y="1096.875"/>
         </scene>

@@ -12,18 +12,45 @@
 @interface VCFight ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *heroImg;
+@property (nonatomic) int currentHeroNumber;
+@property (nonatomic) int totalHeroNumber;
 
 @end
 
 @implementation VCFight
 
+- (IBAction)swipeHero:(UISwipeGestureRecognizer *)sender
+{
+    //Load next hero
+    if(_currentHeroNumber + 1 <_totalHeroNumber)
+    {
+        _currentHeroNumber++;
+    }
+    else
+    {
+        _currentHeroNumber=0;
+    }
+    
+    heroRecord* firstRecord = _heroes[_currentHeroNumber];
+    _heroImg.image = [UIImage imageNamed:firstRecord.imageName];
+}
+
 //VIEW DID LOAD
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //Test
+    //Set initial hero picture
     heroRecord* firstRecord = _heroes[0];
     _heroImg.image = [UIImage imageNamed:firstRecord.imageName];
+    
+    //Enable interactions on hero image
+    _heroImg.userInteractionEnabled = YES;
+    
+    //Current hero img
+    _currentHeroNumber=0;
+    
+    //Set total number of available heroes to the number of paed records
+    _totalHeroNumber = _heroes.count;
 }
 
 - (void)didReceiveMemoryWarning {
