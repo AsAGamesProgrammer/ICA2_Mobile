@@ -254,10 +254,10 @@
             </objects>
             <point key="canvasLocation" x="187.5" y="347.4609375"/>
         </scene>
-        <!--View Controller-->
+        <!--Fight-->
         <scene sceneID="hk7-sp-pMX">
             <objects>
-                <viewController id="57r-Hv-Rkl" sceneMemberID="viewController">
+                <viewController id="57r-Hv-Rkl" customClass="VCFight" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L0x-fA-l4J"/>
                         <viewControllerLayoutGuide type="bottom" id="TFm-JD-zsH"/>
@@ -265,12 +265,25 @@
                     <view key="view" contentMode="scaleToFill" id="wfn-2n-47q">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orc.png" translatesAutoresizingMaskIntoConstraints="NO" id="YUV-Eb-WNS">
+                                <rect key="frame" x="306" y="227" width="442" height="442"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoHero.png" translatesAutoresizingMaskIntoConstraints="NO" id="pC9-cb-ybe">
+                                <rect key="frame" x="76" y="380" width="204" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="heroImg" destination="pC9-cb-ybe" id="LGS-he-pWR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhi-eo-gBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="1097"/>
+            <point key="canvasLocation" x="187.5" y="1096.875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p57-i6-0AK">
@@ -290,10 +303,10 @@
             </objects>
             <point key="canvasLocation" x="-1350" y="316"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Menu-->
         <scene sceneID="PJy-Vd-XVM">
             <objects>
-                <viewController id="7nK-lM-Xzl" sceneMemberID="viewController">
+                <viewController id="7nK-lM-Xzl" customClass="VCMainMenu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="srG-n8-c7Q"/>
                         <viewControllerLayoutGuide type="bottom" id="ICs-1d-hIz"/>
@@ -331,9 +344,10 @@
     <resources>
         <image name="Amazon.png" width="698" height="1048"/>
         <image name="NoHero.png" width="698" height="1048"/>
+        <image name="Orc.png" width="1532" height="1456"/>
         <image name="uuIDsh.jpg" width="1200" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u0L-Dm-4cG"/>
+        <segue reference="b7a-zs-VDG"/>
     </inferredMetricsTieBreakers>
 </document>

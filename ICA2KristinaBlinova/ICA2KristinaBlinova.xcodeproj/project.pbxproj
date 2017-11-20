@@ -12,6 +12,9 @@
 		860AC6FA1FBF5166009153C6 /* Knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F71FBF5166009153C6 /* Knight.png */; };
 		860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6F81FBF5166009153C6 /* Paladin.png */; };
 		860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */ = {isa = PBXBuildFile; fileRef = 860AC6FC1FBF5FA2009153C6 /* NoHero.png */; };
+		860DA0F21FC31984007EEDD2 /* VCFight.m in Sources */ = {isa = PBXBuildFile; fileRef = 860DA0F11FC31984007EEDD2 /* VCFight.m */; };
+		860DA0F51FC31A10007EEDD2 /* VCMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */; };
+		860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0F61FC31A9C007EEDD2 /* Orc.png */; };
 		86187DFA1FB1F1CF00B43293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DF91FB1F1CF00B43293 /* main.m */; };
 		86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFC1FB1F1CF00B43293 /* AppDelegate.m */; };
 		86187E001FB1F1CF00B43293 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86187DFF1FB1F1CF00B43293 /* ViewController.m */; };
@@ -32,6 +35,11 @@
 		860AC6F71FBF5166009153C6 /* Knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knight.png; sourceTree = "<group>"; };
 		860AC6F81FBF5166009153C6 /* Paladin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paladin.png; sourceTree = "<group>"; };
 		860AC6FC1FBF5FA2009153C6 /* NoHero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoHero.png; sourceTree = "<group>"; };
+		860DA0F01FC31984007EEDD2 /* VCFight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCFight.h; sourceTree = "<group>"; };
+		860DA0F11FC31984007EEDD2 /* VCFight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCFight.m; sourceTree = "<group>"; };
+		860DA0F31FC31A10007EEDD2 /* VCMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMainMenu.h; sourceTree = "<group>"; };
+		860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMainMenu.m; sourceTree = "<group>"; };
+		860DA0F61FC31A9C007EEDD2 /* Orc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc.png; sourceTree = "<group>"; };
 		86187DF51FB1F1CF00B43293 /* ICA2KristinaBlinova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICA2KristinaBlinova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86187DF91FB1F1CF00B43293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86187DFB1FB1F1CF00B43293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +73,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		860DA0F81FC31B1D007EEDD2 /* Heroes */ = {
+			isa = PBXGroup;
+			children = (
+				860AC6F41FBF5020009153C6 /* Archer.png */,
+				86F49AF11FB9E0A600B5CFE6 /* Amazon.png */,
+				860AC6F81FBF5166009153C6 /* Paladin.png */,
+				860AC6F71FBF5166009153C6 /* Knight.png */,
+				860AC6F61FBF5166009153C6 /* Fighter.png */,
+			);
+			name = Heroes;
+			sourceTree = "<group>";
+		};
+		860DA0F91FC31B31007EEDD2 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				860AC6FC1FBF5FA2009153C6 /* NoHero.png */,
+				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
+			);
+			name = Additional;
+			sourceTree = "<group>";
+		};
 		86187DEC1FB1F1CF00B43293 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +118,10 @@
 		86187DF71FB1F1CF00B43293 /* ICA2KristinaBlinova */ = {
 			isa = PBXGroup;
 			children = (
+				860DA0F31FC31A10007EEDD2 /* VCMainMenu.h */,
+				860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */,
+				860DA0F01FC31984007EEDD2 /* VCFight.h */,
+				860DA0F11FC31984007EEDD2 /* VCFight.m */,
 				86C1661C1FBAF98B0089F159 /* VCLobby.h */,
 				86C1661D1FBAF98B0089F159 /* VCLobby.m */,
 				86F49AF81FB9E30300B5CFE6 /* VCResult.h */,
@@ -117,13 +150,9 @@
 		86F49AF01FB9E08A00B5CFE6 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
-				860AC6FC1FBF5FA2009153C6 /* NoHero.png */,
-				860AC6F61FBF5166009153C6 /* Fighter.png */,
-				860AC6F71FBF5166009153C6 /* Knight.png */,
-				860AC6F81FBF5166009153C6 /* Paladin.png */,
-				860AC6F41FBF5020009153C6 /* Archer.png */,
-				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
-				86F49AF11FB9E0A600B5CFE6 /* Amazon.png */,
+				860DA0F91FC31B31007EEDD2 /* Additional */,
+				860DA0F81FC31B1D007EEDD2 /* Heroes */,
+				860DA0F61FC31A9C007EEDD2 /* Orc.png */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -188,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860AC6F91FBF5166009153C6 /* Fighter.png in Resources */,
+				860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */,
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
 				860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */,
 				860AC6FA1FBF5166009153C6 /* Knight.png in Resources */,
@@ -214,6 +244,8 @@
 				86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */,
 				86F4F2B11FBA0C680069F908 /* heroRecord.m in Sources */,
 				86187DFA1FB1F1CF00B43293 /* main.m in Sources */,
+				860DA0F51FC31A10007EEDD2 /* VCMainMenu.m in Sources */,
+				860DA0F21FC31984007EEDD2 /* VCFight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
