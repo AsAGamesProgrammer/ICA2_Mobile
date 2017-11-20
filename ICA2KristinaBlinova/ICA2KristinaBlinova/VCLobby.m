@@ -12,13 +12,25 @@
 
 @interface VCLobby ()
 
+//Images
 @property (weak, nonatomic) IBOutlet UIImageView *firstImg;
 @property (weak, nonatomic) IBOutlet UIImageView *secondImg;
 @property (weak, nonatomic) IBOutlet UIImageView *thirdImg;
 
+//Buttons
+@property (weak, nonatomic) IBOutlet UIButton *firstBtn;
+@property (weak, nonatomic) IBOutlet UIButton *secondBtn;
+@property (weak, nonatomic) IBOutlet UIButton *thirdBtn;
+
+
+//Records of all the owned heroes
 @property (nonatomic) NSMutableArray *ownedHeroes;
 
+//Button which opens fighting view controller
 @property (weak, nonatomic) IBOutlet UIButton *fightBtn;
+
+//Label whch appears when u place your hero
+@property (weak, nonatomic) IBOutlet UILabel *placeLbl;
 
 @end
 
@@ -41,6 +53,27 @@
 }
 
 //FUNCTIONALITY
+-(void) enablePlaceMode:(BOOL)toEnable
+{
+    NSString* btnLabel = [[NSString alloc] init];
+    if(toEnable)
+    {
+        _placeLbl.hidden=NO;
+        btnLabel = @"Place here";
+
+    }
+    else
+    {
+        _placeLbl.hidden=YES;
+        btnLabel = @"View stats";
+    }
+    
+    [_firstBtn setTitle:btnLabel forState:UIControlStateNormal];
+    [_secondBtn setTitle:btnLabel forState:UIControlStateNormal];
+    [_thirdBtn setTitle:btnLabel forState:UIControlStateNormal];
+    
+}
+
 -(void) setNewHero:(UIImageView*)toImage atArray:(int)atIndex
 {
     if(_currentHeroID >0)
@@ -51,8 +84,12 @@
         //Add a hero to a array of owned heroes
         _ownedHeroes[atIndex]=_passedHeroRecord;
         
-        //Enable fighting as more than one hero exists
-        _fightBtn.enabled=YES;
+        //Set UI to not placing hero sate
+        [self enablePlaceMode:NO];
+        
+        //Allow fighting
+        _fightBtn.enabled=true;
+        
     }
     //Reset index
     self.currentHeroID=-1;
@@ -63,11 +100,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Initialize a hero record array with empty records
     heroRecord* emptyRecord = [[heroRecord alloc] init];
     _ownedHeroes = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
    
     //Disable fighting as no heroes exist
     _fightBtn.enabled=NO;
+    
+    //Set label to no placing heroes
+    _placeLbl.hidden=YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {

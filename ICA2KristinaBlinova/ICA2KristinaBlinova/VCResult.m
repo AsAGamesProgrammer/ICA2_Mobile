@@ -53,6 +53,7 @@
     VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     keepViewController.currentHeroID=self.index;
     keepViewController.passedHeroRecord=_heroR;
+    [keepViewController enablePlaceMode:YES];
     
 
     [self dismissViewControllerAnimated:YES completion:nil];

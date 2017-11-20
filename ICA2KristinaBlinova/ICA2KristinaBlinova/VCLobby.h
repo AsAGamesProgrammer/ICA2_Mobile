@@ -14,4 +14,5 @@
 @property (nonatomic) int currentHeroID;
 @property (nonatomic) heroRecord* passedHeroRecord;
 
+-(void)enablePlaceMode:(BOOL)toEnable;
 @end
