@@ -31,6 +31,12 @@
 //Label whch appears when u place your hero
 @property (weak, nonatomic) IBOutlet UILabel *placeLbl;
 
+//Stat labels
+@property (weak, nonatomic) IBOutlet UILabel *firstStatLbl;
+@property (weak, nonatomic) IBOutlet UILabel *secondStatLbl;
+@property (weak, nonatomic) IBOutlet UILabel *thirdStatLbl;
+
+
 @end
 
 @implementation VCLobby
@@ -38,6 +44,8 @@
 //VARIABLES
 NSArray* tableData;
 NSArray* icons;
+
+NSMutableArray* statusLabels;
 
 //BUTTON CLICKS
 - (IBAction)selectFirst:(UIButton *)sender
@@ -93,11 +101,25 @@ NSArray* icons;
         //Allow fighting
         _fightBtn.enabled=true;
         
-        //SET A TABLE HERE
+        //Set status labels
+        UILabel* statLabel = statusLabels[atIndex];
+        statLabel.text = [self getStatusLabel];
         
     }
     //Reset index
     self.currentHeroID=-1;
+}
+
+-(NSString*) getStatusLabel
+{
+    //Values from the record
+    NSString* strValue =[@(_passedHeroRecord.strength) stringValue];
+    NSString* aglValue =[@(_passedHeroRecord.agility) stringValue];
+    NSString* intlValue =[@(_passedHeroRecord.intelect) stringValue];
+    NSString* defValue =[@(_passedHeroRecord.defense) stringValue];
+    NSString* statString = [NSString stringWithFormat:@"(Str)%@, (Agl)%@, (Inl)%@, (Def)%@", strValue, aglValue, intlValue, defValue];
+    
+    return statString;
 }
 
 //VIEW DID LOAD
@@ -118,6 +140,8 @@ NSArray* icons;
     tableData = [NSArray arrayWithObjects: @"Item 1", @"Item 2", @"Item 3", @"Item 4", nil];
     icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
     
+    //Status label array
+    statusLabels = [NSMutableArray arrayWithObjects:_firstStatLbl, _secondStatLbl, _thirdStatLbl, nil];
 }
 
 - (void)didReceiveMemoryWarning {
