@@ -66,22 +66,28 @@ NSMutableArray* statusLabels;
 //FUNCTIONALITY
 -(void) enablePlaceMode:(BOOL)toEnable
 {
-    NSString* btnLabel = [[NSString alloc] init];
-    if(toEnable)
-    {
-        _placeLbl.hidden=NO;
-        btnLabel = @"Place here";
-
-    }
-    else
-    {
-        _placeLbl.hidden=YES;
-        btnLabel = @"View stats";
-    }
+    _placeLbl.hidden=!toEnable;
+    _firstBtn.hidden=!toEnable;
+    _secondBtn.hidden=!toEnable;
+    _thirdBtn.hidden=!toEnable;
     
-    [_firstBtn setTitle:btnLabel forState:UIControlStateNormal];
-    [_secondBtn setTitle:btnLabel forState:UIControlStateNormal];
-    [_thirdBtn setTitle:btnLabel forState:UIControlStateNormal];
+//    NSString* btnLabel = [[NSString alloc] init];
+//    if(toEnable)
+//    {
+//        _placeLbl.hidden=NO;
+//        //btnLabel = @"Place here";
+//        _fightBtn.hidden=toEnable;
+//
+//    }
+//    else
+//    {
+//        _placeLbl.hidden=YES;
+//        //btnLabel = @"View stats";
+//    }
+//    
+//    [_firstBtn setTitle:btnLabel forState:UIControlStateNormal];
+//    [_secondBtn setTitle:btnLabel forState:UIControlStateNormal];
+//    [_thirdBtn setTitle:btnLabel forState:UIControlStateNormal];
     
 }
 
