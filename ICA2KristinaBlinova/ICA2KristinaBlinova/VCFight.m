@@ -8,12 +8,15 @@
 
 #import "VCFight.h"
 #import "heroRecord.h"
+#import "FightViewCell.h"
 
 @interface VCFight ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *heroImg;
 @property (nonatomic) int currentHeroNumber;
 @property (nonatomic) int totalHeroNumber;
+
+@property (weak, nonatomic) IBOutlet UITableView *statTable;
 
 @end
 
@@ -23,32 +26,44 @@
 //VARIABLES
 NSArray* tableData;
 NSArray* icons;
+NSArray* tableStats;
 
 //Number of rows
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [tableData count];
+    return [icons count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 124;
 }
 
 //Each row display
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"heroStats";
+    static NSString *simpleTableIdentifier = @"FightingTableCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    FightViewCell *cell = (FightViewCell*)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"FightingTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
     
     //Hero stats
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    cell.heroValueLbl.text = [tableData objectAtIndex:indexPath.row];
+    
+    //Orc stats
+    cell.orcValueLbl.text = [tableData objectAtIndex:indexPath.row];
     
     //Choose a picture
-    cell.imageView.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
+    cell.iconImg.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
     
-
+    //Stats
+    cell.statLbl=[tableStats objectAtIndex:indexPath.row];
     
 
     return cell;
@@ -116,6 +131,9 @@ NSArray* icons;
     //Table
     tableData = [NSArray arrayWithObjects: @"Item 1", @"Item 2", @"Item 3", @"Item 4", nil];
     icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
+    tableStats = [NSArray arrayWithObjects:@"Strength", @"Agility", @"Intellect", @"Defense", nil];
+    
+    _statTable.contentOffset = CGPointMake(0, 0);
 }
 
 - (void)didReceiveMemoryWarning {
