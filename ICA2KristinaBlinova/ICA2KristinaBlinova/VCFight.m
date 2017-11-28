@@ -20,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *statTable;
 
 //Labels
-@property (weak, nonatomic) IBOutlet UILabel *victoryLbl;
+@property (weak, nonatomic) IBOutlet UIView *victoryView;
 
 
 @end
@@ -136,9 +136,16 @@ NSArray* icons;
        heroRec.agility>=_currentOrcRecord.agility &&
        heroRec.defense>=_currentOrcRecord.defense)
     {
-        _victoryLbl.hidden=false;
+        //VICTORY
+        _victoryView.hidden=false;
     }
 }
+
+- (IBAction)resultClick:(UIButton *)sender
+{
+    
+}
+
 
 //-----------------VIEW CNTROLS--------------
 //VIEW DID LOAD
@@ -177,8 +184,9 @@ NSArray* icons;
     _statTable.layer.borderWidth=2.0;
     _statTable.layer.borderColor=[UIColor orangeColor].CGColor;
     
-    //Labels
-    _victoryLbl.hidden=YES;
+    //Victory/Defeat
+    _victoryView.hidden=true;
+    
 }
 
 - (void)didReceiveMemoryWarning {
