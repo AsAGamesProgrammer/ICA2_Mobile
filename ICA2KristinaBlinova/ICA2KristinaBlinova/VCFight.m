@@ -17,6 +17,7 @@
 @property (nonatomic) int currentHeroNumber;
 @property (nonatomic) int totalHeroNumber;
 
+//Connection to a table
 @property (weak, nonatomic) IBOutlet UITableView *statTable;
 
 @end
@@ -25,9 +26,9 @@
 
 //------------------TABLE--------------------
 //VARIABLES
-NSArray* tableData;
+NSArray* tableHeroData;
+NSArray* tableOrcData;
 NSArray* icons;
-NSArray* tableStats;
 
 //Number of rows
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -55,10 +56,10 @@ NSArray* tableStats;
     
     
     //Hero stats
-    cell.heroValueLbl.text = [tableData objectAtIndex:indexPath.row];
+    cell.heroValueLbl.text = [tableHeroData objectAtIndex:indexPath.row];
     
     //Orc stats
-    cell.orcValueLbl.text = [tableData objectAtIndex:indexPath.row];
+    cell.orcValueLbl.text = [tableOrcData objectAtIndex:indexPath.row];
     
     //Choose a picture
     cell.iconImg.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
@@ -80,8 +81,7 @@ NSArray* tableStats;
         _currentHeroNumber=0;
     }
     
-    heroRecord* record = _heroes[_currentHeroNumber];
-    _heroImg.image = [UIImage imageNamed:record.imageName];
+    [self changeHeroOnSwipe];
 }
 
 //Swipe left
@@ -97,8 +97,23 @@ NSArray* tableStats;
         _currentHeroNumber=_totalHeroNumber-1;
     }
     
+    [self changeHeroOnSwipe];
+}
+
+-(void) changeHeroOnSwipe
+{
     heroRecord* record = _heroes[_currentHeroNumber];
+    
+    //Update hero image
     _heroImg.image = [UIImage imageNamed:record.imageName];
+    
+    //Update table data
+    tableHeroData = [NSArray arrayWithObjects: [@(record.strength) stringValue],
+                     [@(record.agility) stringValue],
+                     [@(record.intelect) stringValue],
+                     [@(record.defense) stringValue], nil];
+    
+    [self.statTable reloadData];
 }
 
 //------------------BUTTONS------------------
@@ -123,12 +138,15 @@ NSArray* tableStats;
     _currentHeroNumber=0;
     
     //Set total number of available heroes to the number of paed records
-    _totalHeroNumber = _heroes.count;
+    _totalHeroNumber = (int)_heroes.count;
     
     //Table
-    tableData = [NSArray arrayWithObjects: @"Item 1", @"Item 2", @"Item 3", @"Item 4", nil];
+    tableHeroData = [NSArray arrayWithObjects: [@(firstRecord.strength) stringValue],
+                                               [@(firstRecord.agility) stringValue],
+                                               [@(firstRecord.intelect) stringValue],
+                                               [@(firstRecord.defense) stringValue], nil];
+    tableOrcData = [NSArray arrayWithObjects: @"Orc 1", @"Orc 2", @"orc 3", @"Orc 4", nil];
     icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
-    tableStats = [NSArray arrayWithObjects:@"Strength", @"Agility", @"Intellect", @"Defense", nil];
     
     _statTable.layer.borderWidth=2.0;
     _statTable.layer.borderColor=[UIColor orangeColor].CGColor;
