@@ -19,6 +19,41 @@
 
 @implementation VCFight
 
+//------------------TABLE--------------------
+//VARIABLES
+NSArray* tableData;
+NSArray* icons;
+
+//Number of rows
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [tableData count];
+}
+
+//Each row display
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"heroStats";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    
+    //Hero stats
+    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    
+    //Choose a picture
+    cell.imageView.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
+    
+
+    
+
+    return cell;
+}
+
 //------------------GESTURES-----------------
 //Swipe right
 - (IBAction)swipeHeroRight:(UISwipeGestureRecognizer *)sender
@@ -77,6 +112,10 @@
     
     //Set total number of available heroes to the number of paed records
     _totalHeroNumber = _heroes.count;
+    
+    //Table
+    tableData = [NSArray arrayWithObjects: @"Item 1", @"Item 2", @"Item 3", @"Item 4", nil];
+    icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
 }
 
 - (void)didReceiveMemoryWarning {

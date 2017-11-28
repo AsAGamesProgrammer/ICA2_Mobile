@@ -42,8 +42,8 @@
 @implementation VCLobby
 
 //VARIABLES
-NSArray* tableData;
-NSArray* icons;
+//NSArray* tableData;
+//NSArray* icons;
 
 NSMutableArray* statusLabels;
 
@@ -143,8 +143,8 @@ NSMutableArray* statusLabels;
     [self enablePlaceMode:NO];
     
     //Table
-    tableData = [NSArray arrayWithObjects: @"Item 1", @"Item 2", @"Item 3", @"Item 4", nil];
-    icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
+//    tableData = [NSArray arrayWithObjects: @"Item 1", @"Item 2", @"Item 3", @"Item 4", nil];
+//    icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
     
     //Status label array
     statusLabels = [NSMutableArray arrayWithObjects:_firstStatLbl, _secondStatLbl, _thirdStatLbl, nil];
@@ -179,28 +179,28 @@ NSMutableArray* statusLabels;
 //TABLE FUNCTIONS
 
 //Number of rows
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [tableData count];
-}
-
-//Each row display
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *simpleTableIdentifier = @"heroStats";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    
-    //Choose a picture
-    cell.imageView.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
-    return cell;
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    return [tableData count];
+//}
+//
+////Each row display
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *simpleTableIdentifier = @"heroStats";
+//    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+//    
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+//    }
+//    
+//    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+//    
+//    //Choose a picture
+//    cell.imageView.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
+//    return cell;
+//}
 
 /*
 #pragma mark - Navigation
