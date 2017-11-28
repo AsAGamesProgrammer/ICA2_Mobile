@@ -38,7 +38,11 @@
 
 //Orcs
 @property (strong, nonatomic) heroRecord* orcRecord;
-//@property (weak, nonatomic) orcGenerator* orcGeneration;
+
+
+//Statistics
+@property (weak, nonatomic) IBOutlet UILabel *defeatedOrcLbl;
+@property (nonatomic) NSInteger defeatedOrcNumber;
 
 @end
 
@@ -131,10 +135,13 @@ NSMutableArray* statusLabels;
     statusLabels = [NSMutableArray arrayWithObjects:_firstStatLbl, _secondStatLbl, _thirdStatLbl, nil];
     
     //Orc
-    //_orcGeneration = [[orcGenerator init] alloc];
     //Create an orc generator
     orcGenerator* orcGeneration = [[orcGenerator alloc] init];
     _orcRecord = [orcGeneration getNextOrc];
+    
+    //Statistics
+    _defeatedOrcNumber = 0;
+    _defeatedOrcLbl.text = [@(_defeatedOrcNumber) stringValue];
 }
 
 - (void)didReceiveMemoryWarning {
