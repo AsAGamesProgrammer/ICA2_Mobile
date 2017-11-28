@@ -8,7 +8,7 @@
 
 #import "VCLobby.h"
 #import "VCFight.h"
-
+#import "orcGenerator.h"
 
 @interface VCLobby ()
 
@@ -36,6 +36,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondStatLbl;
 @property (weak, nonatomic) IBOutlet UILabel *thirdStatLbl;
 
+//Orcs
+@property (strong, nonatomic) heroRecord* orcRecord;
+//@property (weak, nonatomic) orcGenerator* orcGeneration;
 
 @end
 
@@ -70,24 +73,6 @@ NSMutableArray* statusLabels;
     _firstBtn.hidden=!toEnable;
     _secondBtn.hidden=!toEnable;
     _thirdBtn.hidden=!toEnable;
-    
-//    NSString* btnLabel = [[NSString alloc] init];
-//    if(toEnable)
-//    {
-//        _placeLbl.hidden=NO;
-//        //btnLabel = @"Place here";
-//        _fightBtn.hidden=toEnable;
-//
-//    }
-//    else
-//    {
-//        _placeLbl.hidden=YES;
-//        //btnLabel = @"View stats";
-//    }
-//    
-//    [_firstBtn setTitle:btnLabel forState:UIControlStateNormal];
-//    [_secondBtn setTitle:btnLabel forState:UIControlStateNormal];
-//    [_thirdBtn setTitle:btnLabel forState:UIControlStateNormal];
     
 }
 
@@ -142,12 +127,14 @@ NSMutableArray* statusLabels;
     //Set label to no placing heroes
     [self enablePlaceMode:NO];
     
-    //Table
-//    tableData = [NSArray arrayWithObjects: @"Item 1", @"Item 2", @"Item 3", @"Item 4", nil];
-//    icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
-    
     //Status label array
     statusLabels = [NSMutableArray arrayWithObjects:_firstStatLbl, _secondStatLbl, _thirdStatLbl, nil];
+    
+    //Orc
+    //_orcGeneration = [[orcGenerator init] alloc];
+    //Create an orc generator
+    orcGenerator* orcGeneration = [[orcGenerator alloc] init];
+    _orcRecord = [orcGeneration getNextOrc];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -172,35 +159,11 @@ NSMutableArray* statusLabels;
         
         if(existingHeroes.count>0)
             fightViewController.heroes= existingHeroes;
+        
+        //Pass an orc
+        fightViewController.currentOrcRecord = _orcRecord;
     }
 }
-
-//--------------------------------------------------------------------------------
-//TABLE FUNCTIONS
-
-//Number of rows
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    return [tableData count];
-//}
-//
-////Each row display
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *simpleTableIdentifier = @"heroStats";
-//    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-//    
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-//    }
-//    
-//    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-//    
-//    //Choose a picture
-//    cell.imageView.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
-//    return cell;
-//}
 
 /*
 #pragma mark - Navigation

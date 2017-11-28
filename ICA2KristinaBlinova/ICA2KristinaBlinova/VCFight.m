@@ -7,7 +7,6 @@
 //
 
 #import "VCFight.h"
-#import "heroRecord.h"
 #import "FightViewCell.h"
 #import  "QuartzCore/QuartzCore.h"
 
@@ -140,12 +139,20 @@ NSArray* icons;
     //Set total number of available heroes to the number of paed records
     _totalHeroNumber = (int)_heroes.count;
     
-    //Table
+    //TABLE
+    //Set initial hero stats to a table
     tableHeroData = [NSArray arrayWithObjects: [@(firstRecord.strength) stringValue],
                                                [@(firstRecord.agility) stringValue],
                                                [@(firstRecord.intelect) stringValue],
                                                [@(firstRecord.defense) stringValue], nil];
-    tableOrcData = [NSArray arrayWithObjects: @"Orc 1", @"Orc 2", @"orc 3", @"Orc 4", nil];
+    
+    //Set orc stats to a table
+    tableOrcData = [NSArray arrayWithObjects: [@(_currentOrcRecord.strength) stringValue],
+                                              [@(_currentOrcRecord.agility) stringValue],
+                                              [@(_currentOrcRecord.intelect) stringValue],
+                                              [@(_currentOrcRecord.defense) stringValue], nil];
+    
+    
     icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
     
     _statTable.layer.borderWidth=2.0;

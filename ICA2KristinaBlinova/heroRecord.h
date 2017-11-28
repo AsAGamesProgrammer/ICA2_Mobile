@@ -6,6 +6,11 @@
 //  Copyright © 2017 BLINOVA, KRISTINA. All rights reserved.
 //
 
+//---------------------------------------------------------
+// This class is used to store both Orc and Character records
+// as parameters are identical
+//---------------------------------------------------------
+
 #import <Foundation/Foundation.h>
 
 @interface heroRecord : NSObject
