@@ -25,7 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UIButton *resultBtn;
 
-
+@property (nonatomic) BOOL orcDead;
 
 @end
 
@@ -142,15 +142,23 @@ NSArray* icons;
        heroRec.defense>=_currentOrcRecord.defense)
     {
         //VICTORY
-        
+        //Change label text
         _resultLabel.text=@"Victory";
+        
+        //Change label/button colours
         self.resultLabel.textColor = [UIColor colorWithRed:(0/255.f) green:(128/255.f) blue:(0/255.f) alpha:1];
         self.resultBtn.backgroundColor = [UIColor colorWithRed:(0/255.f) green:(128/255.f) blue:(0/255.f) alpha:1];
+        
+        //Confirm victory
+        _orcDead=YES;
     }
     else
     {
         //DEFEAT
+        //Change label text
         _resultLabel.text=@"Defeat";
+        
+        //Change label/button colours
         self.resultLabel.textColor = [UIColor colorWithRed:(134/255.f) green:(13/255.f) blue:(13/255.f) alpha:1];
         self.resultBtn.backgroundColor = [UIColor colorWithRed:(134/255.f) green:(13/255.f) blue:(13/255.f) alpha:1];
     }
@@ -163,6 +171,9 @@ NSArray* icons;
 - (IBAction)resultClick:(UIButton *)sender
 {
     VCLobby* lobbyViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
+    
+    if(_orcDead)
+        [lobbyViewController orcDefeated];
     
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.navigationController popToViewController:lobbyViewController animated:YES];
@@ -208,6 +219,7 @@ NSArray* icons;
     
     //Victory/Defeat
     _victoryView.hidden=true;
+    _orcDead = NO;
     
 }
 

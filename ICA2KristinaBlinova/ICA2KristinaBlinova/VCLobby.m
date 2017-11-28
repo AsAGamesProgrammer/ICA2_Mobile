@@ -54,7 +54,9 @@
 
 NSMutableArray* statusLabels;
 
-//BUTTON CLICKS
+//--------------------------------------------------------
+//                     BUTTON CLICKS
+//--------------------------------------------------------
 - (IBAction)selectFirst:(UIButton *)sender
 {
     [self setNewHero:_firstImg atArray:0];
@@ -70,16 +72,26 @@ NSMutableArray* statusLabels;
     [self setNewHero:_thirdImg atArray:2];
 }
 
-//FUNCTIONALITY
+//--------------------------------------------------------
+//                  PUBLIC FUNCTIONALITY
+//--------------------------------------------------------
 -(void) enablePlaceMode:(BOOL)toEnable
 {
     _placeLbl.hidden=!toEnable;
     _firstBtn.hidden=!toEnable;
     _secondBtn.hidden=!toEnable;
     _thirdBtn.hidden=!toEnable;
-    
 }
 
+-(void) orcDefeated
+{
+    _defeatedOrcNumber++;
+    _defeatedOrcLbl.text = [@(_defeatedOrcNumber) stringValue];
+}
+
+//--------------------------------------------------------
+//                  PRIVATE FUNCTIONALITY
+//--------------------------------------------------------
 -(void) setNewHero:(UIImageView*)toImage atArray:(int)atIndex
 {
     if(_currentHeroID >0)
@@ -117,7 +129,9 @@ NSMutableArray* statusLabels;
     return statString;
 }
 
-//VIEW DID LOAD
+//--------------------------------------------------------
+//                     VIEW RELATED
+//--------------------------------------------------------
 - (void)viewDidLoad {
     [super viewDidLoad];
     

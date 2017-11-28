@@ -15,4 +15,8 @@
 @property (nonatomic) heroRecord* passedHeroRecord;
 
 -(void)enablePlaceMode:(BOOL)toEnable;
+
+//Called when an orc is defeated
+-(void)orcDefeated;
+
 @end
