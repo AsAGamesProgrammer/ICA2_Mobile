@@ -27,6 +27,7 @@
 		86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E011FB1F1CF00B43293 /* Main.storyboard */; };
 		86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86187E041FB1F1CF00B43293 /* Assets.xcassets */; };
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
+		8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */; };
 		86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C1661D1FBAF98B0089F159 /* VCLobby.m */; };
 		86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF11FB9E0A600B5CFE6 /* Amazon.png */; };
 		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
@@ -62,6 +63,7 @@
 		86187E041FB1F1CF00B43293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86187E071FB1F1CF00B43293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86187E091FB1F1CF00B43293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FightingTableCell.xib; sourceTree = "<group>"; };
 		86C1661C1FBAF98B0089F159 /* VCLobby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLobby.h; sourceTree = "<group>"; };
 		86C1661D1FBAF98B0089F159 /* VCLobby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLobby.m; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		86187DF71FB1F1CF00B43293 /* ICA2KristinaBlinova */ = {
 			isa = PBXGroup;
 			children = (
+				8671245B1FCD62C300EB7CB3 /* TableDesign */,
 				860DA0F31FC31A10007EEDD2 /* VCMainMenu.h */,
 				860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */,
 				860DA0F01FC31984007EEDD2 /* VCFight.h */,
@@ -178,6 +181,14 @@
 				86187DF91FB1F1CF00B43293 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8671245B1FCD62C300EB7CB3 /* TableDesign */ = {
+			isa = PBXGroup;
+			children = (
+				8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */,
+			);
+			name = TableDesign;
 			sourceTree = "<group>";
 		};
 		86F49AF01FB9E08A00B5CFE6 /* Sprites */ = {
@@ -253,6 +264,7 @@
 				860DA1381FC33DCC007EEDD2 /* featherA.png in Resources */,
 				860DA1371FC33DCC007EEDD2 /* bookI.png in Resources */,
 				860AC6F91FBF5166009153C6 /* Fighter.png in Resources */,
+				8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */,
 				860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */,
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
 				860DA1361FC33DCC007EEDD2 /* beltD.png in Resources */,
