@@ -29,6 +29,7 @@
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
 		8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */; };
 		86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C1661D1FBAF98B0089F159 /* VCLobby.m */; };
+		86C415831FCD6646009C4969 /* FightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C415821FCD6646009C4969 /* FightViewCell.m */; };
 		86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF11FB9E0A600B5CFE6 /* Amazon.png */; };
 		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
 		86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F49AF91FB9E30300B5CFE6 /* VCResult.m */; };
@@ -66,6 +67,8 @@
 		8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FightingTableCell.xib; sourceTree = "<group>"; };
 		86C1661C1FBAF98B0089F159 /* VCLobby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLobby.h; sourceTree = "<group>"; };
 		86C1661D1FBAF98B0089F159 /* VCLobby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLobby.m; sourceTree = "<group>"; };
+		86C415811FCD6646009C4969 /* FightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FightViewCell.h; sourceTree = "<group>"; };
+		86C415821FCD6646009C4969 /* FightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FightViewCell.m; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
 		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
 		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */,
+				86C415811FCD6646009C4969 /* FightViewCell.h */,
+				86C415821FCD6646009C4969 /* FightViewCell.m */,
 			);
 			name = TableDesign;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 				86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */,
 				86F4F2B11FBA0C680069F908 /* heroRecord.m in Sources */,
 				86187DFA1FB1F1CF00B43293 /* main.m in Sources */,
+				86C415831FCD6646009C4969 /* FightViewCell.m in Sources */,
 				860DA0F51FC31A10007EEDD2 /* VCMainMenu.m in Sources */,
 				860DA0F21FC31984007EEDD2 /* VCFight.m in Sources */,
 			);
