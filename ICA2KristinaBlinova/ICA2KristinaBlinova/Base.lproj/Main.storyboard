@@ -343,7 +343,7 @@
                                 </connections>
                             </tableView>
                             <view alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-s7-Rqv">
-                                <rect key="frame" x="-3" y="432" width="769" height="128"/>
+                                <rect key="frame" x="-1" y="70" width="769" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTU-o7-bf3">
@@ -358,7 +358,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.2353497209" green="0.47108978429999998" blue="0.14234684359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Return">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -373,6 +373,8 @@
                     </view>
                     <connections>
                         <outlet property="heroImg" destination="pC9-cb-ybe" id="LGS-he-pWR"/>
+                        <outlet property="resultBtn" destination="S9G-Jj-b1w" id="PWj-FQ-jsl"/>
+                        <outlet property="resultLabel" destination="DTU-o7-bf3" id="C4K-Ib-v2B"/>
                         <outlet property="statTable" destination="18F-ce-mGQ" id="6Jz-Z0-KAc"/>
                         <outlet property="victoryView" destination="CIg-s7-Rqv" id="9iV-y8-Gwr"/>
                     </connections>

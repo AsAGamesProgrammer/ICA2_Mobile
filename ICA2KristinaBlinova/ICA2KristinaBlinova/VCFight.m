@@ -8,7 +8,8 @@
 
 #import "VCFight.h"
 #import "FightViewCell.h"
-#import  "QuartzCore/QuartzCore.h"
+#import "QuartzCore/QuartzCore.h"
+#import "VCLobby.h"
 
 @interface VCFight ()
 
@@ -19,8 +20,11 @@
 //Connection to a table
 @property (weak, nonatomic) IBOutlet UITableView *statTable;
 
-//Labels
+//Pop up wth the fight result
 @property (weak, nonatomic) IBOutlet UIView *victoryView;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UIButton *resultBtn;
+
 
 
 @end
@@ -129,6 +133,7 @@ NSArray* icons;
 //Fight
 - (IBAction)fightClick:(id)sender
 {
+    //Compare hero stats to the orc
     heroRecord* heroRec = _heroes[_currentHeroNumber];
     
     if(heroRec.strength>=_currentOrcRecord.strength &&
@@ -137,13 +142,30 @@ NSArray* icons;
        heroRec.defense>=_currentOrcRecord.defense)
     {
         //VICTORY
-        _victoryView.hidden=false;
+        
+        _resultLabel.text=@"Victory";
+        self.resultLabel.textColor = [UIColor colorWithRed:(0/255.f) green:(128/255.f) blue:(0/255.f) alpha:1];
+        self.resultBtn.backgroundColor = [UIColor colorWithRed:(0/255.f) green:(128/255.f) blue:(0/255.f) alpha:1];
     }
+    else
+    {
+        //DEFEAT
+        _resultLabel.text=@"Defeat";
+        self.resultLabel.textColor = [UIColor colorWithRed:(134/255.f) green:(13/255.f) blue:(13/255.f) alpha:1];
+        self.resultBtn.backgroundColor = [UIColor colorWithRed:(134/255.f) green:(13/255.f) blue:(13/255.f) alpha:1];
+    }
+    
+    //Show a result view
+    _victoryView.hidden=false;
 }
 
+//Result button click
 - (IBAction)resultClick:(UIButton *)sender
 {
+    VCLobby* lobbyViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToViewController:lobbyViewController animated:YES];
 }
 
 
