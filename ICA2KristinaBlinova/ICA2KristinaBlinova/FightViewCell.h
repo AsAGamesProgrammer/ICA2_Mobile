@@ -11,9 +11,11 @@
 @interface FightViewCell : UITableViewCell
 
 
-@property (nonatomic, weak) IBOutlet UILabel *statLbl;
-@property (nonatomic, weak) IBOutlet UILabel *heroValueLbl;
-@property (nonatomic, weak) IBOutlet UILabel *orcValueLbl;
-@property (nonatomic, weak) IBOutlet UIImageView *iconImg;
+//Connections to the UI
+@property (weak, nonatomic) IBOutlet UILabel *statLbl;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImg;
+@property (weak, nonatomic) IBOutlet UILabel *heroValueLbl;
+@property (weak, nonatomic) IBOutlet UILabel *orcValueLbl;
+
 
 @end

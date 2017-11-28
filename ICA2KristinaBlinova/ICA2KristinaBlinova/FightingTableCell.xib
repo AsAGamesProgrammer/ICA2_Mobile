@@ -11,10 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="SzD-7h-hBI">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="SzD-7h-hBI" customClass="FightViewCell">
             <rect key="frame" x="0.0" y="0.0" width="482" height="201"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SzD-7h-hBI" id="F7l-1Y-Zh6">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SzD-7h-hBI" id="F7l-1Y-Zh6" customClass="FightViewCell">
                 <rect key="frame" x="0.0" y="0.0" width="482" height="201"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -59,6 +59,12 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="heroValueLbl" destination="iqC-B4-vfX" id="IOk-tv-fZb"/>
+                <outlet property="iconImg" destination="xeN-Gb-cQV" id="CnA-Xg-49I"/>
+                <outlet property="orcValueLbl" destination="HvK-Ek-hJJ" id="Y46-K7-0m6"/>
+                <outlet property="statLbl" destination="Ntv-jP-N1s" id="VWU-lc-YON"/>
+            </connections>
             <point key="canvasLocation" x="97" y="67.5"/>
         </tableViewCell>
     </objects>
