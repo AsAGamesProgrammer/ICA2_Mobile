@@ -11,7 +11,6 @@
 @implementation FightViewCell
 
 //Synthesizing variables from the header
-@synthesize statLbl = _statLbl;
 @synthesize heroValueLbl = _heroValueLbl;
 @synthesize orcValueLbl = _orcValueLbl;
 @synthesize iconImg = _iconImg;

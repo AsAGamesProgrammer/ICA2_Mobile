@@ -12,7 +12,6 @@
 
 
 //Connections to the UI
-@property (weak, nonatomic) IBOutlet UILabel *statLbl;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImg;
 @property (weak, nonatomic) IBOutlet UILabel *heroValueLbl;
 @property (weak, nonatomic) IBOutlet UILabel *orcValueLbl;

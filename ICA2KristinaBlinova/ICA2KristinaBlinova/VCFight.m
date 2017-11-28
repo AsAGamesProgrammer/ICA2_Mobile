@@ -9,6 +9,7 @@
 #import "VCFight.h"
 #import "heroRecord.h"
 #import "FightViewCell.h"
+#import  "QuartzCore/QuartzCore.h"
 
 @interface VCFight ()
 
@@ -36,7 +37,7 @@ NSArray* tableStats;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 124;
+    return 63;
 }
 
 //Each row display
@@ -62,10 +63,6 @@ NSArray* tableStats;
     //Choose a picture
     cell.iconImg.image = [UIImage imageNamed:[icons objectAtIndex:indexPath.row]];
     
-    //Stats
-    cell.statLbl=[tableStats objectAtIndex:indexPath.row];
-    
-
     return cell;
 }
 
@@ -133,7 +130,8 @@ NSArray* tableStats;
     icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
     tableStats = [NSArray arrayWithObjects:@"Strength", @"Agility", @"Intellect", @"Defense", nil];
     
-    _statTable.contentOffset = CGPointMake(0, 0);
+    _statTable.layer.borderWidth=2.0;
+    _statTable.layer.borderColor=[UIColor orangeColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning {
