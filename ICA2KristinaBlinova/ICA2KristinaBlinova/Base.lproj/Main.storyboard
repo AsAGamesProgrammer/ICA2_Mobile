@@ -304,7 +304,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoHero.png" translatesAutoresizingMaskIntoConstraints="NO" id="pC9-cb-ybe">
-                                <rect key="frame" x="48" y="290" width="204" height="289"/>
+                                <rect key="frame" x="35" y="368" width="204" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -312,26 +312,37 @@
                                     <outletCollection property="gestureRecognizers" destination="Jpu-PP-l1N" appends="YES" id="xj0-Py-NcG"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR1-9t-uFm">
+                                <rect key="frame" x="359" y="923" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FIGHT"/>
+                                <connections>
+                                    <action selector="fightClick:" destination="57r-Hv-Rkl" eventType="touchUpInside" id="YsC-gt-svi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orc.png" translatesAutoresizingMaskIntoConstraints="NO" id="YUV-Eb-WNS">
+                                <rect key="frame" x="318" y="206" width="442" height="442"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKd-jE-2T6">
-                                <rect key="frame" x="359" y="961" width="50" height="30"/>
+                                <rect key="frame" x="356" y="961" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Retreat"/>
                                 <connections>
                                     <action selector="retreatClick:" destination="57r-Hv-Rkl" eventType="touchUpInside" id="L7Y-aG-fqD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR1-9t-uFm">
-                                <rect key="frame" x="359" y="923" width="44" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victory!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-NV-cc0">
+                                <rect key="frame" x="0.0" y="89" width="768" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FIGHT"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orc.png" translatesAutoresizingMaskIntoConstraints="NO" id="YUV-Eb-WNS">
-                                <rect key="frame" x="281" y="137" width="442" height="442"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.99887973070000002" green="0.6923190951" blue="0.4115796685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" red="0.3706035614" green="0.27319198849999998" blue="0.3181118369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="18F-ce-mGQ">
-                                <rect key="frame" x="247" y="606" width="275" height="258"/>
+                                <rect key="frame" x="244" y="606" width="275" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -345,6 +356,7 @@
                     <connections>
                         <outlet property="heroImg" destination="pC9-cb-ybe" id="LGS-he-pWR"/>
                         <outlet property="statTable" destination="18F-ce-mGQ" id="6Jz-Z0-KAc"/>
+                        <outlet property="victoryLbl" destination="mrc-NV-cc0" id="wpO-sI-tgg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhi-eo-gBX" userLabel="First Responder" sceneMemberID="firstResponder"/>

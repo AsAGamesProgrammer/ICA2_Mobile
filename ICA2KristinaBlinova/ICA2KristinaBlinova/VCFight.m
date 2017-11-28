@@ -19,6 +19,10 @@
 //Connection to a table
 @property (weak, nonatomic) IBOutlet UITableView *statTable;
 
+//Labels
+@property (weak, nonatomic) IBOutlet UILabel *victoryLbl;
+
+
 @end
 
 @implementation VCFight
@@ -122,6 +126,21 @@ NSArray* icons;
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+//Fight
+- (IBAction)fightClick:(id)sender
+{
+    heroRecord* heroRec = _heroes[_currentHeroNumber];
+    
+    if(heroRec.strength>=_currentOrcRecord.strength &&
+       heroRec.intelect>=_currentOrcRecord.intelect &&
+       heroRec.agility>=_currentOrcRecord.agility &&
+       heroRec.defense>=_currentOrcRecord.defense)
+    {
+        _victoryLbl.hidden=false;
+    }
+}
+
+//-----------------VIEW CNTROLS--------------
 //VIEW DID LOAD
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -157,6 +176,9 @@ NSArray* icons;
     
     _statTable.layer.borderWidth=2.0;
     _statTable.layer.borderColor=[UIColor orangeColor].CGColor;
+    
+    //Labels
+    _victoryLbl.hidden=YES;
 }
 
 - (void)didReceiveMemoryWarning {
