@@ -201,14 +201,6 @@
                                 <rect key="frame" x="270" y="0.0" width="229" height="932"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d7-cO-JCd">
-                                <rect key="frame" x="393" y="945" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scan"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Uq1-I7-518"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoHero.png" translatesAutoresizingMaskIntoConstraints="NO" id="h3j-gG-Rys">
                                 <rect key="frame" x="20" y="238" width="229" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -289,8 +281,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9W-ex-1lt">
-                                <rect key="frame" x="330" y="945" width="35" height="30"/>
+                                <rect key="frame" x="297" y="913" width="95" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Fight"/>
                                 <connections>
                                     <segue destination="57r-Hv-Rkl" kind="show" identifier="fightSegue" id="Bhb-rg-ofy"/>
@@ -308,6 +301,15 @@
                                 <rect key="frame" x="589" y="573" width="159" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d7-cO-JCd">
+                                <rect key="frame" x="400" y="913" width="84" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Uq1-I7-518"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

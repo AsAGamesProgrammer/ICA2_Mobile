@@ -128,6 +128,9 @@ NSMutableArray* statusLabels;
 {
     _typePassed=Hero;
     [self enablePlaceMode:YES];
+    
+    //Label
+    _placeLbl.text=@"Place your hero!";
 }
 
 -(void) weaponPassed
@@ -147,6 +150,10 @@ NSMutableArray* statusLabels;
     heroR = _ownedHeroes[2];
     if(heroR.imageName==nil)
         _thirdBtn.enabled=NO;
+    
+    //Label
+    _placeLbl.text=@"Equip your hero!";
+    
 }
 
 -(void) orcDefeated
