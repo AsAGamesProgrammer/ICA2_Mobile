@@ -87,7 +87,19 @@
     dispatch_queue_t dispacthQueue;
     dispacthQueue = dispatch_queue_create("myQueue", NULL);
     [captureMetadataOutput setMetadataObjectsDelegate:self queue:dispacthQueue];
-    [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObjects: AVMetadataObjectTypeQRCode, AVMetadataObjectTypeAztecCode, nil]];
+    [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObjects: AVMetadataObjectTypeQRCode,     //qr
+                                                                             AVMetadataObjectTypeAztecCode,  //aztec
+                                                                             AVMetadataObjectTypeUPCECode,   //bar codes
+                                                                             AVMetadataObjectTypeEAN8Code,
+                                                                             AVMetadataObjectTypeEAN13Code,
+                                                                             AVMetadataObjectTypeCode39Code,
+                                                                             AVMetadataObjectTypeCode93Code,
+                                                                             AVMetadataObjectTypeCode128Code,
+                                                                             AVMetadataObjectTypeITF14Code,
+                                                                             AVMetadataObjectTypeCode39Mod43Code,
+                                                                             AVMetadataObjectTypeInterleaved2of5Code,
+                                                                             AVMetadataObjectTypePDF417Code,      //pdf
+                                                                             AVMetadataObjectTypeDataMatrixCode, nil]]; //data matrix
     
     //----SHOW DATA TO THE USER------
     _videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_captureSession]; //Initialization
