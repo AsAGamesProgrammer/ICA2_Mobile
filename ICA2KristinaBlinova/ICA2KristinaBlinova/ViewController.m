@@ -137,7 +137,7 @@
         if([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) //check if an oject read is a valid qr code
         {
             //TODO: Algorithm
-            _nextIndex = metadataObj.stringValue.length % 4;
+            _nextIndex = metadataObj.stringValue.length % 6;
             _codeType=Hero;
             
             //Video capture and display
@@ -206,7 +206,7 @@
             }
             
             //Passed values
-            _nextIndex = weaponIdx % 2;
+            _nextIndex = weaponIdx % 7;
              _codeType=Weapon;
             
             //Video capture and display

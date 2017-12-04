@@ -27,6 +27,13 @@
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
 		8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */; };
 		8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5BD1FD5D00300FDED0C /* enumCodeType.m */; };
+		8652A5C01FD5D3DF00FDED0C /* KSword.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5BF1FD5D3DF00FDED0C /* KSword.png */; };
+		8652A5C21FD5D3E400FDED0C /* KShield.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5C11FD5D3E400FDED0C /* KShield.png */; };
+		8652A5C41FD5D3EF00FDED0C /* DSword.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5C31FD5D3EF00FDED0C /* DSword.png */; };
+		8652A5C61FD5D3F900FDED0C /* bow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5C51FD5D3F900FDED0C /* bow.png */; };
+		8652A5C81FD5D3FF00FDED0C /* ASword.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5C71FD5D3FF00FDED0C /* ASword.png */; };
+		8652A5CA1FD5D84100FDED0C /* Archer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5C91FD5D84100FDED0C /* Archer2.png */; };
+		8652A5CC1FD5D84B00FDED0C /* Amazon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5CB1FD5D84B00FDED0C /* Amazon2.png */; };
 		865A09DF1FD58FFB008CBC11 /* AShield.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09DE1FD58FFB008CBC11 /* AShield.png */; };
 		865A09E11FD5900C008CBC11 /* WAxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09E01FD5900C008CBC11 /* WAxe.png */; };
 		865A09E31FD5943A008CBC11 /* gradientStripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09E21FD59439008CBC11 /* gradientStripe.png */; };
@@ -75,6 +82,13 @@
 		8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weaponDatabase.m; sourceTree = "<group>"; };
 		8652A5BC1FD5D00300FDED0C /* enumCodeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enumCodeType.h; sourceTree = "<group>"; };
 		8652A5BD1FD5D00300FDED0C /* enumCodeType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = enumCodeType.m; sourceTree = "<group>"; };
+		8652A5BF1FD5D3DF00FDED0C /* KSword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KSword.png; sourceTree = "<group>"; };
+		8652A5C11FD5D3E400FDED0C /* KShield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KShield.png; sourceTree = "<group>"; };
+		8652A5C31FD5D3EF00FDED0C /* DSword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DSword.png; sourceTree = "<group>"; };
+		8652A5C51FD5D3F900FDED0C /* bow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bow.png; sourceTree = "<group>"; };
+		8652A5C71FD5D3FF00FDED0C /* ASword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASword.png; sourceTree = "<group>"; };
+		8652A5C91FD5D84100FDED0C /* Archer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Archer2.png; sourceTree = "<group>"; };
+		8652A5CB1FD5D84B00FDED0C /* Amazon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon2.png; sourceTree = "<group>"; };
 		865A09DE1FD58FFB008CBC11 /* AShield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AShield.png; sourceTree = "<group>"; };
 		865A09E01FD5900C008CBC11 /* WAxe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WAxe.png; sourceTree = "<group>"; };
 		865A09E21FD59439008CBC11 /* gradientStripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradientStripe.png; sourceTree = "<group>"; };
@@ -114,6 +128,8 @@
 		860DA0F81FC31B1D007EEDD2 /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				8652A5C91FD5D84100FDED0C /* Archer2.png */,
+				8652A5CB1FD5D84B00FDED0C /* Amazon2.png */,
 				860AC6F41FBF5020009153C6 /* Archer.png */,
 				86F49AF11FB9E0A600B5CFE6 /* Amazon.png */,
 				860AC6F81FBF5166009153C6 /* Paladin.png */,
@@ -230,6 +246,11 @@
 		865A09DC1FD58FDD008CBC11 /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
+				8652A5C71FD5D3FF00FDED0C /* ASword.png */,
+				8652A5C51FD5D3F900FDED0C /* bow.png */,
+				8652A5C31FD5D3EF00FDED0C /* DSword.png */,
+				8652A5C11FD5D3E400FDED0C /* KShield.png */,
+				8652A5BF1FD5D3DF00FDED0C /* KSword.png */,
 				865A09E01FD5900C008CBC11 /* WAxe.png */,
 				865A09DE1FD58FFB008CBC11 /* AShield.png */,
 			);
@@ -348,10 +369,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				865E3B461FD56E1000C3A719 /* Orc3.png in Resources */,
+				8652A5CC1FD5D84B00FDED0C /* Amazon2.png in Resources */,
 				860DA1381FC33DCC007EEDD2 /* featherA.png in Resources */,
 				860DA1371FC33DCC007EEDD2 /* bookI.png in Resources */,
+				8652A5C01FD5D3DF00FDED0C /* KSword.png in Resources */,
 				860AC6F91FBF5166009153C6 /* Fighter.png in Resources */,
 				8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */,
+				8652A5C61FD5D3F900FDED0C /* bow.png in Resources */,
 				865A09E51FD59685008CBC11 /* stripe2.png in Resources */,
 				865A09DF1FD58FFB008CBC11 /* AShield.png in Resources */,
 				860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */,
@@ -366,11 +390,15 @@
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
 				865A09E31FD5943A008CBC11 /* gradientStripe.png in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
+				8652A5C21FD5D3E400FDED0C /* KShield.png in Resources */,
 				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,
+				8652A5C81FD5D3FF00FDED0C /* ASword.png in Resources */,
 				860DA1311FC33CE6007EEDD2 /* sword.png in Resources */,
 				86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */,
 				860AC6F51FBF5020009153C6 /* Archer.png in Resources */,
 				86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */,
+				8652A5C41FD5D3EF00FDED0C /* DSword.png in Resources */,
+				8652A5CA1FD5D84100FDED0C /* Archer2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,12 @@ NSArray *arrayWeapons;
     
     arrayWeapons = @[[self createAHero:0 :0 :0 :0 :@"NoHero.png"],
                      [self createAHero:0 :0 :0 :20 :@"AShield.png"],
-                     [self createAHero:30 :0 :0 :0 :@"WAxe.png"]];
+                     [self createAHero:30 :0 :0 :0 :@"WAxe.png"],
+                     [self createAHero:25 :0 :5 :0 :@"DSword.png"],
+                     [self createAHero:0 :0 :0 :25 :@"KShield.png"],
+                     [self createAHero:10 :10 :0 :0 :@"KSword.png"],
+                     [self createAHero:20 :0 :0 :10 :@"ASword.png"],
+                     [self createAHero:0 :40 :0 :0 :@"bow.png"]];
 }
 
 
