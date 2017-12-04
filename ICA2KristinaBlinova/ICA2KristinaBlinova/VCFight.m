@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *resultBtn;
 
 @property (nonatomic) BOOL orcDead;
+@property (weak, nonatomic) IBOutlet UIImageView *orcImg;
 
 @end
 
@@ -211,6 +212,8 @@ NSArray* icons;
                                               [@(_currentOrcRecord.intelect) stringValue],
                                               [@(_currentOrcRecord.defense) stringValue], nil];
     
+    //Orc image
+    _orcImg.image = [UIImage imageNamed:_currentOrcRecord.imageName];
     
     icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
     

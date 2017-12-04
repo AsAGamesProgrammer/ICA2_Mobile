@@ -15,9 +15,8 @@
 -(heroRecord*) getNextOrc
 {
     srand(time(NULL));
-    int randomStat = rand() %4;
-    
-    
+
+    //DEFAULT RECORD------------------------------------
     heroRecord *newRecord = [[heroRecord alloc]init];
     
     newRecord.indx = 1;
@@ -25,7 +24,9 @@
     newRecord.intelect= 0;
     newRecord.agility=0;
     newRecord.defense=0;
-    newRecord.imageName = @"Orc.png";
+
+    //RANDOM STAT---------------------------------------
+    int randomStat = rand() %4;
     
     switch(randomStat)
     {
@@ -44,7 +45,33 @@
         case 3:
             newRecord.defense=rand() % 50;
             break;
+            
+        default:
+            break;
     }
+    
+    //RANDOM IMAGE---------------------------------------
+    int randomImg = rand()%3;
+    
+    switch(randomImg)
+    {
+        case 0:
+            newRecord.imageName=@"Orc.png";
+            break;
+            
+        case 1:
+            newRecord.imageName=@"Orc2.png";
+            break;
+            
+        case 2:
+            newRecord.imageName=@"Orc3.png";
+            break;
+            
+        default:
+            newRecord.imageName=@"Orc.png";
+            break;
+    }
+    
     
     return newRecord;
 }

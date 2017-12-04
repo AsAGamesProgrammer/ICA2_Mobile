@@ -388,6 +388,7 @@
                     </view>
                     <connections>
                         <outlet property="heroImg" destination="pC9-cb-ybe" id="LGS-he-pWR"/>
+                        <outlet property="orcImg" destination="YUV-Eb-WNS" id="V05-Uj-CJd"/>
                         <outlet property="resultBtn" destination="S9G-Jj-b1w" id="PWj-FQ-jsl"/>
                         <outlet property="resultLabel" destination="DTU-o7-bf3" id="C4K-Ib-v2B"/>
                         <outlet property="statTable" destination="18F-ce-mGQ" id="6Jz-Z0-KAc"/>

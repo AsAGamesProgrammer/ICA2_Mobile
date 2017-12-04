@@ -15,8 +15,6 @@
 		860DA0F21FC31984007EEDD2 /* VCFight.m in Sources */ = {isa = PBXBuildFile; fileRef = 860DA0F11FC31984007EEDD2 /* VCFight.m */; };
 		860DA0F51FC31A10007EEDD2 /* VCMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */; };
 		860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0F61FC31A9C007EEDD2 /* Orc.png */; };
-		860DA0FB1FC32772007EEDD2 /* Orc2.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0FA1FC32772007EEDD2 /* Orc2.png */; };
-		860DA0FD1FC3278B007EEDD2 /* Orc3.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA0FC1FC3278B007EEDD2 /* Orc3.png */; };
 		860DA1311FC33CE6007EEDD2 /* sword.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA12D1FC33CE6007EEDD2 /* sword.png */; };
 		860DA1361FC33DCC007EEDD2 /* beltD.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA1331FC33DCC007EEDD2 /* beltD.png */; };
 		860DA1371FC33DCC007EEDD2 /* bookI.png in Resources */ = {isa = PBXBuildFile; fileRef = 860DA1341FC33DCC007EEDD2 /* bookI.png */; };
@@ -27,6 +25,8 @@
 		86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E011FB1F1CF00B43293 /* Main.storyboard */; };
 		86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86187E041FB1F1CF00B43293 /* Assets.xcassets */; };
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
+		865E3B441FD56E0A00C3A719 /* Orc2.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E3B431FD56E0A00C3A719 /* Orc2.png */; };
+		865E3B461FD56E1000C3A719 /* Orc3.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E3B451FD56E1000C3A719 /* Orc3.png */; };
 		8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */; };
 		86B45B341FCD9B58006021D1 /* orcGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B45B331FCD9B58006021D1 /* orcGenerator.m */; };
 		86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C1661D1FBAF98B0089F159 /* VCLobby.m */; };
@@ -49,8 +49,6 @@
 		860DA0F31FC31A10007EEDD2 /* VCMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMainMenu.h; sourceTree = "<group>"; };
 		860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMainMenu.m; sourceTree = "<group>"; };
 		860DA0F61FC31A9C007EEDD2 /* Orc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc.png; sourceTree = "<group>"; };
-		860DA0FA1FC32772007EEDD2 /* Orc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc2.png; sourceTree = "<group>"; };
-		860DA0FC1FC3278B007EEDD2 /* Orc3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc3.png; sourceTree = "<group>"; };
 		860DA12D1FC33CE6007EEDD2 /* sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sword.png; path = ICA2KristinaBlinova/sword.png; sourceTree = "<group>"; };
 		860DA1331FC33DCC007EEDD2 /* beltD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beltD.png; sourceTree = "<group>"; };
 		860DA1341FC33DCC007EEDD2 /* bookI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookI.png; sourceTree = "<group>"; };
@@ -65,6 +63,8 @@
 		86187E041FB1F1CF00B43293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86187E071FB1F1CF00B43293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86187E091FB1F1CF00B43293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865E3B431FD56E0A00C3A719 /* Orc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc2.png; sourceTree = "<group>"; };
+		865E3B451FD56E1000C3A719 /* Orc3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc3.png; sourceTree = "<group>"; };
 		8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FightingTableCell.xib; sourceTree = "<group>"; };
 		86B45B321FCD9B58006021D1 /* orcGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orcGenerator.h; sourceTree = "<group>"; };
 		86B45B331FCD9B58006021D1 /* orcGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = orcGenerator.m; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				860DA0F61FC31A9C007EEDD2 /* Orc.png */,
-				860DA0FA1FC32772007EEDD2 /* Orc2.png */,
-				860DA0FC1FC3278B007EEDD2 /* Orc3.png */,
+				865E3B431FD56E0A00C3A719 /* Orc2.png */,
+				865E3B451FD56E1000C3A719 /* Orc3.png */,
 			);
 			name = Orcs;
 			sourceTree = "<group>";
@@ -295,19 +295,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865E3B461FD56E1000C3A719 /* Orc3.png in Resources */,
 				860DA1381FC33DCC007EEDD2 /* featherA.png in Resources */,
 				860DA1371FC33DCC007EEDD2 /* bookI.png in Resources */,
 				860AC6F91FBF5166009153C6 /* Fighter.png in Resources */,
 				8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */,
 				860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */,
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
+				865E3B441FD56E0A00C3A719 /* Orc2.png in Resources */,
 				860DA1361FC33DCC007EEDD2 /* beltD.png in Resources */,
 				860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */,
 				860AC6FA1FBF5166009153C6 /* Knight.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
-				860DA0FB1FC32772007EEDD2 /* Orc2.png in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
-				860DA0FD1FC3278B007EEDD2 /* Orc3.png in Resources */,
 				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,
 				860DA1311FC33CE6007EEDD2 /* sword.png in Resources */,
 				86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */,
