@@ -201,11 +201,7 @@
                         weaponIdx+=11;
                 }
                 
-                printf("%d\n", weaponIdx);
-                
             }
-            
-            printf("%d\n", weaponIdx);
             
             _nextIndex = weaponIdx % 4;
             
