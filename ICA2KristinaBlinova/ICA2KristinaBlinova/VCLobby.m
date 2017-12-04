@@ -12,10 +12,15 @@
 
 @interface VCLobby ()
 
-//Images
+//Hero Images
 @property (weak, nonatomic) IBOutlet UIImageView *firstImg;
 @property (weak, nonatomic) IBOutlet UIImageView *secondImg;
 @property (weak, nonatomic) IBOutlet UIImageView *thirdImg;
+
+//Hero gradient stripes
+@property (weak, nonatomic) IBOutlet UIImageView *firstStripe;
+@property (weak, nonatomic) IBOutlet UIImageView *secondStripe;
+@property (weak, nonatomic) IBOutlet UIImageView *thirdStripe;
 
 //Buttons
 @property (weak, nonatomic) IBOutlet UIButton *firstBtn;
@@ -39,7 +44,6 @@
 //Orcs
 @property (strong, nonatomic) heroRecord* orcRecord;
 
-
 //Statistics
 @property (weak, nonatomic) IBOutlet UILabel *defeatedOrcLbl;
 @property (nonatomic) NSInteger defeatedOrcNumber;
@@ -59,16 +63,19 @@ NSMutableArray* statusLabels;
 //--------------------------------------------------------
 - (IBAction)selectFirst:(UIButton *)sender
 {
+    _firstStripe.hidden=NO;
     [self setNewHero:_firstImg atArray:0];
 }
 
 - (IBAction)selectSecond:(UIButton *)sender
 {
+    _secondStripe.hidden=NO;
     [self setNewHero:_secondImg atArray:1];
 }
 
 - (IBAction)selectThird:(UIButton *)sender
 {
+    _thirdStripe.hidden=NO;
     [self setNewHero:_thirdImg atArray:2];
 }
 

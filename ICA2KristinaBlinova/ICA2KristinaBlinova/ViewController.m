@@ -154,6 +154,11 @@
                 [self performSegueWithIdentifier:@"resultSegue" sender:self];
             });
         }
+        else
+        {
+            [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj type] waitUntilDone:NO];
+            
+        }
         
         //---------------------
         //      AZTEC
