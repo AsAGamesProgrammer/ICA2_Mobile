@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>  //Camera
 #import "VCResult.h"
+
 //#import "VCResult.h"
 
 @interface ViewController () <AVCaptureMetadataOutputObjectsDelegate>
@@ -82,14 +83,11 @@
     AVCaptureMetadataOutput *captureMetadataOutput = [[AVCaptureMetadataOutput alloc] init];
     [_captureSession addOutput:captureMetadataOutput];
     
+    //CODE TYES
     dispatch_queue_t dispacthQueue;
     dispacthQueue = dispatch_queue_create("myQueue", NULL);
     [captureMetadataOutput setMetadataObjectsDelegate:self queue:dispacthQueue];
-    [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObject:AVMetadataObjectTypeQRCode]];
-    
-    //!!!!!!!!!!!!!!!!!!!!//
-    //CHANGE QR CODE FOR WHATEVER//
-    //!!!!!!!!!!!!!!!!!!!!//
+    [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObjects: AVMetadataObjectTypeQRCode, AVMetadataObjectTypeAztecCode, nil]];
     
     //----SHOW DATA TO THE USER------
     _videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_captureSession]; //Initialization
@@ -119,9 +117,12 @@
     {
         //Always interpret only the first captured object
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
+        
+        //---------------------
+        //      QR Code
+        //---------------------
         if([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) //check if an oject read is a valid qr code
         {
-            
             
             //Proccess QR code on the main thread
             //Status label with QR value
@@ -140,7 +141,22 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self performSegueWithIdentifier:@"resultSegue" sender:self];
             });
-
+        }
+        
+        //---------------------
+        //      AZTEC
+        //---------------------
+        
+        if([[metadataObj type] isEqualToString:AVMetadataObjectTypeAztecCode]) //check if an oject read is a valid qr code
+        {
+            
+            //Proccess QR code on the main thread
+            //Status label with QR value
+            [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
+            
+            //Video capture and display
+            [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
+            
         }
     }
 }
