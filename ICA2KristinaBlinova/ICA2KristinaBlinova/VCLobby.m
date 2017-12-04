@@ -105,7 +105,7 @@ NSMutableArray* statusLabels;
 }
 
 //--------------------------------------------------------
-//                  PRIVATE FUNCTIONALITY
+//                  SET NEW FUNCTIONALITY
 //--------------------------------------------------------
 -(void) setNewHero:(UIImageView*)toImage atArray:(int)atIndex
 {
