@@ -8,6 +8,7 @@
 
 #import "VCResult.h"
 #import "heroDatabase.h"
+#import "weaponDatabase.h"
 #import "VCLobby.h"
 
 @interface VCResult ()
@@ -29,10 +30,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //Create a database instance
-    heroDatabase* heroDB = [[heroDatabase alloc] init];
-    //Query a database for a hero record
-    _heroR = [heroDB getHeroByIndex:self.index];
+    if([_type isEqualToString:@"Hero"])
+    {
+        //Create a database instance
+        heroDatabase* heroDB = [[heroDatabase alloc] init];
+        //Query a database for a hero record
+        _heroR = [heroDB getHeroByIndex:self.index];
+    }
+    
+    if([_type isEqualToString:@"Weapon"])
+    {
+        weaponDatabase* weaponDB = [[weaponDatabase alloc] init];
+        _heroR = [weaponDB getWeaponByIndex:self.index];
+    }
+    
     
     //Assign hero record data to labels
     _strLbl.text = [@(_heroR.strength) stringValue];
@@ -42,10 +53,11 @@
     _indxLbl.text = [@(self.index) stringValue];
     _characterPreview.image = [UIImage imageNamed: _heroR.imageName];
     
-    
 }
 
-//BUTTONS
+//------------------------------------------------------------------
+//                              BUTTONS
+//------------------------------------------------------------------
 
 //KEEP: Send update to the root and pop back to the lobby
 - (IBAction)keppPrssed:(UIButton *)sender

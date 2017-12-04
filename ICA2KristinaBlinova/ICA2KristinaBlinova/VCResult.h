@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) NSString *strengthValue;
 @property (nonatomic) int index;
+@property (nonatomic, weak) NSString* type;
 
 @end
