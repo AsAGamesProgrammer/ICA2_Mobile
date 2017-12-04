@@ -65,7 +65,16 @@
     VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     keepViewController.currentHeroID=self.index;
     keepViewController.passedHeroRecord=_heroR;
-    [keepViewController enablePlaceMode:YES];
+    
+    //Awake a function in the lobby
+    if([_type isEqualToString:@"Hero"])
+    {
+        [keepViewController heroPassed];
+    }
+    if([_type isEqualToString:@"Weapon"])
+    {
+        [keepViewController weaponPassed];
+    }
     
 
     [self dismissViewControllerAnimated:YES completion:nil];
