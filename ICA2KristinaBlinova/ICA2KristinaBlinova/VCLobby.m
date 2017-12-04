@@ -134,6 +134,19 @@ NSMutableArray* statusLabels;
 {
     _typePassed = @"Weapon";
     [self enablePlaceMode:YES];
+    
+    //Check if weapon can be placed
+    heroRecord* heroR = _ownedHeroes[0];
+    if(heroR.imageName==nil)
+        _firstBtn.enabled=NO;
+    
+    heroR = _ownedHeroes[1];
+    if(heroR.imageName==nil)
+        _secondBtn.enabled=NO;
+    
+    heroR = _ownedHeroes[2];
+    if(heroR.imageName==nil)
+        _thirdBtn.enabled=NO;
 }
 
 -(void) orcDefeated
@@ -231,6 +244,10 @@ NSMutableArray* statusLabels;
     _firstBtn.hidden=!toEnable;
     _secondBtn.hidden=!toEnable;
     _thirdBtn.hidden=!toEnable;
+    
+    _firstBtn.enabled=YES;
+    _secondBtn.enabled=YES;
+    _thirdBtn.enabled=YES;
 }
 
 
