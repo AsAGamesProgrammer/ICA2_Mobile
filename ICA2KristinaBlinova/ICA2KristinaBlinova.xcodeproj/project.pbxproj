@@ -26,6 +26,7 @@
 		86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86187E041FB1F1CF00B43293 /* Assets.xcassets */; };
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
 		8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */; };
+		8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5BD1FD5D00300FDED0C /* enumCodeType.m */; };
 		865A09DF1FD58FFB008CBC11 /* AShield.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09DE1FD58FFB008CBC11 /* AShield.png */; };
 		865A09E11FD5900C008CBC11 /* WAxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09E01FD5900C008CBC11 /* WAxe.png */; };
 		865A09E31FD5943A008CBC11 /* gradientStripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09E21FD59439008CBC11 /* gradientStripe.png */; };
@@ -72,6 +73,8 @@
 		86187E091FB1F1CF00B43293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weaponDatabase.h; sourceTree = "<group>"; };
 		8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weaponDatabase.m; sourceTree = "<group>"; };
+		8652A5BC1FD5D00300FDED0C /* enumCodeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enumCodeType.h; sourceTree = "<group>"; };
+		8652A5BD1FD5D00300FDED0C /* enumCodeType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = enumCodeType.m; sourceTree = "<group>"; };
 		865A09DE1FD58FFB008CBC11 /* AShield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AShield.png; sourceTree = "<group>"; };
 		865A09E01FD5900C008CBC11 /* WAxe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WAxe.png; sourceTree = "<group>"; };
 		865A09E21FD59439008CBC11 /* gradientStripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradientStripe.png; sourceTree = "<group>"; };
@@ -174,20 +177,13 @@
 		86187DF71FB1F1CF00B43293 /* ICA2KristinaBlinova */ = {
 			isa = PBXGroup;
 			children = (
+				8652A5BB1FD5CF9500FDED0C /* ViewControllers */,
 				86B45B351FCD9B8E006021D1 /* Database */,
 				8671245B1FCD62C300EB7CB3 /* TableDesign */,
-				860DA0F31FC31A10007EEDD2 /* VCMainMenu.h */,
-				860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */,
-				860DA0F01FC31984007EEDD2 /* VCFight.h */,
-				860DA0F11FC31984007EEDD2 /* VCFight.m */,
-				86C1661C1FBAF98B0089F159 /* VCLobby.h */,
-				86C1661D1FBAF98B0089F159 /* VCLobby.m */,
-				86F49AF81FB9E30300B5CFE6 /* VCResult.h */,
-				86F49AF91FB9E30300B5CFE6 /* VCResult.m */,
-				86187DFE1FB1F1CF00B43293 /* ViewController.h */,
-				86187DFF1FB1F1CF00B43293 /* ViewController.m */,
 				86187E011FB1F1CF00B43293 /* Main.storyboard */,
 				86187DF81FB1F1CF00B43293 /* Supporting Files */,
+				8652A5BC1FD5D00300FDED0C /* enumCodeType.h */,
+				8652A5BD1FD5D00300FDED0C /* enumCodeType.m */,
 			);
 			path = ICA2KristinaBlinova;
 			sourceTree = "<group>";
@@ -212,6 +208,23 @@
 				8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */,
 			);
 			name = Weapons;
+			sourceTree = "<group>";
+		};
+		8652A5BB1FD5CF9500FDED0C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				860DA0F31FC31A10007EEDD2 /* VCMainMenu.h */,
+				860DA0F41FC31A10007EEDD2 /* VCMainMenu.m */,
+				860DA0F01FC31984007EEDD2 /* VCFight.h */,
+				860DA0F11FC31984007EEDD2 /* VCFight.m */,
+				86C1661C1FBAF98B0089F159 /* VCLobby.h */,
+				86C1661D1FBAF98B0089F159 /* VCLobby.m */,
+				86F49AF81FB9E30300B5CFE6 /* VCResult.h */,
+				86F49AF91FB9E30300B5CFE6 /* VCResult.m */,
+				86187DFE1FB1F1CF00B43293 /* ViewController.h */,
+				86187DFF1FB1F1CF00B43293 /* ViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		865A09DC1FD58FDD008CBC11 /* Weapons */ = {
@@ -378,6 +391,7 @@
 				86F4F2B11FBA0C680069F908 /* heroRecord.m in Sources */,
 				86187DFA1FB1F1CF00B43293 /* main.m in Sources */,
 				86C415831FCD6646009C4969 /* FightViewCell.m in Sources */,
+				8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */,
 				860DA0F51FC31A10007EEDD2 /* VCMainMenu.m in Sources */,
 				860DA0F21FC31984007EEDD2 /* VCFight.m in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "heroRecord.h"
+#import "enumCodeType.h"
 
 @interface VCLobby : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

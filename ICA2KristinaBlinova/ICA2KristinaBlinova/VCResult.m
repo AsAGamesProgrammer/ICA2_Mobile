@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if([_type isEqualToString:@"Hero"])
+    if(_type == Hero)
     {
         //Create a database instance
         heroDatabase* heroDB = [[heroDatabase alloc] init];
@@ -38,7 +38,7 @@
         _heroR = [heroDB getHeroByIndex:self.index];
     }
     
-    if([_type isEqualToString:@"Weapon"])
+    if(_type == Weapon)
     {
         weaponDatabase* weaponDB = [[weaponDatabase alloc] init];
         _heroR = [weaponDB getWeaponByIndex:self.index];
@@ -67,11 +67,11 @@
     keepViewController.passedHeroRecord=_heroR;
     
     //Awake a function in the lobby
-    if([_type isEqualToString:@"Hero"])
+    if(_type == Hero)
     {
         [keepViewController heroPassed];
     }
-    if([_type isEqualToString:@"Weapon"])
+    if(_type == Weapon)
     {
         [keepViewController weaponPassed];
     }

@@ -62,7 +62,7 @@
 @property (nonatomic) NSInteger defeatedOrcNumber;
 
 //Type passed
-@property (weak, nonatomic) NSString* typePassed;
+@property (nonatomic) RecordTypes typePassed;
 
 @end
 
@@ -80,13 +80,13 @@ NSMutableArray* statusLabels;
 - (IBAction)selectFirst:(UIButton *)sender
 {
     //HERO
-    if([_typePassed isEqualToString:@"Hero"])
+    if(_typePassed == Hero)
     {
         _firstStripe.hidden=NO;
         [self setNewHero:_firstImg atArray:0];
     }
     
-    if([_typePassed isEqualToString:@"Weapon"])
+    if(_typePassed == Weapon)
     {
         [self setNewWeapon:_firstWeapon atArray:0];
     }
@@ -95,13 +95,13 @@ NSMutableArray* statusLabels;
 
 - (IBAction)selectSecond:(UIButton *)sender
 {
-    if([_typePassed isEqualToString:@"Hero"])
+    if(_typePassed == Hero)
     {
         _secondStripe.hidden=NO;
         [self setNewHero:_secondImg atArray:1];
     }
     
-    if([_typePassed isEqualToString:@"Weapon"])
+    if(_typePassed == Weapon)
     {
         [self setNewWeapon:_secondWeapon atArray:1];
     }
@@ -109,13 +109,13 @@ NSMutableArray* statusLabels;
 
 - (IBAction)selectThird:(UIButton *)sender
 {
-    if([_typePassed isEqualToString:@"Hero"])
+    if(_typePassed == Hero)
     {
         _thirdStripe.hidden=NO;
         [self setNewHero:_thirdImg atArray:2];
     }
     
-    if([_typePassed isEqualToString:@"Weapon"])
+    if(_typePassed == Weapon)
     {
         [self setNewWeapon:_thirdWeapon atArray:2];
     }
@@ -126,13 +126,13 @@ NSMutableArray* statusLabels;
 //--------------------------------------------------------
 -(void) heroPassed
 {
-    _typePassed=@"Hero";
+    _typePassed=Hero;
     [self enablePlaceMode:YES];
 }
 
 -(void) weaponPassed
 {
-    _typePassed = @"Weapon";
+    _typePassed = Weapon;
     [self enablePlaceMode:YES];
     
     //Check if weapon can be placed

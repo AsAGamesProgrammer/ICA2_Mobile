@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "enumCodeType.h"
 
 @interface VCResult : UIViewController
 
 @property (nonatomic, strong) NSString *strengthValue;
 @property (nonatomic) int index;
-@property (nonatomic, weak) NSString* type;
+@property (nonatomic) RecordTypes type;
 
 @end

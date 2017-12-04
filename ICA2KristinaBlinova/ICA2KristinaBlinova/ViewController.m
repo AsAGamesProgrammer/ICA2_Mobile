@@ -34,7 +34,7 @@
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 
 @property (nonatomic) int nextIndex;
-@property (nonatomic) NSString* codeType;
+@property (nonatomic) RecordTypes codeType;
 
 @end
 
@@ -138,7 +138,7 @@
         {
             //TODO: Algorithm
             _nextIndex = metadataObj.stringValue.length % 4;
-            _codeType=@"Hero";
+            _codeType=Hero;
             
             //Video capture and display
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
@@ -207,7 +207,7 @@
             
             //Passed values
             _nextIndex = weaponIdx % 2;
-             _codeType=@"Weapon";
+             _codeType=Weapon;
             
             //Video capture and display
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
