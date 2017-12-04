@@ -25,6 +25,7 @@
 		86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E011FB1F1CF00B43293 /* Main.storyboard */; };
 		86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86187E041FB1F1CF00B43293 /* Assets.xcassets */; };
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
+		8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */; };
 		865A09DF1FD58FFB008CBC11 /* AShield.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09DE1FD58FFB008CBC11 /* AShield.png */; };
 		865A09E11FD5900C008CBC11 /* WAxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09E01FD5900C008CBC11 /* WAxe.png */; };
 		865A09E31FD5943A008CBC11 /* gradientStripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09E21FD59439008CBC11 /* gradientStripe.png */; };
@@ -69,6 +70,8 @@
 		86187E041FB1F1CF00B43293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86187E071FB1F1CF00B43293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86187E091FB1F1CF00B43293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weaponDatabase.h; sourceTree = "<group>"; };
+		8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weaponDatabase.m; sourceTree = "<group>"; };
 		865A09DE1FD58FFB008CBC11 /* AShield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AShield.png; sourceTree = "<group>"; };
 		865A09E01FD5900C008CBC11 /* WAxe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WAxe.png; sourceTree = "<group>"; };
 		865A09E21FD59439008CBC11 /* gradientStripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradientStripe.png; sourceTree = "<group>"; };
@@ -202,6 +205,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8652A5BA1FD5C1EA00FDED0C /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */,
+				8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */,
+			);
+			name = Weapons;
+			sourceTree = "<group>";
+		};
 		865A09DC1FD58FDD008CBC11 /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +254,7 @@
 		86B45B351FCD9B8E006021D1 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				8652A5BA1FD5C1EA00FDED0C /* Weapons */,
 				86B45B2D1FCD9A78006021D1 /* HeroRecords */,
 				86B45B2E1FCD9AB6006021D1 /* OrcRecords */,
 				86F4F2AF1FBA0C680069F908 /* heroRecord.h */,
@@ -357,6 +370,7 @@
 			files = (
 				86187E001FB1F1CF00B43293 /* ViewController.m in Sources */,
 				86F4F2AE1FBA0C470069F908 /* heroDatabase.m in Sources */,
+				8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */,
 				86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */,
 				86B45B341FCD9B58006021D1 /* orcGenerator.m in Sources */,
 				86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */,
