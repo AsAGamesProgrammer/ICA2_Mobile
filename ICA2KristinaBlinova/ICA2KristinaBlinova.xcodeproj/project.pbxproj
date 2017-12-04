@@ -34,6 +34,7 @@
 		8652A5C81FD5D3FF00FDED0C /* ASword.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5C71FD5D3FF00FDED0C /* ASword.png */; };
 		8652A5CA1FD5D84100FDED0C /* Archer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5C91FD5D84100FDED0C /* Archer2.png */; };
 		8652A5CC1FD5D84B00FDED0C /* Amazon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5CB1FD5D84B00FDED0C /* Amazon2.png */; };
+		8652A5CE1FD5DA9F00FDED0C /* Knight2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5CD1FD5DA9F00FDED0C /* Knight2.png */; };
 		865A09DF1FD58FFB008CBC11 /* AShield.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09DE1FD58FFB008CBC11 /* AShield.png */; };
 		865A09E11FD5900C008CBC11 /* WAxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09E01FD5900C008CBC11 /* WAxe.png */; };
 		865A09E31FD5943A008CBC11 /* gradientStripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 865A09E21FD59439008CBC11 /* gradientStripe.png */; };
@@ -89,6 +90,7 @@
 		8652A5C71FD5D3FF00FDED0C /* ASword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASword.png; sourceTree = "<group>"; };
 		8652A5C91FD5D84100FDED0C /* Archer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Archer2.png; sourceTree = "<group>"; };
 		8652A5CB1FD5D84B00FDED0C /* Amazon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon2.png; sourceTree = "<group>"; };
+		8652A5CD1FD5DA9F00FDED0C /* Knight2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knight2.png; sourceTree = "<group>"; };
 		865A09DE1FD58FFB008CBC11 /* AShield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AShield.png; sourceTree = "<group>"; };
 		865A09E01FD5900C008CBC11 /* WAxe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WAxe.png; sourceTree = "<group>"; };
 		865A09E21FD59439008CBC11 /* gradientStripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradientStripe.png; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		860DA0F81FC31B1D007EEDD2 /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				8652A5CD1FD5DA9F00FDED0C /* Knight2.png */,
 				8652A5C91FD5D84100FDED0C /* Archer2.png */,
 				8652A5CB1FD5D84B00FDED0C /* Amazon2.png */,
 				860AC6F41FBF5020009153C6 /* Archer.png */,
@@ -389,6 +392,7 @@
 				865A09E71FD5973F008CBC11 /* stripe.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
 				865A09E31FD5943A008CBC11 /* gradientStripe.png in Resources */,
+				8652A5CE1FD5DA9F00FDED0C /* Knight2.png in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
 				8652A5C21FD5D3E400FDED0C /* KShield.png in Resources */,
 				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,

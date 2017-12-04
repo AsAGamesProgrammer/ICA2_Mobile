@@ -22,6 +22,7 @@ NSArray *array;
               [self createAHero:0 :100 :0 :0 :@"Archer.png"],
               [self createAHero:0 :0 :25 :75 :@"Amazon2.png"],
               [self createAHero:70 :30 :0 :0 :@"Archer2.png"],
+              [self createAHero:30 :70 :0 :0 :@"Knight2.png"],
               [self createAHero:0 :0 :100 :0 :@"Knight.png"]];
 }
 
