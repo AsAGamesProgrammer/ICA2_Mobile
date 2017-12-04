@@ -302,11 +302,35 @@ NSMutableArray* statusLabels;
         //Create an array of existing heroes to avoid passing NO HERO slots
         NSMutableArray* existingHeroes = [[NSMutableArray alloc] init];
         
-        for(heroRecord* currentRecord in _ownedHeroes)
+        //Go throug hero records
+        for(int i=0; i<3; i++)
         {
-            if(!(currentRecord.imageName == nil))
-                [existingHeroes addObject:currentRecord];
+            heroRecord* heroR = _ownedHeroes[i];
+            if(!(heroR.imageName == nil))
+            {
+                //Find a matching weapon record
+                heroRecord* weaponR = _ownedWeapons[i];
+                if(weaponR.imageName!=nil)
+                {
+                    //Sum up two records to create a new one
+                    heroRecord* sumRecord = [[heroRecord alloc] init];
+                    sumRecord.strength = heroR.strength+weaponR.strength;
+                    sumRecord.agility = heroR.agility+weaponR.agility;
+                    sumRecord.intelect = heroR.intelect+weaponR.intelect;
+                    sumRecord.defense = heroR.defense+weaponR.defense;
+                    sumRecord.imageName=heroR.imageName;
+                    
+                    [existingHeroes addObject:sumRecord];
+                    
+                }
+                else
+                {
+                   [existingHeroes addObject:heroR];
+                }
+
+            }
         }
+        
         
         if(existingHeroes.count>0)
             fightViewController.heroes= existingHeroes;
