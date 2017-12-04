@@ -9,6 +9,8 @@
 //---------------------------------------------------------------
 //TODO:
 // Enum class for a type
+// Check for an existing hero before assigning a weapon
+// Sum up stats witht he weapon
 //---------------------------------------------------------------
 
 #import "VCLobby.h"
@@ -86,7 +88,7 @@ NSMutableArray* statusLabels;
     
     if([_typePassed isEqualToString:@"Weapon"])
     {
-        [self setNewHero:_firstWeapon atArray:0];
+        [self setNewWeapon:_firstWeapon atArray:0];
     }
     
 }
@@ -101,7 +103,7 @@ NSMutableArray* statusLabels;
     
     if([_typePassed isEqualToString:@"Weapon"])
     {
-        [self setNewHero:_secondWeapon atArray:1];
+        [self setNewWeapon:_secondWeapon atArray:1];
     }
 }
 
@@ -115,7 +117,7 @@ NSMutableArray* statusLabels;
     
     if([_typePassed isEqualToString:@"Weapon"])
     {
-        [self setNewHero:_thirdWeapon atArray:2];
+        [self setNewWeapon:_thirdWeapon atArray:2];
     }
 }
 
@@ -146,6 +148,7 @@ NSMutableArray* statusLabels;
 //--------------------------------------------------------
 //                  SET NEW FUNCTIONALITY
 //--------------------------------------------------------
+//HEROES
 -(void) setNewHero:(UIImageView*)toImage atArray:(int)atIndex
 {
     if(_currentHeroID >0)
@@ -164,20 +167,56 @@ NSMutableArray* statusLabels;
         
         //Set status labels
         UILabel* statLabel = statusLabels[atIndex];
-        statLabel.text = [self getStatusLabel];
+        statLabel.text = [self getStatusLabel:atIndex];
         
     }
     //Reset index
     self.currentHeroID=-1;
 }
 
--(NSString*) getStatusLabel
+//WEAPONS
+-(void) setNewWeapon:(UIImageView*)toImage atArray:(int)atIndex
 {
+    if(_currentHeroID >0)
+    {
+        //Set image of a chosen slot
+        toImage.image = [UIImage imageNamed:_passedHeroRecord.imageName];
+        
+        //Add a weapon to a array of owned weapons
+        _ownedWeapons[atIndex]=_passedHeroRecord;
+        
+        //Set UI to not placing hero sate
+        [self enablePlaceMode:NO];
+        
+        //Set status labels
+        UILabel* statLabel = statusLabels[atIndex];
+        statLabel.text = [self getStatusLabel:atIndex];
+        
+    }
+    //Reset index
+    self.currentHeroID=-1;
+}
+
+-(NSString*) getStatusLabel:(int)atIndex
+{
+    heroRecord* heroR = _ownedHeroes[atIndex];
+    heroRecord* weaponR = _ownedWeapons[atIndex];
+    
+//    if(weaponR.imageName==nil)
+//    {
+//        weaponR.strength=0;
+//        weaponR.intelect=0;
+//        weaponR.defense=0;
+//        weaponR.agility=0;
+//    }
+    
+    //long str =heroR.strength + weaponR.strength;
+    
     //Values from the record
-    NSString* strValue =[@(_passedHeroRecord.strength) stringValue];
-    NSString* aglValue =[@(_passedHeroRecord.agility) stringValue];
-    NSString* intlValue =[@(_passedHeroRecord.intelect) stringValue];
-    NSString* defValue =[@(_passedHeroRecord.defense) stringValue];
+    NSString* strValue =[@(heroR.strength + weaponR.strength) stringValue];
+    NSString* aglValue =[@(heroR.agility + weaponR.agility) stringValue];
+    NSString* intlValue =[@(heroR.intelect + weaponR.intelect) stringValue];
+    NSString* defValue =[@(heroR.defense + weaponR.defense) stringValue];
     NSString* statString = [NSString stringWithFormat:@"(Str)%@, (Agl)%@, (Inl)%@, (Def)%@", strValue, aglValue, intlValue, defValue];
     
     return statString;
