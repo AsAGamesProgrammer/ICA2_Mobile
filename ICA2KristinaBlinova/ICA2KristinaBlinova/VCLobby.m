@@ -87,6 +87,9 @@ NSMutableArray* statusLabels;
 {
     _defeatedOrcNumber++;
     _defeatedOrcLbl.text = [@(_defeatedOrcNumber) stringValue];
+    
+    orcGenerator* orcGeneration = [[orcGenerator alloc] init];
+    _orcRecord = [orcGeneration getNextOrc];
 }
 
 //--------------------------------------------------------
