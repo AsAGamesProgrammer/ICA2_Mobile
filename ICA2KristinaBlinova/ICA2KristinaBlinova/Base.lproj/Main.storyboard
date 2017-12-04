@@ -245,12 +245,12 @@
                                     <action selector="selectThird:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="h63-cd-lp4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place your Hero!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NY9-Kb-9Mn">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place your Hero!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NY9-Kb-9Mn">
                                 <rect key="frame" x="0.0" y="120" width="768" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99887973070144653" green="0.69231909513473511" blue="0.4115796685218811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                <color key="textColor" red="0.37060356140136719" green="0.27319198846817017" blue="0.3181118369102478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Str) - (Agl) - (Intl) - (Def) -" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBL-Uk-9Za">
@@ -296,15 +296,15 @@
                                     <segue destination="57r-Hv-Rkl" kind="show" identifier="fightSegue" id="Bhb-rg-ofy"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WAxe.png" translatesAutoresizingMaskIntoConstraints="NO" id="r87-uo-Ple">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r87-uo-Ple">
                                 <rect key="frame" x="90" y="573" width="159" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WAxe.png" translatesAutoresizingMaskIntoConstraints="NO" id="aMl-VX-19c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMl-VX-19c">
                                 <rect key="frame" x="340" y="573" width="159" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WAxe.png" translatesAutoresizingMaskIntoConstraints="NO" id="th5-TZ-abN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="th5-TZ-abN">
                                 <rect key="frame" x="589" y="573" width="159" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -315,18 +315,21 @@
                         <outlet property="defeatedOrcLbl" destination="lZ2-KH-L6f" id="Foy-JE-SOu"/>
                         <outlet property="fightBtn" destination="r9W-ex-1lt" id="0Mx-iO-pYw"/>
                         <outlet property="firstBtn" destination="yqm-YE-Cgm" id="6NR-aF-CVc"/>
-                        <outlet property="firstImg" destination="h3j-gG-Rys" id="wpZ-o0-mtd"/>
+                        <outlet property="firstImg" destination="h3j-gG-Rys" id="msi-Oh-Sff"/>
                         <outlet property="firstStatLbl" destination="Efb-JE-N8D" id="7TW-hP-bF6"/>
                         <outlet property="firstStripe" destination="xep-c5-G3d" id="c9V-eC-39Y"/>
+                        <outlet property="firstWeapon" destination="r87-uo-Ple" id="FUO-k7-ETs"/>
                         <outlet property="placeLbl" destination="NY9-Kb-9Mn" id="j4w-kU-cCC"/>
                         <outlet property="secondBtn" destination="dlm-pQ-FgL" id="CIM-UV-90A"/>
                         <outlet property="secondImg" destination="5HU-dZ-70g" id="Tba-dw-gIv"/>
                         <outlet property="secondStatLbl" destination="hBL-Uk-9Za" id="vrl-26-1v5"/>
                         <outlet property="secondStripe" destination="i7c-rE-uPC" id="mVL-Za-fu9"/>
+                        <outlet property="secondWeapon" destination="aMl-VX-19c" id="wff-w5-ZBx"/>
                         <outlet property="thirdBtn" destination="rp1-aU-i6C" id="2zi-rc-y8F"/>
                         <outlet property="thirdImg" destination="opH-Oo-kyU" id="J8z-Di-ud5"/>
                         <outlet property="thirdStatLbl" destination="9Vv-Wb-h7b" id="TOh-Nq-4lD"/>
                         <outlet property="thirdStripe" destination="cOh-Nd-aPq" id="kFm-ts-5Xu"/>
+                        <outlet property="thirdWeapon" destination="th5-TZ-abN" id="Lr4-oL-F8y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6d-2y-3j8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -496,14 +499,13 @@
         <image name="Amazon.png" width="698" height="1048"/>
         <image name="NoHero.png" width="698" height="1048"/>
         <image name="Orc.png" width="1532" height="1456"/>
-        <image name="WAxe.png" width="540" height="695"/>
         <image name="stripe.png" width="698" height="3822"/>
         <image name="stripe2.png" width="698" height="3822"/>
         <image name="stripe3.png" width="698" height="3822"/>
         <image name="uuIDsh.jpg" width="1200" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uq1-I7-518"/>
+        <segue reference="axl-hJ-E5V"/>
         <segue reference="u0L-Dm-4cG"/>
     </inferredMetricsTieBreakers>
 </document>

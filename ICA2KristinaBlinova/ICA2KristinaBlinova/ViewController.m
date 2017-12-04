@@ -135,46 +135,104 @@
         //---------------------
         if([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) //check if an oject read is a valid qr code
         {
-            
-            //Proccess QR code on the main thread
-            //Status label with QR value
-            [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
-            
             //TODO: Algorithm
             _nextIndex = metadataObj.stringValue.length % 4;
             
             //Video capture and display
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-            //Button title
-            [_startBtn performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start" waitUntilDone:NO];
-            _isReading=NO;
             
             //NEXT SEGUE
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self performSegueWithIdentifier:@"resultSegue" sender:self];
             });
         }
-        else
+        
+        //---------------------
+        //      BARCODES
+        //---------------------
+        
+        //Bacodes may contain numbers, characters and symbols
+        //but differently from the qr codes those are usually a set length
+        
+        /*
+         Types of barcodes:
+         AVMetadataObjectTypeEAN8Code,
+         AVMetadataObjectTypeEAN13Code,
+         AVMetadataObjectTypeCode39Code,
+         AVMetadataObjectTypeCode93Code,
+         AVMetadataObjectTypeCode128Code,
+         AVMetadataObjectTypeITF14Code,
+         AVMetadataObjectTypeCode39Mod43Code,
+         AVMetadataObjectTypeInterleaved2of5Code,
+         */
+        
+        
+        if(([[metadataObj type] isEqualToString:AVMetadataObjectTypeUPCECode]) ||
+           ([[metadataObj type] isEqualToString:AVMetadataObjectTypeEAN8Code]) ||
+           ([[metadataObj type] isEqualToString:AVMetadataObjectTypeEAN13Code])||
+           ([[metadataObj type] isEqualToString:AVMetadataObjectTypeCode39Code])||
+           ([[metadataObj type] isEqualToString:AVMetadataObjectTypeCode93Code])||
+           ([[metadataObj type] isEqualToString:AVMetadataObjectTypeCode128Code])||
+           ([[metadataObj type] isEqualToString:AVMetadataObjectTypeITF14Code])||
+           ([[metadataObj type] isEqualToString:AVMetadataObjectTypeCode39Mod43Code])||
+           ([[metadataObj type] isEqualToString:AVMetadataObjectTypeInterleaved2of5Code]))
         {
-            [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj type] waitUntilDone:NO];
+
+            //[_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
             
+            //ALGORITHM
+            
+            NSString* result = [metadataObj stringValue];
+            int weaponIdx=0;
+            for(int i=0; i<[result length]-1; i++)
+            {
+                char c = [result characterAtIndex:i];
+                
+                //If integer
+                if(c>='0' && c<='9')
+                {
+                    weaponIdx +=atoi(&c);
+                }
+                else
+                {
+                    if(c>'K')
+                        weaponIdx+=17;
+                    else
+                        weaponIdx+=11;
+                }
+                
+                printf("%d\n", weaponIdx);
+                
+            }
+            
+            printf("%d\n", weaponIdx);
+            
+            _nextIndex = weaponIdx % 4;
+            
+            //Video capture and display
+            [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
+            
+            //NEXT SEGUE
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self performSegueWithIdentifier:@"resultSegue" sender:self];
+            });
         }
         
         //---------------------
         //      AZTEC
         //---------------------
         
-        if([[metadataObj type] isEqualToString:AVMetadataObjectTypeAztecCode]) //check if an oject read is a valid qr code
-        {
-            
-            //Proccess QR code on the main thread
-            //Status label with QR value
-            [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
-            
-            //Video capture and display
-            [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-            
-        }
+//        if([[metadataObj type] isEqualToString:AVMetadataObjectTypeAztecCode]) //check if an oject read is a valid qr code
+//        {
+//
+//            //Proccess QR code on the main thread
+//            //Status label with QR value
+//            [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
+//
+//            //Video capture and display
+//            [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
+//
+//        }
     }
 }
 

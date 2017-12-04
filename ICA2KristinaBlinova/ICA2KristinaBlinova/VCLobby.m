@@ -17,6 +17,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *secondImg;
 @property (weak, nonatomic) IBOutlet UIImageView *thirdImg;
 
+//Weapons
+@property (weak, nonatomic) IBOutlet UIImageView *firstWeapon;
+@property (weak, nonatomic) IBOutlet UIImageView *secondWeapon;
+@property (weak, nonatomic) IBOutlet UIImageView *thirdWeapon;
+
 //Hero gradient stripes
 @property (weak, nonatomic) IBOutlet UIImageView *firstStripe;
 @property (weak, nonatomic) IBOutlet UIImageView *secondStripe;
