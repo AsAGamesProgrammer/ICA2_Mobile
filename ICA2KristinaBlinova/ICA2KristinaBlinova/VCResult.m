@@ -74,8 +74,7 @@
     NSError *error;
     NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:urlAsString]];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-    NSLog(@"json: %@", json);
-    
+
    _heroName.text = [json objectForKey: @"name"];
 }
 
@@ -89,6 +88,7 @@
     VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     keepViewController.currentHeroID=self.index;
     keepViewController.passedHeroRecord=_heroR;
+    keepViewController.passedName=_heroName.text;
     
     //Awake a function in the lobby
     if(_type == Hero)

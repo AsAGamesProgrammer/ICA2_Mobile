@@ -333,6 +333,27 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Uq1-I7-518"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBR-eI-GYE">
+                                <rect key="frame" x="38" y="195" width="192" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XU-m3-5dl">
+                                <rect key="frame" x="292" y="195" width="192" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tt4-8o-R7I">
+                                <rect key="frame" x="537" y="195" width="192" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -341,17 +362,20 @@
                         <outlet property="fightBtn" destination="r9W-ex-1lt" id="0Mx-iO-pYw"/>
                         <outlet property="firstBtn" destination="yqm-YE-Cgm" id="6NR-aF-CVc"/>
                         <outlet property="firstImg" destination="h3j-gG-Rys" id="msi-Oh-Sff"/>
+                        <outlet property="firstName" destination="gBR-eI-GYE" id="7hp-uo-2Jx"/>
                         <outlet property="firstStatLbl" destination="Efb-JE-N8D" id="7TW-hP-bF6"/>
                         <outlet property="firstStripe" destination="xep-c5-G3d" id="c9V-eC-39Y"/>
                         <outlet property="firstWeapon" destination="r87-uo-Ple" id="FUO-k7-ETs"/>
                         <outlet property="placeLbl" destination="NY9-Kb-9Mn" id="j4w-kU-cCC"/>
                         <outlet property="secondBtn" destination="dlm-pQ-FgL" id="CIM-UV-90A"/>
                         <outlet property="secondImg" destination="5HU-dZ-70g" id="Tba-dw-gIv"/>
+                        <outlet property="secondName" destination="2XU-m3-5dl" id="OnL-Yu-0RN"/>
                         <outlet property="secondStatLbl" destination="hBL-Uk-9Za" id="vrl-26-1v5"/>
                         <outlet property="secondStripe" destination="i7c-rE-uPC" id="mVL-Za-fu9"/>
                         <outlet property="secondWeapon" destination="aMl-VX-19c" id="wff-w5-ZBx"/>
                         <outlet property="thirdBtn" destination="rp1-aU-i6C" id="2zi-rc-y8F"/>
                         <outlet property="thirdImg" destination="opH-Oo-kyU" id="J8z-Di-ud5"/>
+                        <outlet property="thirdName" destination="Tt4-8o-R7I" id="Rpg-6J-O0s"/>
                         <outlet property="thirdStatLbl" destination="9Vv-Wb-h7b" id="TOh-Nq-4lD"/>
                         <outlet property="thirdStripe" destination="cOh-Nd-aPq" id="kFm-ts-5Xu"/>
                         <outlet property="thirdWeapon" destination="th5-TZ-abN" id="Lr4-oL-F8y"/>

@@ -14,6 +14,7 @@
 
 @property (nonatomic) int currentHeroID;
 @property (nonatomic) heroRecord* passedHeroRecord;
+@property (nonatomic) NSString* passedName;
 
 -(void) heroPassed;
 -(void) weaponPassed;

@@ -64,6 +64,12 @@
 //Type passed
 @property (nonatomic) RecordTypes typePassed;
 
+//Name labels
+@property (weak, nonatomic) IBOutlet UILabel *firstName;
+@property (weak, nonatomic) IBOutlet UILabel *secondName;
+@property (weak, nonatomic) IBOutlet UILabel *thirdName;
+
+
 @end
 
 @implementation VCLobby
@@ -73,6 +79,7 @@
 //NSArray* icons;
 
 NSMutableArray* statusLabels;
+NSMutableArray* nameLabels;
 
 //--------------------------------------------------------
 //                     BUTTON CLICKS
@@ -189,6 +196,10 @@ NSMutableArray* statusLabels;
         UILabel* statLabel = statusLabels[atIndex];
         statLabel.text = [self getStatusLabel:atIndex];
         
+        //Set name label
+        UILabel* nameLabel = nameLabels[atIndex];
+        nameLabel.text = _passedName;
+        
     }
     //Reset index
     self.currentHeroID=-1;
@@ -277,6 +288,7 @@ NSMutableArray* statusLabels;
     
     //Status label array
     statusLabels = [NSMutableArray arrayWithObjects:_firstStatLbl, _secondStatLbl, _thirdStatLbl, nil];
+    nameLabels = [NSMutableArray arrayWithObjects:_firstName, _secondName, _thirdName, nil];
     
     //Orc
     //Create an orc generator
