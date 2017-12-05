@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSString *strengthValue;
 @property (nonatomic) int index;
 @property (nonatomic) RecordTypes type;
+@property (nonatomic) NSString* codeName;
 
 @end

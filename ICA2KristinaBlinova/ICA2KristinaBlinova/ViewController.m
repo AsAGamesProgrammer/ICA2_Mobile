@@ -33,8 +33,10 @@
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 
+//Passed values
 @property (nonatomic) int nextIndex;
 @property (nonatomic) RecordTypes codeType;
+@property (nonatomic) NSString* codeName;
 
 @end
 
@@ -130,6 +132,7 @@
     {
         //Always interpret only the first captured object
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
+        _codeName=[metadataObj type];
         
         //---------------------
         //      QR Code
@@ -266,6 +269,7 @@
         //TODO: ADD A SUPER COOL ALGORITHM
         resultViewController.index = _nextIndex+1;
         resultViewController.type=_codeType;
+        resultViewController.codeName=_codeName;
     }
 }
 

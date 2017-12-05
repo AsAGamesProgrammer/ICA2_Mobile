@@ -22,6 +22,10 @@
 
 @property (weak, nonatomic) heroRecord* heroR;
 
+//Header label
+@property (weak, nonatomic) IBOutlet UILabel *headerLbl;
+@property (weak, nonatomic) IBOutlet UILabel *heroName;
+
 @end
 
 @implementation VCResult
@@ -53,6 +57,26 @@
     _indxLbl.text = [@(self.index) stringValue];
     _characterPreview.image = [UIImage imageNamed: _heroR.imageName];
     
+    //Header label
+    _headerLbl.text=_codeName;
+    
+    //Name generation
+    [self generateName];
+    
+}
+
+//------------------------------------------------------------------
+//                           NAME GENERATOR
+//------------------------------------------------------------------
+-(void) generateName
+{
+    NSString *urlAsString = @"https://uinames.com/api/?region=india";
+    NSError *error;
+    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:urlAsString]];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    NSLog(@"json: %@", json);
+    
+   _heroName.text = [json objectForKey: @"name"];
 }
 
 //------------------------------------------------------------------
