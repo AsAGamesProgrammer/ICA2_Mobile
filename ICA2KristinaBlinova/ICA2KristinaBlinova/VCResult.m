@@ -73,7 +73,7 @@
 //------------------------------------------------------------------
 //                           NAME GENERATOR
 //------------------------------------------------------------------
-//Do this not on the main queue
+//This s done not on the main queue
 -(void) generateName
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -87,6 +87,7 @@
         });
     });
 }
+
 
 //------------------------------------------------------------------
 //                              BUTTONS
