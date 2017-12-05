@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *facebookNotificationLbl;
 
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImg;
 @end
 
 @implementation VCMainMenu
@@ -74,16 +75,15 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
 
 -(void) setFacebookName
 {
-    [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+    [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters: @{@"fields": @"id, name"}]
      startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-         if (!error) {
-             
-             NSString *photostring=[[[result valueForKey:@"picture"] objectForKey:@"data"] valueForKey:@"url"];
-             photostring = [photostring stringByReplacingOccurrencesOfString:@"&" withString:@"%26"];
-             
+         if (!error)
+         {
+
              //NSLog(@"fetched user:%@", result);
              _nameLbl.text =[result valueForKey:@"name"];
              [_nameLbl setText:[NSString stringWithFormat:@"Welcome %@", [result valueForKey:@"name"]]];
+             
              
          }
          else
