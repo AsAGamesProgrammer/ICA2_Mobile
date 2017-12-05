@@ -5,6 +5,8 @@
 //  Created by BLINOVA, KRISTINA on 13/11/2017.
 //  Copyright © 2017 BLINOVA, KRISTINA. All rights reserved.
 //
+//-----------------------------------------------------------------
+
 
 #import "VCResult.h"
 #import "heroDatabase.h"
@@ -48,7 +50,6 @@
         _heroR = [weaponDB getWeaponByIndex:self.index];
     }
     
-    
     //Assign hero record data to labels
     _strLbl.text = [@(_heroR.strength) stringValue];
     _agilLbl.text = [@(_heroR.agility) stringValue];
@@ -61,21 +62,30 @@
     _headerLbl.text=_codeName;
     
     //Name generation
-    [self generateName];
+    if(_type == Hero)
+        [self generateName];
+    
+    if(_type==Weapon)
+        _heroName.text=@"What a weapon!";
     
 }
 
 //------------------------------------------------------------------
 //                           NAME GENERATOR
 //------------------------------------------------------------------
+//Do this not on the main queue
 -(void) generateName
 {
-    NSString *urlAsString = @"https://uinames.com/api/?region=india";
-    NSError *error;
-    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:urlAsString]];
-    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *urlAsString = @"https://uinames.com/api/?region=india";
+        NSError *error;
+        NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:urlAsString]];
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
 
-   _heroName.text = [json objectForKey: @"name"];
+        dispatch_async(dispatch_get_main_queue(), ^{
+        _heroName.text = [json objectForKey: @"name"];
+        });
+    });
 }
 
 //------------------------------------------------------------------
