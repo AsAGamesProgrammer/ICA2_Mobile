@@ -29,6 +29,8 @@
     loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
     [self.view addSubview:loginButton];
     
+    //Set itself as a delegate
+    loginButton.delegate = self;
     
     if ([FBSDKAccessToken currentAccessToken])
     {
@@ -57,6 +59,41 @@
     // Do any additional setup after loading the view.
 }
 
+//---------------------------------------------------
+//          LOG IN TO FACEBOOK ACTIONS
+//---------------------------------------------------
+
+- (void)  loginButton:(FBSDKLoginButton *)loginButton
+didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
+                error:(NSError *)error
+{
+    //use your custom code here
+    //redirect after successful login
+    // User is logged in, do work such as go to next view controller.
+    [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+     startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+         if (!error) {
+             
+             NSString *photostring=[[[result valueForKey:@"picture"] objectForKey:@"data"] valueForKey:@"url"];
+             photostring = [photostring stringByReplacingOccurrencesOfString:@"&" withString:@"%26"];
+             
+             NSLog(@"all data here is:%@",result);
+             NSLog(@"username is :%@",[result valueForKey:@"name"]);
+             //NSLog(@"fetched user:%@", result);
+             _nameLbl.text =[result valueForKey:@"name"];
+             
+         }
+         else
+             NSLog(@"Oooops");
+     }];
+}
+
+- (void) loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
+{
+    //use your custom code here
+    //redirect after successful logout
+    _nameLbl.text = @"Welcome, Warrior!";
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
