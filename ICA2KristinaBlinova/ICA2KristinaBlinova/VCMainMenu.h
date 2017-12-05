@@ -17,7 +17,8 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface VCMainMenu : UIViewController
+@interface VCMainMenu : UIViewController //<FBSDKLoginButtonDelegate>
 
 @end
