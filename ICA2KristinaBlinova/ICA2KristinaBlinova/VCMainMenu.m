@@ -15,6 +15,7 @@
 @interface VCMainMenu ()
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 @property (weak, nonatomic) IBOutlet UILabel *nameLbl;
+@property (weak, nonatomic) IBOutlet UILabel *facebookNotificationLbl;
 
 @end
 
@@ -34,27 +35,12 @@
     
     if ([FBSDKAccessToken currentAccessToken])
     {
-        // User is logged in, do work such as go to next view controller.
-        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
-         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-             if (!error) {
-                 
-                 NSString *photostring=[[[result valueForKey:@"picture"] objectForKey:@"data"] valueForKey:@"url"];
-                 photostring = [photostring stringByReplacingOccurrencesOfString:@"&" withString:@"%26"];
-                 
-                 NSLog(@"all data here is:%@",result);
-                 NSLog(@"username is :%@",[result valueForKey:@"name"]);
-                 //NSLog(@"fetched user:%@", result);
-                 _nameLbl.text =[result valueForKey:@"name"];
-                 
-             }
-             else
-                 NSLog(@"Oooops");
-         }];
+        [self setFacebookName];
     }
     else
     {
         _nameLbl.text = @"Welcome, Warrior!";
+        _facebookNotificationLbl.hidden=NO;
     }
     // Do any additional setup after loading the view.
 }
@@ -70,22 +56,7 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
     //use your custom code here
     //redirect after successful login
     // User is logged in, do work such as go to next view controller.
-    [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
-     startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-         if (!error) {
-             
-             NSString *photostring=[[[result valueForKey:@"picture"] objectForKey:@"data"] valueForKey:@"url"];
-             photostring = [photostring stringByReplacingOccurrencesOfString:@"&" withString:@"%26"];
-             
-             NSLog(@"all data here is:%@",result);
-             NSLog(@"username is :%@",[result valueForKey:@"name"]);
-             //NSLog(@"fetched user:%@", result);
-             _nameLbl.text =[result valueForKey:@"name"];
-             
-         }
-         else
-             NSLog(@"Oooops");
-     }];
+    [self setFacebookName];
 }
 
 - (void) loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
@@ -93,6 +64,7 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
     //use your custom code here
     //redirect after successful logout
     _nameLbl.text = @"Welcome, Warrior!";
+    _facebookNotificationLbl.hidden=NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,7 +72,25 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
     // Dispose of any resources that can be recreated.
 }
 
-
+-(void) setFacebookName
+{
+    [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+     startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+         if (!error) {
+             
+             NSString *photostring=[[[result valueForKey:@"picture"] objectForKey:@"data"] valueForKey:@"url"];
+             photostring = [photostring stringByReplacingOccurrencesOfString:@"&" withString:@"%26"];
+             
+             //NSLog(@"fetched user:%@", result);
+             _nameLbl.text =[result valueForKey:@"name"];
+             
+         }
+         else
+             NSLog(@"Oooops");
+     }];
+    
+    _facebookNotificationLbl.hidden=YES;
+}
 
 /*
 #pragma mark - Navigation
