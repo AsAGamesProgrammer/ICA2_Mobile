@@ -83,6 +83,7 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
              
              //NSLog(@"fetched user:%@", result);
              _nameLbl.text =[result valueForKey:@"name"];
+             [_nameLbl setText:[NSString stringWithFormat:@"Welcome %@", [result valueForKey:@"name"]]];
              
          }
          else
