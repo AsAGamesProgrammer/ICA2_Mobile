@@ -79,11 +79,9 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
      startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
          if (!error)
          {
-
              //NSLog(@"fetched user:%@", result);
              _nameLbl.text =[result valueForKey:@"name"];
              [_nameLbl setText:[NSString stringWithFormat:@"Welcome %@", [result valueForKey:@"name"]]];
-             
              
          }
          else

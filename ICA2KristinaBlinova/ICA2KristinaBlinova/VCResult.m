@@ -6,12 +6,16 @@
 //  Copyright © 2017 BLINOVA, KRISTINA. All rights reserved.
 //
 //-----------------------------------------------------------------
-
+//TODO: Pretty share button
+//Share picture + stats
 
 #import "VCResult.h"
 #import "heroDatabase.h"
 #import "weaponDatabase.h"
 #import "VCLobby.h"
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
 
 @interface VCResult ()
 
@@ -68,7 +72,35 @@
     if(_type==Weapon)
         _heroName.text=@"What a weapon!";
     
+
+    
+
+    
+    
+    //FBSDKShareButton *button = [[FBSDKShareButton alloc] init];
+    //button.center = CGPointMake(self.view.frame.size.width /2, self.view.frame.size.height - 40);
+    //button.shareContent = content;
+    //[self.view addSubview:button];
 }
+
+//------------------------------------------------------------------
+//                            FACEBOOK
+//------------------------------------------------------------------
+- (IBAction)sharePressed:(UIButton *)sender
+{
+    //FACEBOOK
+    FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
+    photo.image = _characterPreview.image;
+    photo.userGenerated = YES;
+    FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
+    content.photos = @[photo];
+    
+    //Works
+    [FBSDKShareDialog showFromViewController:self
+                                 withContent:content
+                                    delegate:nil];
+}
+
 
 //------------------------------------------------------------------
 //                           NAME GENERATOR
