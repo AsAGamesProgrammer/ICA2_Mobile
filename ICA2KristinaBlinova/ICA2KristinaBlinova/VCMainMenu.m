@@ -8,14 +8,28 @@
 
 #import "VCMainMenu.h"
 
-@interface VCMainMenu ()
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
+@interface VCMainMenu ()
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 @end
 
 @implementation VCMainMenu
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    // Optional: Place the button in the center of your view.
+    loginButton.center = self.view.center;
+    loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
+    [self.view addSubview:loginButton];
+    
+    if ([FBSDKAccessToken currentAccessToken])
+    {
+        // User is logged in, do work such as go to next view controller.
+    }
     // Do any additional setup after loading the view.
 }
 

@@ -44,6 +44,11 @@
 		865E3B441FD56E0A00C3A719 /* Orc2.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E3B431FD56E0A00C3A719 /* Orc2.png */; };
 		865E3B461FD56E1000C3A719 /* Orc3.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E3B451FD56E1000C3A719 /* Orc3.png */; };
 		8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */; };
+		868A9D201FD6D25700AD523E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D1F1FD6D25700AD523E /* FBSDKCoreKit.framework */; };
+		868A9D221FD6D26100AD523E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D211FD6D26100AD523E /* FBSDKLoginKit.framework */; };
+		868A9D241FD6D26C00AD523E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D231FD6D26C00AD523E /* FBSDKShareKit.framework */; };
+		868A9D261FD6D27F00AD523E /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D251FD6D27F00AD523E /* FBSDKPlacesKit.framework */; };
+		868A9D281FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D271FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework */; };
 		86B45B341FCD9B58006021D1 /* orcGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B45B331FCD9B58006021D1 /* orcGenerator.m */; };
 		86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C1661D1FBAF98B0089F159 /* VCLobby.m */; };
 		86C415831FCD6646009C4969 /* FightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C415821FCD6646009C4969 /* FightViewCell.m */; };
@@ -100,6 +105,11 @@
 		865E3B431FD56E0A00C3A719 /* Orc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc2.png; sourceTree = "<group>"; };
 		865E3B451FD56E1000C3A719 /* Orc3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc3.png; sourceTree = "<group>"; };
 		8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FightingTableCell.xib; sourceTree = "<group>"; };
+		868A9D1F1FD6D25700AD523E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
+		868A9D211FD6D26100AD523E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
+		868A9D231FD6D26C00AD523E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
+		868A9D251FD6D27F00AD523E /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = FacebookSDK/FBSDKPlacesKit.framework; sourceTree = SOURCE_ROOT; };
+		868A9D271FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = SOURCE_ROOT; };
 		86B45B321FCD9B58006021D1 /* orcGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orcGenerator.h; sourceTree = "<group>"; };
 		86B45B331FCD9B58006021D1 /* orcGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = orcGenerator.m; sourceTree = "<group>"; };
 		86C1661C1FBAF98B0089F159 /* VCLobby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLobby.h; sourceTree = "<group>"; };
@@ -121,6 +131,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868A9D221FD6D26100AD523E /* FBSDKLoginKit.framework in Frameworks */,
+				868A9D201FD6D25700AD523E /* FBSDKCoreKit.framework in Frameworks */,
+				868A9D281FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework in Frameworks */,
+				868A9D261FD6D27F00AD523E /* FBSDKPlacesKit.framework in Frameworks */,
+				868A9D241FD6D26C00AD523E /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +194,7 @@
 		86187DEC1FB1F1CF00B43293 = {
 			isa = PBXGroup;
 			children = (
+				868A9D1E1FD6D1A400AD523E /* Frameworks */,
 				86F49AF01FB9E08A00B5CFE6 /* Sprites */,
 				86187DF71FB1F1CF00B43293 /* ICA2KristinaBlinova */,
 				86187DF61FB1F1CF00B43293 /* Products */,
@@ -268,6 +284,18 @@
 				86C415821FCD6646009C4969 /* FightViewCell.m */,
 			);
 			name = TableDesign;
+			sourceTree = "<group>";
+		};
+		868A9D1E1FD6D1A400AD523E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				868A9D271FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework */,
+				868A9D251FD6D27F00AD523E /* FBSDKPlacesKit.framework */,
+				868A9D231FD6D26C00AD523E /* FBSDKShareKit.framework */,
+				868A9D211FD6D26100AD523E /* FBSDKLoginKit.framework */,
+				868A9D1F1FD6D25700AD523E /* FBSDKCoreKit.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		86B45B2D1FCD9A78006021D1 /* HeroRecords */ = {
@@ -548,6 +576,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UU8FBYK5RR;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = ICA2KristinaBlinova/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.tees.live.ICA2KristinaBlinova;
@@ -560,6 +593,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UU8FBYK5RR;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = ICA2KristinaBlinova/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.tees.live.ICA2KristinaBlinova;
