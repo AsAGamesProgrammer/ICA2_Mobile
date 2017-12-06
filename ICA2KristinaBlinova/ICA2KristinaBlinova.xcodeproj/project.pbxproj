@@ -25,12 +25,16 @@
 		86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E011FB1F1CF00B43293 /* Main.storyboard */; };
 		86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86187E041FB1F1CF00B43293 /* Assets.xcassets */; };
 		86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86187E061FB1F1CF00B43293 /* LaunchScreen.storyboard */; };
-		862B26E91FD86FFB0095BD94 /* stripReward.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26E81FD86FFA0095BD94 /* stripReward.png */; };
 		862B26EB1FD8773E0095BD94 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26EA1FD8773C0095BD94 /* background.png */; };
 		862B26ED1FD87AF40095BD94 /* framePng.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26EC1FD87AF10095BD94 /* framePng.png */; };
 		862B26EF1FD87CD50095BD94 /* facebookWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26EE1FD87CD20095BD94 /* facebookWhite.png */; };
 		862B26F11FD880FB0095BD94 /* camera-shutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26F01FD880F80095BD94 /* camera-shutter.png */; };
 		862B26F31FD8824D0095BD94 /* photo-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26F21FD882490095BD94 /* photo-camera.png */; };
+		862B26F51FD8868E0095BD94 /* Fireworks-Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26F41FD8868A0095BD94 /* Fireworks-Transparent.png */; };
+		862B26F71FD888C70095BD94 /* UnoccupiedStripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26F61FD888C30095BD94 /* UnoccupiedStripe.png */; };
+		862B26FA1FD88A120095BD94 /* stripeU2.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26F91FD88A120095BD94 /* stripeU2.png */; };
+		862B26FC1FD88C4D0095BD94 /* noHeroSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26FB1FD88C490095BD94 /* noHeroSprite.png */; };
+		862B26FE1FD88C520095BD94 /* noHeroStripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26FD1FD88C4F0095BD94 /* noHeroStripe.png */; };
 		8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */; };
 		8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5BD1FD5D00300FDED0C /* enumCodeType.m */; };
 		8652A5C01FD5D3DF00FDED0C /* KSword.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5BF1FD5D3DF00FDED0C /* KSword.png */; };
@@ -90,12 +94,16 @@
 		86187E041FB1F1CF00B43293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86187E071FB1F1CF00B43293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86187E091FB1F1CF00B43293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		862B26E81FD86FFA0095BD94 /* stripReward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stripReward.png; sourceTree = "<group>"; };
 		862B26EA1FD8773C0095BD94 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		862B26EC1FD87AF10095BD94 /* framePng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = framePng.png; sourceTree = "<group>"; };
 		862B26EE1FD87CD20095BD94 /* facebookWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebookWhite.png; path = ../../../Downloads/facebookWhite.png; sourceTree = "<group>"; };
 		862B26F01FD880F80095BD94 /* camera-shutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-shutter.png"; path = "../../../Downloads/camera-shutter.png"; sourceTree = "<group>"; };
 		862B26F21FD882490095BD94 /* photo-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photo-camera.png"; path = "../../../Downloads/photo-camera.png"; sourceTree = "<group>"; };
+		862B26F41FD8868A0095BD94 /* Fireworks-Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fireworks-Transparent.png"; path = "../../../Downloads/Fireworks-Transparent.png"; sourceTree = "<group>"; };
+		862B26F61FD888C30095BD94 /* UnoccupiedStripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnoccupiedStripe.png; sourceTree = "<group>"; };
+		862B26F91FD88A120095BD94 /* stripeU2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stripeU2.png; sourceTree = "<group>"; };
+		862B26FB1FD88C490095BD94 /* noHeroSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noHeroSprite.png; sourceTree = "<group>"; };
+		862B26FD1FD88C4F0095BD94 /* noHeroStripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noHeroStripe.png; sourceTree = "<group>"; };
 		8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weaponDatabase.h; sourceTree = "<group>"; };
 		8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weaponDatabase.m; sourceTree = "<group>"; };
 		8652A5BC1FD5D00300FDED0C /* enumCodeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enumCodeType.h; sourceTree = "<group>"; };
@@ -172,17 +180,16 @@
 		860DA0F91FC31B31007EEDD2 /* Additional */ = {
 			isa = PBXGroup;
 			children = (
+				862B26FB1FD88C490095BD94 /* noHeroSprite.png */,
+				862B26F81FD888CC0095BD94 /* Stripes */,
+				862B26F41FD8868A0095BD94 /* Fireworks-Transparent.png */,
 				862B26F21FD882490095BD94 /* photo-camera.png */,
 				862B26F01FD880F80095BD94 /* camera-shutter.png */,
 				862B26EE1FD87CD20095BD94 /* facebookWhite.png */,
 				862B26EC1FD87AF10095BD94 /* framePng.png */,
 				862B26EA1FD8773C0095BD94 /* background.png */,
-				862B26E81FD86FFA0095BD94 /* stripReward.png */,
-				865A09E81FD59743008CBC11 /* stripe3.png */,
-				865A09E61FD5973E008CBC11 /* stripe.png */,
 				865A09E21FD59439008CBC11 /* gradientStripe.png */,
 				860AC6FC1FBF5FA2009153C6 /* NoHero.png */,
-				865A09E41FD59683008CBC11 /* stripe2.png */,
 				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
 			);
 			name = Additional;
@@ -252,6 +259,19 @@
 				86187DF91FB1F1CF00B43293 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		862B26F81FD888CC0095BD94 /* Stripes */ = {
+			isa = PBXGroup;
+			children = (
+				862B26FD1FD88C4F0095BD94 /* noHeroStripe.png */,
+				862B26F91FD88A120095BD94 /* stripeU2.png */,
+				865A09E81FD59743008CBC11 /* stripe3.png */,
+				865A09E61FD5973E008CBC11 /* stripe.png */,
+				862B26F61FD888C30095BD94 /* UnoccupiedStripe.png */,
+				865A09E41FD59683008CBC11 /* stripe2.png */,
+			);
+			name = Stripes;
 			sourceTree = "<group>";
 		};
 		8652A5BA1FD5C1EA00FDED0C /* Weapons */ = {
@@ -422,6 +442,7 @@
 				860DA1381FC33DCC007EEDD2 /* featherA.png in Resources */,
 				860DA1371FC33DCC007EEDD2 /* bookI.png in Resources */,
 				8652A5C01FD5D3DF00FDED0C /* KSword.png in Resources */,
+				862B26FC1FD88C4D0095BD94 /* noHeroSprite.png in Resources */,
 				860AC6F91FBF5166009153C6 /* Fighter.png in Resources */,
 				8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */,
 				8652A5C61FD5D3F900FDED0C /* bow.png in Resources */,
@@ -431,12 +452,15 @@
 				860DA0F71FC31A9C007EEDD2 /* Orc.png in Resources */,
 				862B26EF1FD87CD50095BD94 /* facebookWhite.png in Resources */,
 				865A09E91FD59745008CBC11 /* stripe3.png in Resources */,
+				862B26FE1FD88C520095BD94 /* noHeroStripe.png in Resources */,
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
 				865E3B441FD56E0A00C3A719 /* Orc2.png in Resources */,
 				860DA1361FC33DCC007EEDD2 /* beltD.png in Resources */,
 				862B26EB1FD8773E0095BD94 /* background.png in Resources */,
 				860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */,
+				862B26F51FD8868E0095BD94 /* Fireworks-Transparent.png in Resources */,
 				860AC6FA1FBF5166009153C6 /* Knight.png in Resources */,
+				862B26FA1FD88A120095BD94 /* stripeU2.png in Resources */,
 				862B26F11FD880FB0095BD94 /* camera-shutter.png in Resources */,
 				862B26ED1FD87AF40095BD94 /* framePng.png in Resources */,
 				865A09E11FD5900C008CBC11 /* WAxe.png in Resources */,
@@ -445,6 +469,7 @@
 				865A09E31FD5943A008CBC11 /* gradientStripe.png in Resources */,
 				8652A5CE1FD5DA9F00FDED0C /* Knight2.png in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
+				862B26F71FD888C70095BD94 /* UnoccupiedStripe.png in Resources */,
 				8652A5C21FD5D3E400FDED0C /* KShield.png in Resources */,
 				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,
 				8652A5C81FD5D3FF00FDED0C /* ASword.png in Resources */,
@@ -454,7 +479,6 @@
 				86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */,
 				8652A5C41FD5D3EF00FDED0C /* DSword.png in Resources */,
 				8652A5CA1FD5D84100FDED0C /* Archer2.png in Resources */,
-				862B26E91FD86FFB0095BD94 /* stripReward.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

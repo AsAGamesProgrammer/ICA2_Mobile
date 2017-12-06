@@ -25,6 +25,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fireworks-Transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="rGo-bG-GpV">
+                                <rect key="frame" x="-19" y="-14" width="815" height="558"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="framePng.png" translatesAutoresizingMaskIntoConstraints="NO" id="f7w-lv-gMh">
                                 <rect key="frame" x="0.0" y="40" width="768" height="940"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -125,6 +129,13 @@
                                     <action selector="keppPrssed:" destination="jzx-fb-IJ9" eventType="touchUpInside" id="VoK-bE-Q3z"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations! You scanned a code! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-AE-NS5">
+                                <rect key="frame" x="19" y="123" width="728" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-va-cJ2">
                                 <rect key="frame" x="20" y="220" width="728" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -147,13 +158,6 @@
                                     <outletCollection property="gestureRecognizers" destination="8dU-IY-4Ek" appends="YES" id="VTL-mS-mOP"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations! You scanned a code! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-AE-NS5">
-                                <rect key="frame" x="19" y="123" width="728" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -245,6 +249,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noHeroStripe.png" translatesAutoresizingMaskIntoConstraints="NO" id="bV2-11-Q5n">
+                                <rect key="frame" x="20" y="0.0" width="229" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stripe3.png" translatesAutoresizingMaskIntoConstraints="NO" id="cOh-Nd-aPq">
                                 <rect key="frame" x="519" y="0.0" width="229" height="932"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -257,7 +265,7 @@
                                 <rect key="frame" x="270" y="0.0" width="229" height="932"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoHero.png" translatesAutoresizingMaskIntoConstraints="NO" id="h3j-gG-Rys">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noHeroSprite.png" translatesAutoresizingMaskIntoConstraints="NO" id="h3j-gG-Rys">
                                 <rect key="frame" x="20" y="238" width="229" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -599,11 +607,14 @@
     </scenes>
     <resources>
         <image name="Amazon.png" width="698" height="1048"/>
+        <image name="Fireworks-Transparent.png" width="548" height="375"/>
         <image name="NoHero.png" width="698" height="1048"/>
         <image name="Orc.png" width="1532" height="1456"/>
         <image name="background.png" width="3236" height="3822"/>
         <image name="facebookWhite.png" width="64" height="64"/>
         <image name="framePng.png" width="3236" height="3822"/>
+        <image name="noHeroSprite.png" width="692" height="1048"/>
+        <image name="noHeroStripe.png" width="698" height="3822"/>
         <image name="photo-camera.png" width="128" height="128"/>
         <image name="stripe.png" width="698" height="3822"/>
         <image name="stripe2.png" width="698" height="3822"/>
