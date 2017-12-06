@@ -90,8 +90,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qI-Ts-KQ9">
-                                <rect key="frame" x="496" y="850" width="77" height="29"/>
+                                <rect key="frame" x="414" y="850" width="218" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Discard">
                                     <color key="titleColor" red="1" green="0.96011419085216443" blue="0.96726683975198946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -114,8 +115,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rv-Vw-61t">
-                                <rect key="frame" x="198" y="850" width="35" height="30"/>
+                                <rect key="frame" x="131" y="850" width="223" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Keep">
                                     <color key="titleColor" red="1" green="0.96011419085216443" blue="0.96726683975198946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -123,13 +125,6 @@
                                     <action selector="keppPrssed:" destination="jzx-fb-IJ9" eventType="touchUpInside" id="VoK-bE-Q3z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations! You scanned a code! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-AE-NS5">
-                                <rect key="frame" x="20" y="103" width="728" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-va-cJ2">
                                 <rect key="frame" x="20" y="220" width="728" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -138,22 +133,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Code name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsx-0U-sae">
-                                <rect key="frame" x="0.0" y="151" width="748" height="59"/>
+                                <rect key="frame" x="0.0" y="172" width="748" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml6-6R-Qim">
-                                <rect key="frame" x="297" y="829" width="175" height="71"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebookWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="iQY-ah-8rp">
+                                <rect key="frame" x="355" y="836" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Share">
-                                    <color key="titleColor" red="1" green="0.96011419085216443" blue="0.96726683975198946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <gestureRecognizers/>
                                 <connections>
-                                    <action selector="sharePressed:" destination="jzx-fb-IJ9" eventType="touchUpInside" id="9jI-fg-vR5"/>
+                                    <outletCollection property="gestureRecognizers" destination="8dU-IY-4Ek" appends="YES" id="VTL-mS-mOP"/>
                                 </connections>
-                            </button>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations! You scanned a code! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-AE-NS5">
+                                <rect key="frame" x="19" y="123" width="728" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -162,6 +162,7 @@
                         <outlet property="agilLbl" destination="A5l-SE-DGH" id="Ny4-1A-QbB"/>
                         <outlet property="characterPreview" destination="LUU-D8-cSV" id="L6n-vu-214"/>
                         <outlet property="defLbl" destination="n6Q-RE-XZc" id="Jh2-fz-Fxo"/>
+                        <outlet property="facebookLogo" destination="iQY-ah-8rp" id="ICd-3J-tbD"/>
                         <outlet property="headerLbl" destination="lsx-0U-sae" id="hRE-Nm-ZPO"/>
                         <outlet property="heroName" destination="p1E-va-cJ2" id="dLB-zW-aJw"/>
                         <outlet property="indxLbl" destination="ZcH-Sp-TkX" id="eHa-MP-duS"/>
@@ -171,6 +172,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbB-Cx-3d6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8dU-IY-4Ek">
+                    <connections>
+                        <action selector="facebookClicked:" destination="jzx-fb-IJ9" id="kZT-Am-9Yr"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1712.5" y="-352.1484375"/>
         </scene>
@@ -589,6 +595,7 @@
         <image name="NoHero.png" width="698" height="1048"/>
         <image name="Orc.png" width="1532" height="1456"/>
         <image name="background.png" width="3236" height="3822"/>
+        <image name="facebookWhite.png" width="64" height="64"/>
         <image name="framePng.png" width="3236" height="3822"/>
         <image name="stripe.png" width="698" height="3822"/>
         <image name="stripe2.png" width="698" height="3822"/>

@@ -32,6 +32,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *headerLbl;
 @property (weak, nonatomic) IBOutlet UILabel *heroName;
 
+//Buttons
+@property (weak, nonatomic) IBOutlet UIImageView *facebookLogo;
+
 @end
 
 @implementation VCResult
@@ -72,12 +75,16 @@
     if(_type==Weapon)
         _heroName.text=@"What a weapon!";
     
+    //Interactions
+    [_facebookLogo setUserInteractionEnabled:YES];
+    
 }
 
 //------------------------------------------------------------------
 //                            FACEBOOK
 //------------------------------------------------------------------
-- (IBAction)sharePressed:(UIButton *)sender
+
+- (IBAction)facebookClicked:(UITapGestureRecognizer *)sender
 {
     //FACEBOOK
     FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
@@ -92,7 +99,6 @@
                                  withContent:content
                                     delegate:nil];
 }
-
 
 //------------------------------------------------------------------
 //                           NAME GENERATOR
