@@ -31,19 +31,19 @@
     switch(randomStat)
     {
         case 0:
-            newRecord.strength=rand() % 50 + 10;
+            newRecord.strength=rand() % 90 + 10;
             break;
             
         case 1:
-            newRecord.intelect=rand() % 50 + 10;
+            newRecord.intelect=rand() % 90 + 10;
             break;
             
         case 2:
-            newRecord.agility=rand() % 50 + 10;
+            newRecord.agility=rand() % 90 + 10;
             break;
             
         case 3:
-            newRecord.defense=rand() % 50 + 10;
+            newRecord.defense=rand() % 90 + 10;
             break;
             
         default:

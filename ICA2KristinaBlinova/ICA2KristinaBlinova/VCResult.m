@@ -72,15 +72,6 @@
     if(_type==Weapon)
         _heroName.text=@"What a weapon!";
     
-
-    
-
-    
-    
-    //FBSDKShareButton *button = [[FBSDKShareButton alloc] init];
-    //button.center = CGPointMake(self.view.frame.size.width /2, self.view.frame.size.height - 40);
-    //button.shareContent = content;
-    //[self.view addSubview:button];
 }
 
 //------------------------------------------------------------------
@@ -94,6 +85,7 @@
     photo.userGenerated = YES;
     FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
     content.photos = @[photo];
+    
     
     //Works
     [FBSDKShareDialog showFromViewController:self
