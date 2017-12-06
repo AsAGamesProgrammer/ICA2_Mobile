@@ -78,7 +78,10 @@
     //Interactions
     [_facebookLogo setUserInteractionEnabled:YES];
     
+     self.navigationController.navigationBar.hidden = YES;
 }
+
+
 
 //------------------------------------------------------------------
 //                            FACEBOOK

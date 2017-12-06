@@ -224,6 +224,8 @@ NSArray* icons;
     _victoryView.hidden=true;
     _orcDead = NO;
     
+     self.navigationController.navigationBar.hidden = NO;
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -170,6 +170,8 @@ NSMutableArray* nameLabels;
     
     orcGenerator* orcGeneration = [[orcGenerator alloc] init];
     _orcRecord = [orcGeneration getNextOrc];
+    
+     self.navigationController.navigationBar.hidden = YES;
 }
 
 //--------------------------------------------------------
@@ -266,6 +268,8 @@ NSMutableArray* nameLabels;
     _firstBtn.enabled=YES;
     _secondBtn.enabled=YES;
     _thirdBtn.enabled=YES;
+    
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 
@@ -298,6 +302,9 @@ NSMutableArray* nameLabels;
     //Statistics
     _defeatedOrcNumber = 0;
     _defeatedOrcLbl.text = [@(_defeatedOrcNumber) stringValue];
+    
+    //Navigation bar
+     self.navigationController.navigationBar.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {

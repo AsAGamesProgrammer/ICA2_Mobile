@@ -16,11 +16,6 @@
 
 //Connections to UI
 @property (weak, nonatomic) IBOutlet UIView *previewView;
-@property (weak, nonatomic) IBOutlet UIButton *startBtn;
-@property (weak, nonatomic) IBOutlet UILabel *statusLbl;
-
-//Button action
-- (IBAction)startStopScan:(id)sender;
 
 //Flags
 @property (nonatomic) BOOL isReading;
@@ -41,26 +36,6 @@
 @end
 
 @implementation ViewController
-
-//IMPLEMENTATION
-- (IBAction)startStopScan:(id)sender
-{
-    if(!_isReading)
-    {
-        if([self startReading])
-        {
-            [_startBtn setTitle:@"Stop" forState:UIControlStateNormal];
-            [_statusLbl setText:@"Scanning for code..."];
-        }
-    }
-    else
-    {
-        //[self stopReading];
-        [_startBtn setTitle:@"Start" forState:UIControlStateNormal];
-    }
-    
-    _isReading=!_isReading;
-}
 
 //Start Reading
 -(BOOL) startReading
@@ -250,8 +225,12 @@
     _captureSession = nil;
     
     _nextIndex=0;
+    
+    [self startReading];
+    
+    //Enable Navigation bar
+    self.navigationController.navigationBar.hidden = NO;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
