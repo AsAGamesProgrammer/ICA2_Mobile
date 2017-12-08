@@ -26,7 +26,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *indxLbl;
 @property (weak, nonatomic) IBOutlet UIImageView *characterPreview;
 
-@property (weak, nonatomic) heroRecord* heroR;
+@property (weak, nonatomic) GeneralRecord* heroR;
 
 //Header label
 @property (weak, nonatomic) IBOutlet UILabel *headerLbl;

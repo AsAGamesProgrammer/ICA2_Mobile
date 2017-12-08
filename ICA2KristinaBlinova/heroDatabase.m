@@ -29,14 +29,14 @@ NSArray *array;
 
 
 //Create one hero
--(heroRecord*) createAHero
+-(GeneralRecord*) createAHero
                           :(NSInteger)str
                           :(NSInteger)agl
                           :(NSInteger)intl
                           :(NSInteger)def
                           :(NSString*)imgName
 {
-    heroRecord *newRecord = [[heroRecord alloc]init];
+    GeneralRecord *newRecord = [[GeneralRecord alloc]init];
     newRecord.strength = str;
     newRecord.agility =agl;
     newRecord.intelect = intl;
@@ -48,7 +48,7 @@ NSArray *array;
 
 //Return a hero by index
 //TODO: try creating heroes differently e.g. database, not on every call
--(heroRecord*) getHeroByIndex:(int)index
+-(GeneralRecord*) getHeroByIndex:(int)index
 {
     [self createHeroes];
 

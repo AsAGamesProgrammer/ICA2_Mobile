@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "heroRecord.h"
+#import "GeneralRecord.h"
 
 @interface orcGenerator : NSObject
 
--(heroRecord*) getNextOrc;
+-(GeneralRecord*) getNextOrc;
 
 @end

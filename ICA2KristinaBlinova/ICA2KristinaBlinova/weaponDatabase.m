@@ -29,14 +29,14 @@ NSArray *arrayWeapons;
 
 
 //Create one hero
--(heroRecord*) createAHero
+-(GeneralRecord*) createAHero
 :(NSInteger)str
 :(NSInteger)agl
 :(NSInteger)intl
 :(NSInteger)def
 :(NSString*)imgName
 {
-    heroRecord *newRecord = [[heroRecord alloc]init];
+    GeneralRecord *newRecord = [[GeneralRecord alloc]init];
     newRecord.strength = str;
     newRecord.agility =agl;
     newRecord.intelect = intl;
@@ -46,7 +46,7 @@ NSArray *arrayWeapons;
     
 }
 
--(heroRecord*) getWeaponByIndex:(int)index
+-(GeneralRecord*) getWeaponByIndex:(int)index
 {
     [self createHeroes];
     

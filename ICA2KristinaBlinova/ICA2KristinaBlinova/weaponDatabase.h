@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "heroRecord.h"
+#import "GeneralRecord.h"
 
 @interface weaponDatabase : NSObject
 
--(heroRecord*) getWeaponByIndex:(int)index;
+-(GeneralRecord*) getWeaponByIndex:(int)index;
 
 @end

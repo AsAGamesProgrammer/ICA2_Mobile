@@ -12,12 +12,12 @@
 
 @implementation orcGenerator
 
--(heroRecord*) getNextOrc
+-(GeneralRecord*) getNextOrc
 {
     srand(time(NULL));
 
     //DEFAULT RECORD------------------------------------
-    heroRecord *newRecord = [[heroRecord alloc]init];
+    GeneralRecord *newRecord = [[GeneralRecord alloc]init];
     
     newRecord.indx = 1;
     newRecord.strength=0;
@@ -31,19 +31,19 @@
     switch(randomStat)
     {
         case 0:
-            newRecord.strength=rand() % 90 + 10;
+            newRecord.strength=rand() % 70 + 30;
             break;
             
         case 1:
-            newRecord.intelect=rand() % 90 + 10;
+            newRecord.intelect=rand() % 70 + 30;
             break;
             
         case 2:
-            newRecord.agility=rand() % 90 + 10;
+            newRecord.agility=rand() % 70 + 30;
             break;
             
         case 3:
-            newRecord.defense=rand() % 90 + 10;
+            newRecord.defense=rand() % 70 + 30;
             break;
             
         default:

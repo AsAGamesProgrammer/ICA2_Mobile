@@ -73,7 +73,7 @@
 		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
 		86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F49AF91FB9E30300B5CFE6 /* VCResult.m */; };
 		86F4F2AE1FBA0C470069F908 /* heroDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F4F2AD1FBA0C470069F908 /* heroDatabase.m */; };
-		86F4F2B11FBA0C680069F908 /* heroRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F4F2B01FBA0C680069F908 /* heroRecord.m */; };
+		86F4F2B11FBA0C680069F908 /* GeneralRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F4F2B01FBA0C680069F908 /* GeneralRecord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,8 +156,8 @@
 		86F49AF91FB9E30300B5CFE6 /* VCResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCResult.m; sourceTree = "<group>"; };
 		86F4F2AC1FBA0C470069F908 /* heroDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = heroDatabase.h; path = ../heroDatabase.h; sourceTree = "<group>"; };
 		86F4F2AD1FBA0C470069F908 /* heroDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = heroDatabase.m; path = ../heroDatabase.m; sourceTree = "<group>"; };
-		86F4F2AF1FBA0C680069F908 /* heroRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = heroRecord.h; path = ../heroRecord.h; sourceTree = "<group>"; };
-		86F4F2B01FBA0C680069F908 /* heroRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = heroRecord.m; path = ../heroRecord.m; sourceTree = "<group>"; };
+		86F4F2AF1FBA0C680069F908 /* GeneralRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralRecord.h; path = ../GeneralRecord.h; sourceTree = "<group>"; };
+		86F4F2B01FBA0C680069F908 /* GeneralRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralRecord.m; path = ../GeneralRecord.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,8 +386,8 @@
 				8652A5BA1FD5C1EA00FDED0C /* Weapons */,
 				86B45B2D1FCD9A78006021D1 /* HeroRecords */,
 				86B45B2E1FCD9AB6006021D1 /* OrcRecords */,
-				86F4F2AF1FBA0C680069F908 /* heroRecord.h */,
-				86F4F2B01FBA0C680069F908 /* heroRecord.m */,
+				86F4F2AF1FBA0C680069F908 /* GeneralRecord.h */,
+				86F4F2B01FBA0C680069F908 /* GeneralRecord.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -540,7 +540,7 @@
 				86B45B341FCD9B58006021D1 /* orcGenerator.m in Sources */,
 				86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */,
 				86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */,
-				86F4F2B11FBA0C680069F908 /* heroRecord.m in Sources */,
+				86F4F2B11FBA0C680069F908 /* GeneralRecord.m in Sources */,
 				86187DFA1FB1F1CF00B43293 /* main.m in Sources */,
 				86C415831FCD6646009C4969 /* FightViewCell.m in Sources */,
 				8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */,

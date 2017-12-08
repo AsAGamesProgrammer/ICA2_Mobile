@@ -1,5 +1,5 @@
 //
-//  heroRecord.h
+//  GeneralRecord.h
 //  ICA2KristinaBlinova
 //
 //  Created by BLINOVA, KRISTINA on 13/11/2017.
@@ -13,7 +13,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface heroRecord : NSObject
+@interface GeneralRecord : NSObject
 
 @property (nonatomic) int indx;
 @property (nonatomic) NSInteger strength;

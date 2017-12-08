@@ -55,7 +55,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *thirdStatLbl;
 
 //Orcs
-@property (strong, nonatomic) heroRecord* orcRecord;
+@property (strong, nonatomic) GeneralRecord* orcRecord;
 
 //Statistics
 @property (weak, nonatomic) IBOutlet UILabel *defeatedOrcLbl;
@@ -146,7 +146,7 @@ NSMutableArray* nameLabels;
     [self enablePlaceMode:YES];
     
     //Check if weapon can be placed
-    heroRecord* heroR = _ownedHeroes[0];
+    GeneralRecord* heroR = _ownedHeroes[0];
     if(heroR.imageName==nil)
         _firstBtn.enabled=NO;
     
@@ -232,8 +232,8 @@ NSMutableArray* nameLabels;
 
 -(NSString*) getStatusLabel:(int)atIndex
 {
-    heroRecord* heroR = _ownedHeroes[atIndex];
-    heroRecord* weaponR = _ownedWeapons[atIndex];
+    GeneralRecord* heroR = _ownedHeroes[atIndex];
+    GeneralRecord* weaponR = _ownedWeapons[atIndex];
     
 //    if(weaponR.imageName==nil)
 //    {
@@ -280,7 +280,7 @@ NSMutableArray* nameLabels;
     [super viewDidLoad];
     
     //Initialize a hero record array with empty records
-    heroRecord* emptyRecord = [[heroRecord alloc] init];
+    GeneralRecord* emptyRecord = [[GeneralRecord alloc] init];
     _ownedHeroes = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
     _ownedWeapons = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
    
@@ -324,15 +324,15 @@ NSMutableArray* nameLabels;
         //Go throug hero records
         for(int i=0; i<3; i++)
         {
-            heroRecord* heroR = _ownedHeroes[i];
+            GeneralRecord* heroR = _ownedHeroes[i];
             if(!(heroR.imageName == nil))
             {
                 //Find a matching weapon record
-                heroRecord* weaponR = _ownedWeapons[i];
+                GeneralRecord* weaponR = _ownedWeapons[i];
                 if(weaponR.imageName!=nil)
                 {
                     //Sum up two records to create a new one
-                    heroRecord* sumRecord = [[heroRecord alloc] init];
+                    GeneralRecord* sumRecord = [[GeneralRecord alloc] init];
                     sumRecord.strength = heroR.strength+weaponR.strength;
                     sumRecord.agility = heroR.agility+weaponR.agility;
                     sumRecord.intelect = heroR.intelect+weaponR.intelect;

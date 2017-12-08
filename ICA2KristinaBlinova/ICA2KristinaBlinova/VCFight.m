@@ -118,7 +118,7 @@ NSArray* icons;
 
 -(void) changeHeroOnSwipe
 {
-    heroRecord* record = _heroes[_currentHeroNumber];
+    GeneralRecord* record = _heroes[_currentHeroNumber];
     
     //Update hero image
     _heroImg.image = [UIImage imageNamed:record.imageName];
@@ -143,7 +143,7 @@ NSArray* icons;
 - (IBAction)fightClick:(id)sender
 {
     //Compare hero stats to the orc
-    heroRecord* heroRec = _heroes[_currentHeroNumber];
+    GeneralRecord* heroRec = _heroes[_currentHeroNumber];
     
     if(heroRec.strength>=_currentOrcRecord.strength &&
        heroRec.intelect>=_currentOrcRecord.intelect &&
@@ -195,7 +195,7 @@ NSArray* icons;
     [super viewDidLoad];
     
     //Set initial hero picture
-    heroRecord* firstRecord = _heroes[0];
+    GeneralRecord* firstRecord = _heroes[0];
     _heroImg.image = [UIImage imageNamed:firstRecord.imageName];
     
     //Enable interactions on hero image
