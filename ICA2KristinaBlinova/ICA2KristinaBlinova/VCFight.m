@@ -218,7 +218,7 @@ NSArray* icons;
     icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
     
     _statTable.layer.borderWidth=2.0;
-    _statTable.layer.borderColor=[UIColor orangeColor].CGColor;
+    _statTable.layer.borderColor=[UIColor yellowColor].CGColor;
     
     //Victory/Defeat
     _victoryView.hidden=true;
