@@ -14,5 +14,6 @@
 @property (nonatomic) NSMutableArray* heroes;
 @property (nonatomic) heroRecord* currentOrcRecord;
 @property (nonatomic) NSInteger battleNumber;
+@property (nonatomic) NSArray* heroNames;
 
 @end

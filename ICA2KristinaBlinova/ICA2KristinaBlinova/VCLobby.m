@@ -42,6 +42,7 @@
 //Records of all the owned heroes
 @property (nonatomic) NSMutableArray *ownedHeroes;
 @property (nonatomic) NSMutableArray *ownedWeapons;
+@property (nonatomic) NSMutableArray *heroNames;
 
 //Button which opens fighting view controller
 @property (weak, nonatomic) IBOutlet UIButton *fightBtn;
@@ -201,6 +202,7 @@ NSMutableArray* nameLabels;
         //Set name label
         UILabel* nameLabel = nameLabels[atIndex];
         nameLabel.text = _passedName;
+        _heroNames[atIndex]=_passedName;
         
     }
     //Reset index
@@ -283,6 +285,7 @@ NSMutableArray* nameLabels;
     heroRecord* emptyRecord = [[heroRecord alloc] init];
     _ownedHeroes = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
     _ownedWeapons = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
+    _heroNames = [NSMutableArray arrayWithObjects:@"Hero 1", @"Hero 2", @"Hero 3", nil];
    
     //Disable fighting as no heroes exist
     _fightBtn.enabled=NO;
@@ -320,6 +323,7 @@ NSMutableArray* nameLabels;
 
         //Create an array of existing heroes to avoid passing NO HERO slots
         NSMutableArray* existingHeroes = [[NSMutableArray alloc] init];
+        NSMutableArray* existingNames = [[NSMutableArray alloc] init];
         
         //Go throug hero records
         for(int i=0; i<3; i++)
@@ -346,19 +350,25 @@ NSMutableArray* nameLabels;
                 {
                    [existingHeroes addObject:heroR];
                 }
-
+                
+                //Add a name
+                [existingNames addObject:_heroNames[i]];
             }
         }
         
         
         if(existingHeroes.count>0)
+        {
             fightViewController.heroes= existingHeroes;
+            fightViewController.heroNames=existingNames;
+        }
         
         //Pass an orc
         fightViewController.currentOrcRecord = _orcRecord;
         
         //Battle Number
         fightViewController.battleNumber = _defeatedOrcNumber + 1;
+        
     }
 }
 
