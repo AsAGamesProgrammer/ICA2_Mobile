@@ -42,7 +42,6 @@
 //Records of all the owned heroes
 @property (nonatomic) NSMutableArray *ownedHeroes;
 @property (nonatomic) NSMutableArray *ownedWeapons;
-@property (nonatomic) NSMutableArray *heroNames;
 
 //Button which opens fighting view controller
 @property (weak, nonatomic) IBOutlet UIButton *fightBtn;
@@ -202,8 +201,6 @@ NSMutableArray* nameLabels;
         //Set name label
         UILabel* nameLabel = nameLabels[atIndex];
         nameLabel.text = _passedHero.name;
-        _heroNames[atIndex]=_passedHero.name;
-        
     }
     //Reset index
     self.currentHeroID=-1;
@@ -215,10 +212,10 @@ NSMutableArray* nameLabels;
     if(_currentHeroID >0)
     {
         //Set image of a chosen slot
-        toImage.image = [UIImage imageNamed:_passedHeroRecord.imageName];
+        toImage.image = [UIImage imageNamed:_passedHero.imageName];
         
         //Add a weapon to a array of owned weapons
-        _ownedWeapons[atIndex]=_passedHeroRecord;
+        _ownedWeapons[atIndex]=_passedHero;
         
         //Set UI to not placing hero sate
         [self enablePlaceMode:NO];
@@ -282,12 +279,10 @@ NSMutableArray* nameLabels;
     [super viewDidLoad];
     
     //Initialize a hero record array with empty records
-    GeneralRecord* emptyRecord = [[GeneralRecord alloc] init];
     HeroRecord* emptyHRecord = [[HeroRecord alloc] init];
     _ownedHeroes = [NSMutableArray arrayWithObjects:emptyHRecord, emptyHRecord, emptyHRecord, nil];
-    _ownedWeapons = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
-    _heroNames = [NSMutableArray arrayWithObjects:@"Hero 1", @"Hero 2", @"Hero 3", nil];
-   
+    _ownedWeapons = [NSMutableArray arrayWithObjects:emptyHRecord, emptyHRecord, emptyHRecord, nil];
+    
     //Disable fighting as no heroes exist
     _fightBtn.enabled=NO;
     
@@ -324,7 +319,6 @@ NSMutableArray* nameLabels;
 
         //Create an array of existing heroes to avoid passing NO HERO slots
         NSMutableArray* existingHeroes = [[NSMutableArray alloc] init];
-        NSMutableArray* existingNames = [[NSMutableArray alloc] init];
         
         //Go throug hero records
         for(int i=0; i<3; i++)
@@ -352,17 +346,12 @@ NSMutableArray* nameLabels;
                    [existingHeroes addObject:heroR];
                 }
                 
-                //Add a name
-                [existingNames addObject:_heroNames[i]];
             }
         }
         
         
         if(existingHeroes.count>0)
-        {
             fightViewController.heroes= existingHeroes;
-            fightViewController.heroNames=existingNames;
-        }
         
         //Pass an orc
         fightViewController.currentOrcRecord = _orcRecord;

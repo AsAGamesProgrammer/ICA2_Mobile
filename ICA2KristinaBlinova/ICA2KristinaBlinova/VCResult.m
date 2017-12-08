@@ -130,25 +130,26 @@
 //KEEP: Send update to the root and pop back to the lobby
 - (IBAction)keppPrssed:(UIButton *)sender
 {
+    //Generate a full record
+    HeroRecord* heroRecord = [[HeroRecord alloc] init];
+    
+    heroRecord.strength = _heroR.strength;
+    heroRecord.agility = _heroR.agility;
+    heroRecord.intelect = _heroR.intelect;
+    heroRecord.defense = _heroR.defense;
+    heroRecord.name = _heroName.text;
+    heroRecord.imageName = _heroR.imageName;
+    
     VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     keepViewController.currentHeroID=self.index;
-    keepViewController.passedHeroRecord=_heroR;
-    keepViewController.passedName=_heroName.text;
+    keepViewController.passedHero = heroRecord;
     
     //Awake a function in the lobby
     if(_type == Hero)
     {
-        HeroRecord* heroRecord = [[HeroRecord alloc] init];
-        heroRecord.strength = _heroR.strength;
-        heroRecord.agility = _heroR.agility;
-        heroRecord.intelect = _heroR.intelect;
-        heroRecord.defense = _heroR.defense;
-        heroRecord.name = _heroName.text;
-        heroRecord.imageName = _heroR.imageName;
-        
         [keepViewController heroPassed];
-        keepViewController.passedHero = heroRecord;
     }
+    
     if(_type == Weapon)
     {
         [keepViewController weaponPassed];

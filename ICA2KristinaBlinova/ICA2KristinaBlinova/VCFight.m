@@ -118,7 +118,7 @@ NSArray* icons;
 
 -(void) changeHeroOnSwipe
 {
-    GeneralRecord* record = _heroes[_currentHeroNumber];
+    HeroRecord* record = _heroes[_currentHeroNumber];
     
     //Update hero image
     _heroImg.image = [UIImage imageNamed:record.imageName];
@@ -129,7 +129,7 @@ NSArray* icons;
                      [@(record.intelect) stringValue],
                      [@(record.defense) stringValue], nil];
     
-    _heroNameLabel.text = _heroNames[_currentHeroNumber];
+    _heroNameLabel.text = record.name;
     
     [self.statTable reloadData];
 }
@@ -197,9 +197,9 @@ NSArray* icons;
     [super viewDidLoad];
     
     //Set initial hero picture
-    GeneralRecord* firstRecord = _heroes[0];
+    HeroRecord* firstRecord = _heroes[0];
     _heroImg.image = [UIImage imageNamed:firstRecord.imageName];
-    _heroNameLabel.text = _heroNames[0];
+    _heroNameLabel.text = firstRecord.name;
     
     //Enable interactions on hero image
     _heroImg.userInteractionEnabled = YES;
