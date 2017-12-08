@@ -13,6 +13,7 @@
 #import "heroDatabase.h"
 #import "weaponDatabase.h"
 #import "VCLobby.h"
+#import "HeroRecord.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
@@ -137,7 +138,16 @@
     //Awake a function in the lobby
     if(_type == Hero)
     {
+        HeroRecord* heroRecord = [[HeroRecord alloc] init];
+        heroRecord.strength = _heroR.strength;
+        heroRecord.agility = _heroR.agility;
+        heroRecord.intelect = _heroR.intelect;
+        heroRecord.defense = _heroR.defense;
+        heroRecord.name = _heroName.text;
+        heroRecord.imageName = _heroR.imageName;
+        
         [keepViewController heroPassed];
+        keepViewController.passedHero = heroRecord;
     }
     if(_type == Weapon)
     {

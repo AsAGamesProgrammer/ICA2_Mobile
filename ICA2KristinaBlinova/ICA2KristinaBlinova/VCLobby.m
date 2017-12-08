@@ -147,7 +147,7 @@ NSMutableArray* nameLabels;
     [self enablePlaceMode:YES];
     
     //Check if weapon can be placed
-    GeneralRecord* heroR = _ownedHeroes[0];
+    HeroRecord* heroR = _ownedHeroes[0];
     if(heroR.imageName==nil)
         _firstBtn.enabled=NO;
     
@@ -184,10 +184,10 @@ NSMutableArray* nameLabels;
     if(_currentHeroID >0)
     {
         //Set image of a chosen slot
-        toImage.image = [UIImage imageNamed:_passedHeroRecord.imageName];
+        toImage.image = [UIImage imageNamed:_passedHero.imageName];
         
         //Add a hero to a array of owned heroes
-        _ownedHeroes[atIndex]=_passedHeroRecord;
+        _ownedHeroes[atIndex]=_passedHero;
         
         //Set UI to not placing hero sate
         [self enablePlaceMode:NO];
@@ -201,8 +201,8 @@ NSMutableArray* nameLabels;
         
         //Set name label
         UILabel* nameLabel = nameLabels[atIndex];
-        nameLabel.text = _passedName;
-        _heroNames[atIndex]=_passedName;
+        nameLabel.text = _passedHero.name;
+        _heroNames[atIndex]=_passedHero.name;
         
     }
     //Reset index
@@ -283,7 +283,8 @@ NSMutableArray* nameLabels;
     
     //Initialize a hero record array with empty records
     GeneralRecord* emptyRecord = [[GeneralRecord alloc] init];
-    _ownedHeroes = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
+    HeroRecord* emptyHRecord = [[HeroRecord alloc] init];
+    _ownedHeroes = [NSMutableArray arrayWithObjects:emptyHRecord, emptyHRecord, emptyHRecord, nil];
     _ownedWeapons = [NSMutableArray arrayWithObjects:emptyRecord, emptyRecord, emptyRecord, nil];
     _heroNames = [NSMutableArray arrayWithObjects:@"Hero 1", @"Hero 2", @"Hero 3", nil];
    

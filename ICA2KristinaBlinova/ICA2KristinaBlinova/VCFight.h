@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "heroRecord.h"
+#import "GeneralRecord.h"
 #import "orcRecord.h"
 
 @interface VCFight : UIViewController

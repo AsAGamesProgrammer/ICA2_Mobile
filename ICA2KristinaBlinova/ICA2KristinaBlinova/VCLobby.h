@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GeneralRecord.h"
 #import "enumCodeType.h"
+#import "HeroRecord.h"
 
 @interface VCLobby : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
@@ -16,6 +17,7 @@
 @property (nonatomic) GeneralRecord* passedHeroRecord;
 @property (nonatomic) NSString* passedName;
 
+@property (nonatomic) HeroRecord* passedHero;
 -(void) heroPassed;
 -(void) weaponPassed;
 

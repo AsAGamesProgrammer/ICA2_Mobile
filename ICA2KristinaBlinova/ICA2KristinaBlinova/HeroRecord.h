@@ -1,5 +1,5 @@
 //
-//  orcRecord.h
+//  HeroRecord.h
 //  ICA2KristinaBlinova
 //
 //  Created by BLINOVA, KRISTINA on 08/12/2017.
@@ -8,8 +8,8 @@
 
 #import "GeneralRecord.h"
 
-@interface orcRecord : GeneralRecord
+@interface HeroRecord : GeneralRecord
 
-@property (nonatomic) NSString* deathImg;
+@property (nonatomic) NSString* name;
 
 @end
