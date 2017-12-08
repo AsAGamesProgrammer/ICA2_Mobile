@@ -331,7 +331,7 @@ NSMutableArray* nameLabels;
                 if(weaponR.imageName!=nil)
                 {
                     //Sum up two records to create a new one
-                    GeneralRecord* sumRecord = [[GeneralRecord alloc] init];
+                    HeroRecord* sumRecord = [[HeroRecord alloc] init];
                     sumRecord.strength = heroR.strength+weaponR.strength;
                     sumRecord.agility = heroR.agility+weaponR.agility;
                     sumRecord.intelect = heroR.intelect+weaponR.intelect;

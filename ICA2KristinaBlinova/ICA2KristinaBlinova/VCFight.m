@@ -24,11 +24,16 @@
 @property (weak, nonatomic) IBOutlet UIView *victoryView;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UIButton *resultBtn;
+@property (weak, nonatomic) IBOutlet UIImageView *defeatedOrc;
+@property (weak, nonatomic) IBOutlet UIImageView *popupBackgroundImg;
+@property (weak, nonatomic) IBOutlet UIImageView *mainBackgroundImg;
+
 
 @property (nonatomic) BOOL orcDead;
 @property (weak, nonatomic) IBOutlet UIImageView *orcImg;
 @property (weak, nonatomic) IBOutlet UILabel *battleNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *heroNameLabel;
+
 
 @end
 
@@ -157,11 +162,15 @@ NSArray* icons;
         _resultLabel.text=@"Victory";
         
         //Change label/button colours
-        self.resultLabel.textColor = [UIColor colorWithRed:(0/255.f) green:(128/255.f) blue:(0/255.f) alpha:1];
         self.resultBtn.backgroundColor = [UIColor colorWithRed:(0/255.f) green:(128/255.f) blue:(0/255.f) alpha:1];
         
         //Confirm victory
         _orcDead=YES;
+        
+        //Picture
+        _defeatedOrc.image = [UIImage imageNamed:_currentOrcRecord.deathImg];
+        
+        _popupBackgroundImg.image = [UIImage imageNamed:@"victoryBackground"];
     }
     else
     {
@@ -169,10 +178,13 @@ NSArray* icons;
         //Change label text
         _resultLabel.text=@"Defeat";
         
+        _popupBackgroundImg.image = [UIImage imageNamed:@"screenDeath"];
+        
         //Change label/button colours
-        self.resultLabel.textColor = [UIColor colorWithRed:(134/255.f) green:(13/255.f) blue:(13/255.f) alpha:1];
         self.resultBtn.backgroundColor = [UIColor colorWithRed:(134/255.f) green:(13/255.f) blue:(13/255.f) alpha:1];
     }
+    
+    _mainBackgroundImg.alpha=0.5;
     
     //Show a result view
     _victoryView.hidden=false;

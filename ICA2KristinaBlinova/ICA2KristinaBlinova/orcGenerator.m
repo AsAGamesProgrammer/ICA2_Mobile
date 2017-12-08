@@ -57,18 +57,22 @@
     {
         case 0:
             newRecord.imageName=@"Orc.png";
+            newRecord.deathImg=@"OrcDead";
             break;
             
         case 1:
             newRecord.imageName=@"Orc2.png";
+            newRecord.deathImg=@"Orc2Dead";
             break;
             
         case 2:
             newRecord.imageName=@"Orc3.png";
+            newRecord.deathImg=@"Orc3Dead";
             break;
             
         default:
             newRecord.imageName=@"Orc.png";
+            newRecord.deathImg=@"OrcDead";
             break;
     }
     

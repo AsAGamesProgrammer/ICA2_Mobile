@@ -464,32 +464,6 @@
                                     <outlet property="delegate" destination="57r-Hv-Rkl" id="1U0-UB-0E5"/>
                                 </connections>
                             </tableView>
-                            <view hidden="YES" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-s7-Rqv">
-                                <rect key="frame" x="-1" y="448" width="769" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTU-o7-bf3">
-                                        <rect key="frame" x="259" y="8" width="285" height="56"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                        <color key="textColor" red="0.18252062554603099" green="0.38388324873096447" blue="0.1428172163008273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9G-Jj-b1w">
-                                        <rect key="frame" x="326" y="72" width="150" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.2353497209" green="0.47108978429999998" blue="0.14234684359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Return">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="resultClick:" destination="57r-Hv-Rkl" eventType="touchUpInside" id="BoT-OD-qmy"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.91698628660000003" green="0.56173229219999998" blue="0.33858698609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLn-gt-SLQ">
                                 <rect key="frame" x="35" y="348" width="204" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -542,14 +516,51 @@
                                 <rect key="frame" x="125" y="695" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-s7-Rqv">
+                                <rect key="frame" x="-1" y="357" width="769" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="screenDeath.png" translatesAutoresizingMaskIntoConstraints="NO" id="yyo-jG-5X3">
+                                        <rect key="frame" x="0.0" y="8" width="769" height="292"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTU-o7-bf3">
+                                        <rect key="frame" x="259" y="8" width="285" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9G-Jj-b1w">
+                                        <rect key="frame" x="318" y="247" width="150" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.2353497209" green="0.47108978429999998" blue="0.14234684359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Return">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resultClick:" destination="57r-Hv-Rkl" eventType="touchUpInside" id="BoT-OD-qmy"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHR-zc-uZg">
+                                        <rect key="frame" x="196" y="62" width="410" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88846844434738159" green="0.61456936597824097" blue="0.23994871973991394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="battleNumberLabel" destination="eFW-BM-wou" id="FNs-OL-7yw"/>
+                        <outlet property="defeatedOrc" destination="xHR-zc-uZg" id="CbI-8W-Zqh"/>
                         <outlet property="heroImg" destination="pC9-cb-ybe" id="LGS-he-pWR"/>
                         <outlet property="heroNameLabel" destination="aLn-gt-SLQ" id="ozO-qm-mOf"/>
+                        <outlet property="mainBackgroundImg" destination="Ft5-1O-3Y4" id="VhT-uy-uZN"/>
                         <outlet property="orcImg" destination="YUV-Eb-WNS" id="V05-Uj-CJd"/>
+                        <outlet property="popupBackgroundImg" destination="yyo-jG-5X3" id="mz8-u1-iEL"/>
                         <outlet property="resultBtn" destination="S9G-Jj-b1w" id="PWj-FQ-jsl"/>
                         <outlet property="resultLabel" destination="DTU-o7-bf3" id="C4K-Ib-v2B"/>
                         <outlet property="statTable" destination="18F-ce-mGQ" id="6Jz-Z0-KAc"/>
@@ -655,6 +666,7 @@
         <image name="fightBanner.png" width="3236" height="928"/>
         <image name="framePng.png" width="3236" height="3822"/>
         <image name="photo-camera.png" width="128" height="128"/>
+        <image name="screenDeath.png" width="4404" height="1588"/>
         <image name="stripe.png" width="698" height="3822"/>
         <image name="stripe2.png" width="698" height="3822"/>
         <image name="stripe3.png" width="698" height="3822"/>
@@ -662,7 +674,6 @@
         <image name="uuIDsh.jpg" width="1200" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uq1-I7-518"/>
-        <segue reference="u0L-Dm-4cG"/>
+        <segue reference="b7a-zs-VDG"/>
     </inferredMetricsTieBreakers>
 </document>
