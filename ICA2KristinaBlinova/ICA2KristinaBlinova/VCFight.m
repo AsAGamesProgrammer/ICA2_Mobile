@@ -27,6 +27,8 @@
 
 @property (nonatomic) BOOL orcDead;
 @property (weak, nonatomic) IBOutlet UIImageView *orcImg;
+@property (weak, nonatomic) IBOutlet UILabel *battleNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *heroNameLabel;
 
 @end
 

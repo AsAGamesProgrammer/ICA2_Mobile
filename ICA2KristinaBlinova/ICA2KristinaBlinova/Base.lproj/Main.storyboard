@@ -434,7 +434,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="darkBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ft5-1O-3Y4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="background2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ft5-1O-3Y4">
                                 <rect key="frame" x="-1" y="0.0" width="769" height="1024"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1024" id="CpP-vV-HX8"/>
@@ -490,7 +490,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.91698628660000003" green="0.56173229219999998" blue="0.33858698609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLn-gt-SLQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLn-gt-SLQ">
                                 <rect key="frame" x="35" y="348" width="204" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -546,7 +546,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="battleNumberLabel" destination="eFW-BM-wou" id="FNs-OL-7yw"/>
                         <outlet property="heroImg" destination="pC9-cb-ybe" id="LGS-he-pWR"/>
+                        <outlet property="heroNameLabel" destination="aLn-gt-SLQ" id="ozO-qm-mOf"/>
                         <outlet property="orcImg" destination="YUV-Eb-WNS" id="V05-Uj-CJd"/>
                         <outlet property="resultBtn" destination="S9G-Jj-b1w" id="PWj-FQ-jsl"/>
                         <outlet property="resultLabel" destination="DTU-o7-bf3" id="C4K-Ib-v2B"/>
@@ -648,7 +650,7 @@
         <image name="NoHero.png" width="698" height="1048"/>
         <image name="Orc.png" width="1532" height="1456"/>
         <image name="background.png" width="3236" height="3822"/>
-        <image name="darkBackground.png" width="3236" height="3822"/>
+        <image name="background2.png" width="3236" height="3822"/>
         <image name="facebookWhite.png" width="64" height="64"/>
         <image name="fightBanner.png" width="3236" height="928"/>
         <image name="framePng.png" width="3236" height="3822"/>
