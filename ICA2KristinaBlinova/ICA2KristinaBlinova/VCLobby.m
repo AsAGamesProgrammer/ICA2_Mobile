@@ -356,6 +356,9 @@ NSMutableArray* nameLabels;
         
         //Pass an orc
         fightViewController.currentOrcRecord = _orcRecord;
+        
+        //Battle Number
+        fightViewController.battleNumber = _defeatedOrcNumber + 1;
     }
 }
 

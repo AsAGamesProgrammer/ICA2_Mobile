@@ -234,6 +234,9 @@ NSArray* icons;
     
      self.navigationController.navigationBar.hidden = NO;
     
+    //Banner
+    _battleNumberLabel.text = [@(_battleNumber) stringValue];
+    
 }
 
 - (void)didReceiveMemoryWarning {
