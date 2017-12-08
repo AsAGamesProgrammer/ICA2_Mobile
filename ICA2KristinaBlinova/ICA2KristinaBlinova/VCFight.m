@@ -129,6 +129,8 @@ NSArray* icons;
                      [@(record.intelect) stringValue],
                      [@(record.defense) stringValue], nil];
     
+    _heroNameLabel.text = _heroNames[_currentHeroNumber];
+    
     [self.statTable reloadData];
 }
 
@@ -197,6 +199,7 @@ NSArray* icons;
     //Set initial hero picture
     GeneralRecord* firstRecord = _heroes[0];
     _heroImg.image = [UIImage imageNamed:firstRecord.imageName];
+    _heroNameLabel.text = _heroNames[0];
     
     //Enable interactions on hero image
     _heroImg.userInteractionEnabled = YES;

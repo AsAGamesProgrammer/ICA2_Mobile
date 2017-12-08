@@ -54,6 +54,7 @@
 		865E3B441FD56E0A00C3A719 /* Orc2.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E3B431FD56E0A00C3A719 /* Orc2.png */; };
 		865E3B461FD56E1000C3A719 /* Orc3.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E3B451FD56E1000C3A719 /* Orc3.png */; };
 		8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */; };
+		868705031FDB1EC20040D649 /* orcRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 868705021FDB1EC20040D649 /* orcRecord.m */; };
 		868A9D201FD6D25700AD523E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D1F1FD6D25700AD523E /* FBSDKCoreKit.framework */; };
 		868A9D221FD6D26100AD523E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D211FD6D26100AD523E /* FBSDKLoginKit.framework */; };
 		868A9D241FD6D26C00AD523E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D231FD6D26C00AD523E /* FBSDKShareKit.framework */; };
@@ -132,6 +133,8 @@
 		865E3B431FD56E0A00C3A719 /* Orc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc2.png; sourceTree = "<group>"; };
 		865E3B451FD56E1000C3A719 /* Orc3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orc3.png; sourceTree = "<group>"; };
 		8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FightingTableCell.xib; sourceTree = "<group>"; };
+		868705011FDB1EC20040D649 /* orcRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orcRecord.h; sourceTree = "<group>"; };
+		868705021FDB1EC20040D649 /* orcRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orcRecord.m; sourceTree = "<group>"; };
 		868A9D1F1FD6D25700AD523E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
 		868A9D211FD6D26100AD523E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
 		868A9D231FD6D26C00AD523E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
@@ -376,6 +379,8 @@
 			children = (
 				86B45B321FCD9B58006021D1 /* orcGenerator.h */,
 				86B45B331FCD9B58006021D1 /* orcGenerator.m */,
+				868705011FDB1EC20040D649 /* orcRecord.h */,
+				868705021FDB1EC20040D649 /* orcRecord.m */,
 			);
 			name = OrcRecords;
 			sourceTree = "<group>";
@@ -534,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86187E001FB1F1CF00B43293 /* ViewController.m in Sources */,
+				868705031FDB1EC20040D649 /* orcRecord.m in Sources */,
 				86F4F2AE1FBA0C470069F908 /* heroDatabase.m in Sources */,
 				8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */,
 				86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */,
