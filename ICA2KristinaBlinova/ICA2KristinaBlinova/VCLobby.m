@@ -56,7 +56,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *thirdStatLbl;
 
 //Orcs
-@property (strong, nonatomic) heroRecord* orcRecord;
+@property (strong, nonatomic) orcRecord* orcRecord;
 
 //Statistics
 @property (weak, nonatomic) IBOutlet UILabel *defeatedOrcLbl;

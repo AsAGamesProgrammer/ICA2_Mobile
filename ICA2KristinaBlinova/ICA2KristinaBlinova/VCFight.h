@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "heroRecord.h"
+#import "orcRecord.h"
 
 @interface VCFight : UIViewController
 
 @property (nonatomic) NSMutableArray* heroes;
-@property (nonatomic) heroRecord* currentOrcRecord;
+@property (nonatomic) orcRecord* currentOrcRecord;
 @property (nonatomic) NSInteger battleNumber;
 @property (nonatomic) NSArray* heroNames;
 

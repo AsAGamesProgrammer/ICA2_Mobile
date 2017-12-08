@@ -12,12 +12,12 @@
 
 @implementation orcGenerator
 
--(heroRecord*) getNextOrc
+-(orcRecord*) getNextOrc
 {
     srand(time(NULL));
 
     //DEFAULT RECORD------------------------------------
-    heroRecord *newRecord = [[heroRecord alloc]init];
+    orcRecord *newRecord = [[orcRecord alloc]init];
     
     newRecord.indx = 1;
     newRecord.strength=0;
