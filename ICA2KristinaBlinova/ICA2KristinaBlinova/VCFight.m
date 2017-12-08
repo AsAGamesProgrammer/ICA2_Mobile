@@ -49,6 +49,12 @@ NSArray* icons;
     return 63;
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+}
+
 //Each row display
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -217,8 +223,8 @@ NSArray* icons;
     
     icons = [NSArray arrayWithObjects:@"sword.png", @"featherA.png", @"bookI.png", @"beltD.png", nil];
     
-    _statTable.layer.borderWidth=2.0;
-    _statTable.layer.borderColor=[UIColor yellowColor].CGColor;
+   // _statTable.layer.borderWidth=2.0;
+    //_statTable.layer.borderColor=[UIColor yellowColor].CGColor;
     
     //Victory/Defeat
     _victoryView.hidden=true;
