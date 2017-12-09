@@ -139,7 +139,7 @@ NSMutableArray* nameLabels;
     [self enablePlaceMode:YES];
     
     //Label
-    _headerLabel.text=@"Place your hero!";
+    _headerLabel.text=NSLocalizedString(@"PlaceHero", nil);
 }
 
 -(void) weaponPassed
@@ -161,7 +161,7 @@ NSMutableArray* nameLabels;
         _thirdBtn.enabled=NO;
     
     //Label
-    _headerLabel.text=@"Equip your hero!";
+    _headerLabel.text=NSLocalizedString(@"PlaceWeapon", nil);
     
 }
 
@@ -208,7 +208,7 @@ NSMutableArray* nameLabels;
     self.currentHeroID=-1;
     
     //Header
-    _headerLabel.text = @"Ready to fight!";
+    _headerLabel.text=NSLocalizedString(@"ReadyToFight", nil);
 }
 
 //WEAPONS
@@ -247,7 +247,9 @@ NSMutableArray* nameLabels;
     NSString* aglValue =[@(combinedRecord.agility) stringValue];
     NSString* intlValue =[@(combinedRecord.intelect) stringValue];
     NSString* defValue =[@(combinedRecord.defense) stringValue];
-    NSString* statString = [NSString stringWithFormat:@"(Str)%@, (Agl)%@, (Inl)%@, (Def)%@", strValue, aglValue, intlValue, defValue];
+    
+    NSString* localisationString = _headerLabel.text=NSLocalizedString(@"Stats", nil);
+    NSString* statString = [NSString stringWithFormat:localisationString, strValue, aglValue, intlValue, defValue];
     
     return statString;
 }
@@ -302,7 +304,7 @@ NSMutableArray* nameLabels;
     //Navigation bar
      self.navigationController.navigationBar.hidden = YES;
     
-    _headerLabel.text = @"Let's scan some heroes!";
+    _headerLabel.text = _headerLabel.text=NSLocalizedString(@"LetsScan", nil);
     
     _utilityManager = [[Utilities alloc] init];
 }

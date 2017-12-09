@@ -9,4 +9,25 @@
 //------------------------------------------------------
 //                       Main menu
 //------------------------------------------------------
+//Used before facebook log in name
 "Welcome" = "Привет";
+
+//------------------------------------------------------
+//                       Main menu
+//------------------------------------------------------
+//Header banner for placing heroes
+"PlaceHero" = "Размести героя!";
+
+//Header banner for placing a weapon
+"PlaceWeapon"="Экипируй героя!";
+
+//Header banner for ready to ight state
+"ReadyToFight"="К бою готов!";
+
+//General stats
+"Stats" = "(Сил)%@, (Лов)%@, (Интл)%@, (Защ)%@";
+
+//Header banner for scanning encouragement
+"LetsScan" = "Посканируем!";
+
+

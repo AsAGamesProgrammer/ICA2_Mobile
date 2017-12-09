@@ -10,3 +10,21 @@
 //                       Main menu
 //------------------------------------------------------
 "Welcome" = "Welcome";
+
+//------------------------------------------------------
+//                       Main menu
+//------------------------------------------------------
+//Header banner for placing heroes
+"PlaceHero" = "Place your hero!";
+
+//Header banner for placing a weapon
+"PlaceWeapon"="Equip your hero!";
+
+//Header banner for ready to ight state
+"ReadyToFight"="Ready to fight!";
+
+//General stats
+"Stats" = "(Str)%@, (Agl)%@, (Inl)%@, (Def)%@";
+
+//Header banner for scanning encouragement
+"LetsScan" = "Let's scan!";
