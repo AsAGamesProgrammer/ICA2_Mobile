@@ -35,6 +35,7 @@
 		862B26FE1FD88C520095BD94 /* noHeroStripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26FD1FD88C4F0095BD94 /* noHeroStripe.png */; };
 		862B27001FD891100095BD94 /* uStripe3.png in Resources */ = {isa = PBXBuildFile; fileRef = 862B26FF1FD8910C0095BD94 /* uStripe3.png */; };
 		8631D4E51FDAF266005CD396 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 8631D4E41FDAF262005CD396 /* swipe.png */; };
+		8642966E1FDC79010076E05C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 864296701FDC79010076E05C /* Localizable.strings */; };
 		8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */; };
 		8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5BD1FD5D00300FDED0C /* enumCodeType.m */; };
 		8652A5C01FD5D3DF00FDED0C /* KSword.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652A5BF1FD5D3DF00FDED0C /* KSword.png */; };
@@ -125,6 +126,8 @@
 		862B26FD1FD88C4F0095BD94 /* noHeroStripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noHeroStripe.png; sourceTree = "<group>"; };
 		862B26FF1FD8910C0095BD94 /* uStripe3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uStripe3.png; sourceTree = "<group>"; };
 		8631D4E41FDAF262005CD396 /* swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe.png; sourceTree = "<group>"; };
+		8642966F1FDC79010076E05C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		864296711FDC79020076E05C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weaponDatabase.h; sourceTree = "<group>"; };
 		8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weaponDatabase.m; sourceTree = "<group>"; };
 		8652A5BC1FD5D00300FDED0C /* enumCodeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enumCodeType.h; sourceTree = "<group>"; };
@@ -305,6 +308,7 @@
 				8652A5BD1FD5D00300FDED0C /* enumCodeType.m */,
 				86DCA7BA1FDC350300684A6D /* Utilities.h */,
 				86DCA7BB1FDC350300684A6D /* Utilities.m */,
+				864296701FDC79010076E05C /* Localizable.strings */,
 			);
 			path = ICA2KristinaBlinova;
 			sourceTree = "<group>";
@@ -508,6 +512,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 86187DEC1FB1F1CF00B43293;
 			productRefGroup = 86187DF61FB1F1CF00B43293 /* Products */;
@@ -555,6 +560,7 @@
 				868705161FDB388A0040D649 /* victoryBackground.png in Resources */,
 				862B26F51FD8868E0095BD94 /* Fireworks-Transparent.png in Resources */,
 				860AC6FA1FBF5166009153C6 /* Knight.png in Resources */,
+				8642966E1FDC79010076E05C /* Localizable.strings in Resources */,
 				862B26FA1FD88A120095BD94 /* stripeU2.png in Resources */,
 				862B26ED1FD87AF40095BD94 /* framePng.png in Resources */,
 				86CEC4A51FDB0B1D008F0C68 /* background2.png in Resources */,
@@ -632,6 +638,15 @@
 				86DCA7D61FDC46F700684A6D /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		864296701FDC79010076E05C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8642966F1FDC79010076E05C /* en */,
+				864296711FDC79020076E05C /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
