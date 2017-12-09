@@ -1,0 +1,123 @@
+
+/* Class = "UIButton"; normalTitle = "Keep"; ObjectID = "0rv-Vw-61t"; */
+"0rv-Vw-61t.normalTitle" = "Сохранить";
+
+/* Class = "UILabel"; text = "Hero 2"; ObjectID = "2XU-m3-5dl"; */
+"2XU-m3-5dl.text" = "Герой 2";
+
+/* Class = "UIButton"; normalTitle = "Discard"; ObjectID = "5qI-Ts-KQ9"; */
+"5qI-Ts-KQ9.normalTitle" = "Отмена";
+
+/* Class = "UIButton"; normalTitle = "Scan"; ObjectID = "8d7-cO-JCd"; */
+"8d7-cO-JCd.normalTitle" = "Сканировать";
+
+/* Class = "UILabel"; text = "Orcs defeated"; ObjectID = "919-vJ-4i0"; */
+"919-vJ-4i0.text" = "Орк побежден";
+
+/* Class = "UILabel"; text = "(Str) - (Agl) - (Intl) - (Def) -"; ObjectID = "9Vv-Wb-h7b"; */
+"9Vv-Wb-h7b.text" = "(Сил) - (Лов) - (Интл) - (Защ) -";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "A5l-SE-DGH"; */
+"A5l-SE-DGH.text" = "Текст";
+
+/* Class = "UILabel"; text = "Battle"; ObjectID = "BTR-yt-9CS"; */
+"BTR-yt-9CS.text" = "Бой";
+
+/* Class = "UILabel"; text = "Victory"; ObjectID = "DTU-o7-bf3"; */
+"DTU-o7-bf3.text" = "Победа";
+
+/* Class = "UILabel"; text = "Intelect"; ObjectID = "DzF-ub-a7n"; */
+"DzF-ub-a7n.text" = "Интеллект";
+
+/* Class = "UILabel"; text = "(Str) - (Agl) - (Intl) - (Def) - "; ObjectID = "Efb-JE-N8D"; */
+"Efb-JE-N8D.text" = "(Сил) - (Лов) - (Интл) - (Защ) -";
+
+/* Class = "UILabel"; text = "Strength"; ObjectID = "Jyi-7T-7U4"; */
+"Jyi-7T-7U4.text" = "Сила";
+
+/* Class = "UILabel"; text = "Congratulations! You scanned a code! "; ObjectID = "MRi-AE-NS5"; */
+"MRi-AE-NS5.text" = "Поздравляем! Вы просканировали код! ";
+
+/* Class = "UIButton"; normalTitle = "FIGHT"; ObjectID = "PR1-9t-uFm"; */
+"PR1-9t-uFm.normalTitle" = "В БОЙ!";
+
+/* Class = "UIButton"; normalTitle = "Return"; ObjectID = "S9G-Jj-b1w"; */
+"S9G-Jj-b1w.normalTitle" = "Отступить";
+
+/* Class = "UILabel"; text = "Hero 3"; ObjectID = "Tt4-8o-R7I"; */
+"Tt4-8o-R7I.text" = "Герой 3";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Uoo-nH-zHx"; */
+"Uoo-nH-zHx.text" = "Текст";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XJD-Or-0cX"; */
+"XJD-Or-0cX.text" = "Текст";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZcH-Sp-TkX"; */
+"ZcH-Sp-TkX.text" = "Текст";
+
+/* Class = "UILabel"; text = "Hero"; ObjectID = "aLn-gt-SLQ"; */
+"aLn-gt-SLQ.text" = "Герой";
+
+/* Class = "UIButton"; normalTitle = "Place here"; ObjectID = "dlm-pQ-FgL"; */
+"dlm-pQ-FgL.normalTitle" = "Разместить здесь";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "eFW-BM-wou"; */
+"eFW-BM-wou.text" = "1";
+
+/* Class = "UILabel"; text = "Your loyal heroes!"; ObjectID = "f1b-tx-Gb5"; */
+"f1b-tx-Gb5.text" = "Ваши преданные герои!";
+
+/* Class = "UIButton"; normalTitle = "Retreat"; ObjectID = "fKd-jE-2T6"; */
+"fKd-jE-2T6.normalTitle" = "Отступить";
+
+/* Class = "UILabel"; text = "Hero 1"; ObjectID = "gBR-eI-GYE"; */
+"gBR-eI-GYE.text" = "Герой 1";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gud-de-83Z"; */
+"gud-de-83Z.text" = "Текст";
+
+/* Class = "UILabel"; text = "(Str) - (Agl) - (Intl) - (Def) -"; ObjectID = "hBL-Uk-9Za"; */
+"hBL-Uk-9Za.text" = "(Сил) - (Лов) - (Интл) - (Защ) -";
+
+/* Class = "UILabel"; text = "Point your camera on a barcode or qr code and hold still"; ObjectID = "i8v-fw-D4m"; */
+"i8v-fw-D4m.text" = "Направьте камеру на сканируемый код и подождите";
+
+/* Class = "UILabel"; text = "Let's set our heroes free!"; ObjectID = "jjo-tH-emI"; */
+"jjo-tH-emI.text" = "Освободим наших героев!";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lZ2-KH-L6f"; */
+"lZ2-KH-L6f.text" = "Текст";
+
+/* Class = "UILabel"; text = "Code name"; ObjectID = "lsx-0U-sae"; */
+"lsx-0U-sae.text" = "Название кода";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "n6Q-RE-XZc"; */
+"n6Q-RE-XZc.text" = "Текст";
+
+/* Class = "UILabel"; text = "Loading..."; ObjectID = "p1E-va-cJ2"; */
+"p1E-va-cJ2.text" = "Загрузка...";
+
+/* Class = "UILabel"; text = "Agility"; ObjectID = "p1H-Y3-Ufy"; */
+"p1H-Y3-Ufy.text" = "Ловкость";
+
+/* Class = "UIButton"; normalTitle = "Fight"; ObjectID = "r9W-ex-1lt"; */
+"r9W-ex-1lt.normalTitle" = "Fight";
+
+/* Class = "UILabel"; text = "Please log in with Facebok so we could recognize you better"; ObjectID = "rLd-Sn-0Wi"; */
+"rLd-Sn-0Wi.text" = "Пожалуйста, подключите ваш аккаунт Facebook";
+
+/* Class = "UIButton"; normalTitle = "Place here"; ObjectID = "rp1-aU-i6C"; */
+"rp1-aU-i6C.normalTitle" = "Разместить здесь";
+
+/* Class = "UILabel"; text = "Index"; ObjectID = "wg0-8k-kEl"; */
+"wg0-8k-kEl.text" = "Индекс";
+
+/* Class = "UILabel"; text = "Defense"; ObjectID = "xof-op-g7o"; */
+"xof-op-g7o.text" = "Защита";
+
+/* Class = "UIButton"; normalTitle = "Place here"; ObjectID = "yqm-YE-Cgm"; */
+"yqm-YE-Cgm.normalTitle" = "Разместить здесь";
+
+/* Class = "UIButton"; normalTitle = "Press to Start"; ObjectID = "zDr-Vj-yda"; */
+"zDr-Vj-yda.normalTitle" = "Нажмите, чтобы начать";

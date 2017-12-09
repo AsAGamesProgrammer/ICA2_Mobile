@@ -181,6 +181,8 @@
 		86DCA7BD1FDC3BD000684A6D /* otherLobbyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = otherLobbyBackground.png; sourceTree = "<group>"; };
 		86DCA7BF1FDC3D2000684A6D /* lighterBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lighterBackground.png; sourceTree = "<group>"; };
 		86DCA7C11FDC3E3D00684A6D /* shineyLobbyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shineyLobbyBackground.png; sourceTree = "<group>"; };
+		86DCA7D51FDC46F700684A6D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		86DCA7D61FDC46F700684A6D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
 		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
 		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				86187E021FB1F1CF00B43293 /* Base */,
+				86DCA7D51FDC46F700684A6D /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -626,6 +629,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				86187E071FB1F1CF00B43293 /* Base */,
+				86DCA7D61FDC46F700684A6D /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -637,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -692,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
