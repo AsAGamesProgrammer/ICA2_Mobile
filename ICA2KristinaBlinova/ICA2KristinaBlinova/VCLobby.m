@@ -16,6 +16,7 @@
 #import "VCLobby.h"
 #import "VCFight.h"
 #import "orcGenerator.h"
+#import "Utilities.h"
 
 @interface VCLobby ()
 
@@ -67,6 +68,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *thirdName;
 
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;
+
+//Utilities
+@property (nonatomic) Utilities* utilityManager;
 
 @end
 
@@ -235,21 +239,14 @@ NSMutableArray* nameLabels;
     GeneralRecord* heroR = _ownedHeroes[atIndex];
     GeneralRecord* weaponR = _ownedWeapons[atIndex];
     
-//    if(weaponR.imageName==nil)
-//    {
-//        weaponR.strength=0;
-//        weaponR.intelect=0;
-//        weaponR.defense=0;
-//        weaponR.agility=0;
-//    }
+    //Combine hero and weapon record
+    GeneralRecord* combinedRecord = [_utilityManager sumGeneralRecordA:heroR andGeneralRecordB:weaponR];
     
-    //long str =heroR.strength + weaponR.strength;
-    
-    //Values from the record
-    NSString* strValue =[@(heroR.strength + weaponR.strength) stringValue];
-    NSString* aglValue =[@(heroR.agility + weaponR.agility) stringValue];
-    NSString* intlValue =[@(heroR.intelect + weaponR.intelect) stringValue];
-    NSString* defValue =[@(heroR.defense + weaponR.defense) stringValue];
+    //Update a status label
+    NSString* strValue =[@(combinedRecord.strength) stringValue];
+    NSString* aglValue =[@(combinedRecord.agility) stringValue];
+    NSString* intlValue =[@(combinedRecord.intelect) stringValue];
+    NSString* defValue =[@(combinedRecord.defense) stringValue];
     NSString* statString = [NSString stringWithFormat:@"(Str)%@, (Agl)%@, (Inl)%@, (Def)%@", strValue, aglValue, intlValue, defValue];
     
     return statString;
@@ -306,6 +303,8 @@ NSMutableArray* nameLabels;
      self.navigationController.navigationBar.hidden = YES;
     
     _headerLabel.text = @"Let's scan some heroes!";
+    
+    _utilityManager = [[Utilities alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -325,20 +324,17 @@ NSMutableArray* nameLabels;
         //Go throug hero records
         for(int i=0; i<3; i++)
         {
-            GeneralRecord* heroR = _ownedHeroes[i];
+            HeroRecord* heroR = _ownedHeroes[i];
             if(!(heroR.imageName == nil))
             {
                 //Find a matching weapon record
-                GeneralRecord* weaponR = _ownedWeapons[i];
+                HeroRecord* weaponR = _ownedWeapons[i];
                 if(weaponR.imageName!=nil)
                 {
                     //Sum up two records to create a new one
-                    HeroRecord* sumRecord = [[HeroRecord alloc] init];
-                    sumRecord.strength = heroR.strength+weaponR.strength;
-                    sumRecord.agility = heroR.agility+weaponR.agility;
-                    sumRecord.intelect = heroR.intelect+weaponR.intelect;
-                    sumRecord.defense = heroR.defense+weaponR.defense;
+                    HeroRecord* sumRecord = [_utilityManager sumRecordA:heroR andRecordB:weaponR];
                     sumRecord.imageName=heroR.imageName;
+                    sumRecord.name = heroR.name;
                     
                     [existingHeroes addObject:sumRecord];
                     

@@ -79,6 +79,7 @@
 		86DCA7B51FDC2F9C00684A6D /* bannerBl.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7B41FDC2F9700684A6D /* bannerBl.png */; };
 		86DCA7B71FDC312C00684A6D /* brightBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7B61FDC312700684A6D /* brightBanner.png */; };
 		86DCA7B91FDC32C400684A6D /* lobbyBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7B81FDC32BE00684A6D /* lobbyBackground.png */; };
+		86DCA7BC1FDC350300684A6D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DCA7BB1FDC350300684A6D /* Utilities.m */; };
 		86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF11FB9E0A600B5CFE6 /* Amazon.png */; };
 		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
 		86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F49AF91FB9E30300B5CFE6 /* VCResult.m */; };
@@ -172,6 +173,8 @@
 		86DCA7B41FDC2F9700684A6D /* bannerBl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerBl.png; sourceTree = "<group>"; };
 		86DCA7B61FDC312700684A6D /* brightBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightBanner.png; sourceTree = "<group>"; };
 		86DCA7B81FDC32BE00684A6D /* lobbyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobbyBackground.png; sourceTree = "<group>"; };
+		86DCA7BA1FDC350300684A6D /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		86DCA7BB1FDC350300684A6D /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
 		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
 		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 				86187DF81FB1F1CF00B43293 /* Supporting Files */,
 				8652A5BC1FD5D00300FDED0C /* enumCodeType.h */,
 				8652A5BD1FD5D00300FDED0C /* enumCodeType.m */,
+				86DCA7BA1FDC350300684A6D /* Utilities.h */,
+				86DCA7BB1FDC350300684A6D /* Utilities.m */,
 			);
 			path = ICA2KristinaBlinova;
 			sourceTree = "<group>";
@@ -577,6 +582,7 @@
 			files = (
 				86187E001FB1F1CF00B43293 /* ViewController.m in Sources */,
 				868705031FDB1EC20040D649 /* orcRecord.m in Sources */,
+				86DCA7BC1FDC350300684A6D /* Utilities.m in Sources */,
 				86F4F2AE1FBA0C470069F908 /* heroDatabase.m in Sources */,
 				8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */,
 				86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */,
