@@ -544,7 +544,7 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHR-zc-uZg">
-                                        <rect key="frame" x="196" y="62" width="410" height="200"/>
+                                        <rect key="frame" x="250" y="84" width="287" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -556,6 +556,7 @@
                     <connections>
                         <outlet property="battleNumberLabel" destination="eFW-BM-wou" id="FNs-OL-7yw"/>
                         <outlet property="defeatedOrc" destination="xHR-zc-uZg" id="CbI-8W-Zqh"/>
+                        <outlet property="fightBtn" destination="PR1-9t-uFm" id="9UX-MD-6sB"/>
                         <outlet property="heroImg" destination="pC9-cb-ybe" id="LGS-he-pWR"/>
                         <outlet property="heroNameLabel" destination="aLn-gt-SLQ" id="ozO-qm-mOf"/>
                         <outlet property="mainBackgroundImg" destination="Ft5-1O-3Y4" id="VhT-uy-uZN"/>
@@ -563,6 +564,7 @@
                         <outlet property="popupBackgroundImg" destination="yyo-jG-5X3" id="mz8-u1-iEL"/>
                         <outlet property="resultBtn" destination="S9G-Jj-b1w" id="PWj-FQ-jsl"/>
                         <outlet property="resultLabel" destination="DTU-o7-bf3" id="C4K-Ib-v2B"/>
+                        <outlet property="retreatBtn" destination="fKd-jE-2T6" id="hQQ-OO-te4"/>
                         <outlet property="statTable" destination="18F-ce-mGQ" id="6Jz-Z0-KAc"/>
                         <outlet property="victoryView" destination="CIg-s7-Rqv" id="9iV-y8-Gwr"/>
                     </connections>

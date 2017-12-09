@@ -166,6 +166,7 @@
 		86CEC49E1FDAFE0B008F0C68 /* FightBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FightBottom.png; sourceTree = "<group>"; };
 		86CEC4A01FDB06DC008F0C68 /* swipe (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe (1).png"; sourceTree = "<group>"; };
 		86CEC4A41FDB0B0A008F0C68 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
+		86DCA7B11FDC2CF200684A6D /* blueBannerpng */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueBannerpng; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
 		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
 		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
@@ -225,6 +226,7 @@
 				86CEC4A41FDB0B0A008F0C68 /* background2.png */,
 				868705131FDB36630040D649 /* screenDeath.png */,
 				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
+				86DCA7B11FDC2CF200684A6D /* blueBannerpng */,
 				86CEC49C1FDAFC3E008F0C68 /* darkBackground.png */,
 			);
 			name = Additional;

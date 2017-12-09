@@ -34,6 +34,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *battleNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *heroNameLabel;
 
+//Buttons
+@property (weak, nonatomic) IBOutlet UIButton *fightBtn;
+@property (weak, nonatomic) IBOutlet UIButton *retreatBtn;
 
 @end
 
@@ -184,7 +187,13 @@ NSArray* icons;
         self.resultBtn.backgroundColor = [UIColor colorWithRed:(134/255.f) green:(13/255.f) blue:(13/255.f) alpha:1];
     }
     
+    //Fade background
     _mainBackgroundImg.alpha=0.5;
+    _orcImg.alpha=0.5;
+    _heroImg.alpha=0.5;
+    _statTable.alpha=0.5;
+    _fightBtn.enabled=NO;
+    _retreatBtn.enabled=NO;
     
     //Show a result view
     _victoryView.hidden=false;
