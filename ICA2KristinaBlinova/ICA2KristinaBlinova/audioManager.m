@@ -14,18 +14,37 @@
  AVAudioPlayer *audioHeroPlace;
  AVAudioPlayer *audioClick;
  AVAudioPlayer *audioGetHero;
+ AVAudioPlayer *audioSwipe;
+ AVAudioPlayer *audioVictory;
+ AVAudioPlayer *audioDefeat;
 
 @implementation audioManager
 
+//----------------------------------------
+//             Initializer
+//----------------------------------------
+//This function is to be called right after constructor
 -(void) initializePlayer
 {
-    //PLACE WEAPON
+    //Lobby
     audioWeaponPlace = [[AVAudioPlayer alloc] initWithContentsOfURL:[self createSoundURL:@"%@/metalicSound.mp3"] error:nil];
     audioHeroPlace = [[AVAudioPlayer alloc] initWithContentsOfURL:[self createSoundURL:@"%@/placeHero.mp3"] error:nil];
+    
+    //General
     audioClick = [[AVAudioPlayer alloc] initWithContentsOfURL:[self createSoundURL:@"%@/click.mp3"] error:nil];
+    
+    //Result
     audioGetHero = [[AVAudioPlayer alloc] initWithContentsOfURL:[self createSoundURL:@"%@/getHero.mp3"] error:nil];
+    
+    //Fight
+    audioSwipe = [[AVAudioPlayer alloc] initWithContentsOfURL:[self createSoundURL:@"%@/swipe.mp3"] error:nil];
+    audioVictory = [[AVAudioPlayer alloc] initWithContentsOfURL:[self createSoundURL:@"%@/heroVictory.mp3"] error:nil];
+    audioDefeat = [[AVAudioPlayer alloc] initWithContentsOfURL:[self createSoundURL:@"%@/defeat.mp3"] error:nil];
 }
 
+//----------------------------------------
+//             Helper functions
+//----------------------------------------
 -(NSURL*)createSoundURL:(NSString*)soundPath
 {
     NSString *path = [NSString stringWithFormat:soundPath, [[NSBundle mainBundle] resourcePath]];
@@ -33,6 +52,10 @@
     return soundUrl;
 }
 
+
+//----------------------------------------
+//         Play sound wrappers
+//----------------------------------------
 -(void) playPlaceWeaponAudio
 {
     [audioWeaponPlace play];
@@ -51,6 +74,21 @@
 -(void) playGetHero
 {
     [audioGetHero play];
+}
+
+-(void) playSwipe
+{
+    [audioSwipe play];
+}
+
+-(void) playDefeat
+{
+    [audioDefeat play];
+}
+
+-(void) playVictory
+{
+    [audioVictory play];
 }
 
 @end

@@ -65,6 +65,9 @@
 		864296DE1FDC9E8C0076E05C /* placeHero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296DD1FDC9E8C0076E05C /* placeHero.mp3 */; };
 		864296E01FDCA02D0076E05C /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296DF1FDCA02D0076E05C /* click.mp3 */; };
 		864296E21FDCA1E40076E05C /* getHero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296E11FDCA1E40076E05C /* getHero.mp3 */; };
+		864296E41FDCA33E0076E05C /* swipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296E31FDCA33E0076E05C /* swipe.mp3 */; };
+		864296E61FDCA3860076E05C /* heroVictory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296E51FDCA3860076E05C /* heroVictory.mp3 */; };
+		864296E81FDCA4F00076E05C /* defeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296E71FDCA4F00076E05C /* defeat.mp3 */; };
 		8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */; };
 		8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5BD1FD5D00300FDED0C /* enumCodeType.m */; };
 		8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */; };
@@ -153,6 +156,9 @@
 		864296DD1FDC9E8C0076E05C /* placeHero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = placeHero.mp3; path = Sounds/placeHero.mp3; sourceTree = SOURCE_ROOT; };
 		864296DF1FDCA02D0076E05C /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = click.mp3; path = Sounds/click.mp3; sourceTree = SOURCE_ROOT; };
 		864296E11FDCA1E40076E05C /* getHero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = getHero.mp3; path = Sounds/getHero.mp3; sourceTree = SOURCE_ROOT; };
+		864296E31FDCA33E0076E05C /* swipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = swipe.mp3; path = Sounds/swipe.mp3; sourceTree = SOURCE_ROOT; };
+		864296E51FDCA3860076E05C /* heroVictory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = heroVictory.mp3; path = Sounds/heroVictory.mp3; sourceTree = SOURCE_ROOT; };
+		864296E71FDCA4F00076E05C /* defeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = defeat.mp3; path = Sounds/defeat.mp3; sourceTree = SOURCE_ROOT; };
 		8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weaponDatabase.h; sourceTree = "<group>"; };
 		8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weaponDatabase.m; sourceTree = "<group>"; };
 		8652A5BC1FD5D00300FDED0C /* enumCodeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enumCodeType.h; sourceTree = "<group>"; };
@@ -362,6 +368,9 @@
 				864296DD1FDC9E8C0076E05C /* placeHero.mp3 */,
 				864296E11FDCA1E40076E05C /* getHero.mp3 */,
 				864296DF1FDCA02D0076E05C /* click.mp3 */,
+				864296E31FDCA33E0076E05C /* swipe.mp3 */,
+				864296E51FDCA3860076E05C /* heroVictory.mp3 */,
+				864296E71FDCA4F00076E05C /* defeat.mp3 */,
 			);
 			name = Sounds;
 			path = "New Group";
@@ -565,7 +574,9 @@
 				864296861FDC89380076E05C /* Amazon.png in Resources */,
 				864296D91FDC95F00076E05C /* metalicSound.mp3 in Resources */,
 				864296A41FDC8A6F0076E05C /* KSword.png in Resources */,
+				864296E41FDCA33E0076E05C /* swipe.mp3 in Resources */,
 				864296741FDC83C80076E05C /* NoHero.png in Resources */,
+				864296E61FDCA3860076E05C /* heroVictory.mp3 in Resources */,
 				864296A51FDC8A6F0076E05C /* DSword.png in Resources */,
 				864296D11FDC8DB60076E05C /* featherA.png in Resources */,
 				864296C31FDC8C710076E05C /* Fireworks-Transparent.png in Resources */,
@@ -577,6 +588,7 @@
 				864296B51FDC8B9D0076E05C /* stripe3.png in Resources */,
 				864296B11FDC8B3B0076E05C /* background.png in Resources */,
 				864296E01FDCA02D0076E05C /* click.mp3 in Resources */,
+				864296E81FDCA4F00076E05C /* defeat.mp3 in Resources */,
 				864296A21FDC8A6F0076E05C /* AShield.png in Resources */,
 				8642968A1FDC89380076E05C /* Knight.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,

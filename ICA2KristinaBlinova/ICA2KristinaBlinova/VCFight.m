@@ -10,6 +10,7 @@
 #import "FightViewCell.h"
 #import "QuartzCore/QuartzCore.h"
 #import "VCLobby.h"
+#import "audioManager.h"
 
 @interface VCFight ()
 
@@ -37,6 +38,9 @@
 //Buttons
 @property (weak, nonatomic) IBOutlet UIButton *fightBtn;
 @property (weak, nonatomic) IBOutlet UIButton *retreatBtn;
+
+//Audio player
+@property (nonatomic) audioManager *audioPlayer;
 
 @end
 
@@ -95,6 +99,9 @@ NSArray* icons;
 //Swipe right
 - (IBAction)swipeHeroRight:(UISwipeGestureRecognizer *)sender
 {
+    //Audio
+    [_audioPlayer playSwipe];
+    
     //Load next hero
     if(_currentHeroNumber + 1 <_totalHeroNumber)
     {
@@ -111,6 +118,9 @@ NSArray* icons;
 //Swipe left
 - (IBAction)swipeHeroLeft:(UISwipeGestureRecognizer *)sender
 {
+    //Audio
+    [_audioPlayer playSwipe];
+    
     //Load next hero
     if(_currentHeroNumber >0)
     {
@@ -146,6 +156,10 @@ NSArray* icons;
 //Retreat
 - (IBAction)retreatClick:(UIButton *)sender
 {
+    //Audio
+    [_audioPlayer playClick];
+    
+    //Navigation
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -161,6 +175,9 @@ NSArray* icons;
        heroRec.defense>=_currentOrcRecord.defense)
     {
         //VICTORY
+        //Audio
+        [_audioPlayer playVictory];
+        
         //Change label text
         _resultLabel.text=NSLocalizedString(@"Victory", nil);
         
@@ -178,6 +195,9 @@ NSArray* icons;
     else
     {
         //DEFEAT
+        //Audio
+        [_audioPlayer playDefeat];
+        
         //Change label text
         _resultLabel.text=NSLocalizedString(@"Defeat", nil);
         
@@ -202,6 +222,9 @@ NSArray* icons;
 //Result button click
 - (IBAction)resultClick:(UIButton *)sender
 {
+    //Audio
+    [_audioPlayer playClick];
+    
     VCLobby* lobbyViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     
     if(_orcDead)
@@ -260,6 +283,10 @@ NSArray* icons;
     
     //Banner
     _battleNumberLabel.text = [@(_battleNumber) stringValue];
+    
+    //Audio
+    _audioPlayer = [[audioManager alloc] init];
+    [_audioPlayer initializePlayer];
     
 }
 

@@ -22,4 +22,9 @@
 //Result
 -(void) playGetHero;
 
+//Fight
+-(void) playVictory;
+-(void) playDefeat;
+-(void) playSwipe;
+
 @end
