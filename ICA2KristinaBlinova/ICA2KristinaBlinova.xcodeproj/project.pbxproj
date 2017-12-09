@@ -63,6 +63,8 @@
 		864296D91FDC95F00076E05C /* metalicSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296D81FDC95F00076E05C /* metalicSound.mp3 */; };
 		864296DC1FDC97E40076E05C /* audioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 864296DB1FDC97E40076E05C /* audioManager.m */; };
 		864296DE1FDC9E8C0076E05C /* placeHero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296DD1FDC9E8C0076E05C /* placeHero.mp3 */; };
+		864296E01FDCA02D0076E05C /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296DF1FDCA02D0076E05C /* click.mp3 */; };
+		864296E21FDCA1E40076E05C /* getHero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296E11FDCA1E40076E05C /* getHero.mp3 */; };
 		8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */; };
 		8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5BD1FD5D00300FDED0C /* enumCodeType.m */; };
 		8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */; };
@@ -149,6 +151,8 @@
 		864296DA1FDC97E40076E05C /* audioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = audioManager.h; sourceTree = "<group>"; };
 		864296DB1FDC97E40076E05C /* audioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = audioManager.m; sourceTree = "<group>"; };
 		864296DD1FDC9E8C0076E05C /* placeHero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = placeHero.mp3; path = Sounds/placeHero.mp3; sourceTree = SOURCE_ROOT; };
+		864296DF1FDCA02D0076E05C /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = click.mp3; path = Sounds/click.mp3; sourceTree = SOURCE_ROOT; };
+		864296E11FDCA1E40076E05C /* getHero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = getHero.mp3; path = Sounds/getHero.mp3; sourceTree = SOURCE_ROOT; };
 		8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weaponDatabase.h; sourceTree = "<group>"; };
 		8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weaponDatabase.m; sourceTree = "<group>"; };
 		8652A5BC1FD5D00300FDED0C /* enumCodeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enumCodeType.h; sourceTree = "<group>"; };
@@ -356,6 +360,8 @@
 			children = (
 				864296D81FDC95F00076E05C /* metalicSound.mp3 */,
 				864296DD1FDC9E8C0076E05C /* placeHero.mp3 */,
+				864296E11FDCA1E40076E05C /* getHero.mp3 */,
+				864296DF1FDCA02D0076E05C /* click.mp3 */,
 			);
 			name = Sounds;
 			path = "New Group";
@@ -548,6 +554,7 @@
 				864296C01FDC8C710076E05C /* brightBanner.png in Resources */,
 				8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */,
 				864296CB1FDC8D400076E05C /* photo-camera.png in Resources */,
+				864296E21FDCA1E40076E05C /* getHero.mp3 in Resources */,
 				864296991FDC89D50076E05C /* Orc.png in Resources */,
 				864296A31FDC8A6F0076E05C /* bow.png in Resources */,
 				864296A91FDC8AF80076E05C /* shineyLobbyBackground.png in Resources */,
@@ -569,6 +576,7 @@
 				864296A61FDC8A6F0076E05C /* WAxe.png in Resources */,
 				864296B51FDC8B9D0076E05C /* stripe3.png in Resources */,
 				864296B11FDC8B3B0076E05C /* background.png in Resources */,
+				864296E01FDCA02D0076E05C /* click.mp3 in Resources */,
 				864296A21FDC8A6F0076E05C /* AShield.png in Resources */,
 				8642968A1FDC89380076E05C /* Knight.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,

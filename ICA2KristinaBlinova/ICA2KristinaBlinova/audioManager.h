@@ -11,7 +11,15 @@
 @interface audioManager : NSObject
 
 -(void) initializePlayer;
+
+//General
+-(void) playClick;
+
+//Lobby
 -(void) playPlaceWeaponAudio;
 -(void) playPlaceHeroAudio;
+
+//Result
+-(void) playGetHero;
 
 @end

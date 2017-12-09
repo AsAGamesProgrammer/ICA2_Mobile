@@ -14,6 +14,7 @@
 #import "weaponDatabase.h"
 #import "VCLobby.h"
 #import "HeroRecord.h"
+#import "audioManager.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
@@ -36,6 +37,9 @@
 //Buttons
 @property (weak, nonatomic) IBOutlet UIImageView *facebookLogo;
 
+//Audio player
+@property (nonatomic) audioManager *audioPlayer;
+
 @end
 
 @implementation VCResult
@@ -44,6 +48,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Audio
+    _audioPlayer = [[audioManager alloc] init];
+    [_audioPlayer initializePlayer];
+    
+    //Play track
+    [_audioPlayer playGetHero];
+    
+    //Load type
     if(_type == Hero)
     {
         //Create a database instance
@@ -90,6 +102,9 @@
 
 - (IBAction)facebookClicked:(UITapGestureRecognizer *)sender
 {
+    //Audio
+    [_audioPlayer playClick];
+    
     //FACEBOOK
     FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
     photo.image = _characterPreview.image;
@@ -130,6 +145,9 @@
 //KEEP: Send update to the root and pop back to the lobby
 - (IBAction)keppPrssed:(UIButton *)sender
 {
+    //Audio
+    [_audioPlayer playClick];
+    
     //Generate a full record
     HeroRecord* heroRecord = [[HeroRecord alloc] init];
     
@@ -163,6 +181,9 @@
 //DISCARD: pop back to the lobby
 - (IBAction)discardPressed:(UIButton *)sender
 {
+    //Audio
+    [_audioPlayer playClick];
+    
     VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     
     [self dismissViewControllerAnimated:YES completion:nil];

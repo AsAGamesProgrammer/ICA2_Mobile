@@ -328,6 +328,8 @@ NSMutableArray* nameLabels;
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    [_audioPlayer playClick];
+    
     if([segue.identifier isEqualToString:@"fightSegue"])
     {
         VCFight *fightViewController = [segue destinationViewController];
