@@ -80,6 +80,9 @@
 		86DCA7B71FDC312C00684A6D /* brightBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7B61FDC312700684A6D /* brightBanner.png */; };
 		86DCA7B91FDC32C400684A6D /* lobbyBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7B81FDC32BE00684A6D /* lobbyBackground.png */; };
 		86DCA7BC1FDC350300684A6D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DCA7BB1FDC350300684A6D /* Utilities.m */; };
+		86DCA7BE1FDC3BD700684A6D /* otherLobbyBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7BD1FDC3BD000684A6D /* otherLobbyBackground.png */; };
+		86DCA7C01FDC3D3200684A6D /* lighterBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7BF1FDC3D2000684A6D /* lighterBackground.png */; };
+		86DCA7C21FDC3E4300684A6D /* shineyLobbyBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7C11FDC3E3D00684A6D /* shineyLobbyBackground.png */; };
 		86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF11FB9E0A600B5CFE6 /* Amazon.png */; };
 		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
 		86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F49AF91FB9E30300B5CFE6 /* VCResult.m */; };
@@ -175,6 +178,9 @@
 		86DCA7B81FDC32BE00684A6D /* lobbyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobbyBackground.png; sourceTree = "<group>"; };
 		86DCA7BA1FDC350300684A6D /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		86DCA7BB1FDC350300684A6D /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		86DCA7BD1FDC3BD000684A6D /* otherLobbyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = otherLobbyBackground.png; sourceTree = "<group>"; };
+		86DCA7BF1FDC3D2000684A6D /* lighterBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lighterBackground.png; sourceTree = "<group>"; };
+		86DCA7C11FDC3E3D00684A6D /* shineyLobbyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shineyLobbyBackground.png; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
 		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
 		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
@@ -238,6 +244,9 @@
 				86DCA7B81FDC32BE00684A6D /* lobbyBackground.png */,
 				86CEC49C1FDAFC3E008F0C68 /* darkBackground.png */,
 				86DCA7B61FDC312700684A6D /* brightBanner.png */,
+				86DCA7BF1FDC3D2000684A6D /* lighterBackground.png */,
+				86DCA7C11FDC3E3D00684A6D /* shineyLobbyBackground.png */,
+				86DCA7BD1FDC3BD000684A6D /* otherLobbyBackground.png */,
 			);
 			name = Additional;
 			sourceTree = "<group>";
@@ -538,6 +547,7 @@
 				86DCA7B51FDC2F9C00684A6D /* bannerBl.png in Resources */,
 				865E3B441FD56E0A00C3A719 /* Orc2.png in Resources */,
 				860DA1361FC33DCC007EEDD2 /* beltD.png in Resources */,
+				86DCA7BE1FDC3BD700684A6D /* otherLobbyBackground.png in Resources */,
 				862B26EB1FD8773E0095BD94 /* background.png in Resources */,
 				860AC6FD1FBF5FA2009153C6 /* NoHero.png in Resources */,
 				868705161FDB388A0040D649 /* victoryBackground.png in Resources */,
@@ -556,10 +566,12 @@
 				86CEC49D1FDAFC43008F0C68 /* darkBackground.png in Resources */,
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
 				8652A5C21FD5D3E400FDED0C /* KShield.png in Resources */,
+				86DCA7C21FDC3E4300684A6D /* shineyLobbyBackground.png in Resources */,
 				8687050E1FDB2F390040D649 /* DeathPicture.png in Resources */,
 				86DCA7B91FDC32C400684A6D /* lobbyBackground.png in Resources */,
 				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,
 				8652A5C81FD5D3FF00FDED0C /* ASword.png in Resources */,
+				86DCA7C01FDC3D3200684A6D /* lighterBackground.png in Resources */,
 				86CEC4A11FDB06E1008F0C68 /* swipe (1).png in Resources */,
 				860DA1311FC33CE6007EEDD2 /* sword.png in Resources */,
 				86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */,

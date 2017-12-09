@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="40M-Qy-8bB">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fireworks-Transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="rGo-bG-GpV">
@@ -197,7 +197,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZNC-pN-Au7">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBn-UR-4HV">
@@ -249,20 +249,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lobbyBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Ms-6S-aSC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shineyLobbyBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Ms-6S-aSC">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stripe.png" translatesAutoresizingMaskIntoConstraints="NO" id="xep-c5-G3d">
-                                <rect key="frame" x="17" y="0.0" width="232" height="1145"/>
+                                <rect key="frame" x="18" y="0.0" width="232" height="1203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stripe3.png" translatesAutoresizingMaskIntoConstraints="NO" id="cOh-Nd-aPq">
-                                <rect key="frame" x="519" y="0.0" width="229" height="1132"/>
+                                <rect key="frame" x="519" y="0.0" width="229" height="1169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stripe2.png" translatesAutoresizingMaskIntoConstraints="NO" id="i7c-rE-uPC">
-                                <rect key="frame" x="270" y="0.0" width="229" height="1145"/>
+                                <rect key="frame" x="270" y="0.0" width="229" height="1203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoHero.png" translatesAutoresizingMaskIntoConstraints="NO" id="h3j-gG-Rys">
@@ -280,7 +280,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqm-YE-Cgm">
                                 <rect key="frame" x="20" y="850" width="222" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Place here"/>
+                                <state key="normal" title="Place here">
+                                    <color key="titleColor" red="0.13641227937241923" green="0.11245335531378665" blue="0.68496192893401009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectFirst:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="Oo4-8Z-qci"/>
                                 </connections>
@@ -288,7 +290,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlm-pQ-FgL">
                                 <rect key="frame" x="270" y="850" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Place here"/>
+                                <state key="normal" title="Place here">
+                                    <color key="titleColor" red="0.1364122794" green="0.1124533553" blue="0.68496192889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectSecond:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="eEn-pq-Dv1"/>
                                 </connections>
@@ -296,7 +300,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-aU-i6C">
                                 <rect key="frame" x="519" y="850" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Place here"/>
+                                <state key="normal" title="Place here">
+                                    <color key="titleColor" red="0.1364122794" green="0.1124533553" blue="0.68496192889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectThird:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="h63-cd-lp4"/>
                                 </connections>
@@ -323,14 +329,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Orcs defeated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="919-vJ-4i0">
-                                <rect key="frame" x="12" y="983" width="133" height="21"/>
+                                <rect key="frame" x="27" y="983" width="133" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ2-KH-L6f">
-                                <rect key="frame" x="138" y="983" width="42" height="21"/>
+                                <rect key="frame" x="153" y="983" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -340,7 +346,9 @@
                                 <rect key="frame" x="297" y="913" width="95" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Fight"/>
+                                <state key="normal" title="Fight">
+                                    <color key="titleColor" red="0.1364122794" green="0.1124533553" blue="0.68496192889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="57r-Hv-Rkl" kind="show" identifier="fightSegue" id="Bhb-rg-ofy"/>
                                 </connections>
@@ -361,7 +369,9 @@
                                 <rect key="frame" x="400" y="913" width="84" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Scan"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" red="0.1364122794" green="0.1124533553" blue="0.68496192889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Uq1-I7-518"/>
                                 </connections>
@@ -675,9 +685,9 @@
         <image name="facebookWhite.png" width="64" height="64"/>
         <image name="fightBanner.png" width="3236" height="928"/>
         <image name="framePng.png" width="3236" height="3822"/>
-        <image name="lobbyBackground.png" width="3236" height="3822"/>
         <image name="photo-camera.png" width="128" height="128"/>
         <image name="screenDeath.png" width="4404" height="1588"/>
+        <image name="shineyLobbyBackground.png" width="3236" height="3822"/>
         <image name="stripe.png" width="698" height="3822"/>
         <image name="stripe2.png" width="698" height="3822"/>
         <image name="stripe3.png" width="698" height="3822"/>
@@ -685,6 +695,7 @@
         <image name="uuIDsh.jpg" width="1200" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b7a-zs-VDG"/>
+        <segue reference="Uq1-I7-518"/>
+        <segue reference="u0L-Dm-4cG"/>
     </inferredMetricsTieBreakers>
 </document>
