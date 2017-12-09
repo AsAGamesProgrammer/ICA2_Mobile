@@ -76,6 +76,9 @@
 		86CEC49F1FDAFE0F008F0C68 /* FightBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 86CEC49E1FDAFE0B008F0C68 /* FightBottom.png */; };
 		86CEC4A11FDB06E1008F0C68 /* swipe (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 86CEC4A01FDB06DC008F0C68 /* swipe (1).png */; };
 		86CEC4A51FDB0B1D008F0C68 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86CEC4A41FDB0B0A008F0C68 /* background2.png */; };
+		86DCA7B51FDC2F9C00684A6D /* bannerBl.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7B41FDC2F9700684A6D /* bannerBl.png */; };
+		86DCA7B71FDC312C00684A6D /* brightBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7B61FDC312700684A6D /* brightBanner.png */; };
+		86DCA7B91FDC32C400684A6D /* lobbyBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA7B81FDC32BE00684A6D /* lobbyBackground.png */; };
 		86F49AF21FB9E0A600B5CFE6 /* Amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF11FB9E0A600B5CFE6 /* Amazon.png */; };
 		86F49AF41FB9E12500B5CFE6 /* uuIDsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */; };
 		86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F49AF91FB9E30300B5CFE6 /* VCResult.m */; };
@@ -166,7 +169,9 @@
 		86CEC49E1FDAFE0B008F0C68 /* FightBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FightBottom.png; sourceTree = "<group>"; };
 		86CEC4A01FDB06DC008F0C68 /* swipe (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe (1).png"; sourceTree = "<group>"; };
 		86CEC4A41FDB0B0A008F0C68 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
-		86DCA7B11FDC2CF200684A6D /* blueBannerpng */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueBannerpng; sourceTree = "<group>"; };
+		86DCA7B41FDC2F9700684A6D /* bannerBl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerBl.png; sourceTree = "<group>"; };
+		86DCA7B61FDC312700684A6D /* brightBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightBanner.png; sourceTree = "<group>"; };
+		86DCA7B81FDC32BE00684A6D /* lobbyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobbyBackground.png; sourceTree = "<group>"; };
 		86F49AF11FB9E0A600B5CFE6 /* Amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon.png; sourceTree = "<group>"; };
 		86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uuIDsh.jpg; sourceTree = "<group>"; };
 		86F49AF81FB9E30300B5CFE6 /* VCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCResult.h; sourceTree = "<group>"; };
@@ -225,9 +230,11 @@
 				860AC6FC1FBF5FA2009153C6 /* NoHero.png */,
 				86CEC4A41FDB0B0A008F0C68 /* background2.png */,
 				868705131FDB36630040D649 /* screenDeath.png */,
+				86DCA7B41FDC2F9700684A6D /* bannerBl.png */,
 				86F49AF31FB9E12500B5CFE6 /* uuIDsh.jpg */,
-				86DCA7B11FDC2CF200684A6D /* blueBannerpng */,
+				86DCA7B81FDC32BE00684A6D /* lobbyBackground.png */,
 				86CEC49C1FDAFC3E008F0C68 /* darkBackground.png */,
+				86DCA7B61FDC312700684A6D /* brightBanner.png */,
 			);
 			name = Additional;
 			sourceTree = "<group>";
@@ -523,6 +530,7 @@
 				865A09E91FD59745008CBC11 /* stripe3.png in Resources */,
 				862B26FE1FD88C520095BD94 /* noHeroStripe.png in Resources */,
 				86187E081FB1F1CF00B43293 /* LaunchScreen.storyboard in Resources */,
+				86DCA7B51FDC2F9C00684A6D /* bannerBl.png in Resources */,
 				865E3B441FD56E0A00C3A719 /* Orc2.png in Resources */,
 				860DA1361FC33DCC007EEDD2 /* beltD.png in Resources */,
 				862B26EB1FD8773E0095BD94 /* background.png in Resources */,
@@ -533,6 +541,7 @@
 				862B26FA1FD88A120095BD94 /* stripeU2.png in Resources */,
 				862B26ED1FD87AF40095BD94 /* framePng.png in Resources */,
 				86CEC4A51FDB0B1D008F0C68 /* background2.png in Resources */,
+				86DCA7B71FDC312C00684A6D /* brightBanner.png in Resources */,
 				865A09E11FD5900C008CBC11 /* WAxe.png in Resources */,
 				865A09E71FD5973F008CBC11 /* stripe.png in Resources */,
 				86187E051FB1F1CF00B43293 /* Assets.xcassets in Resources */,
@@ -543,6 +552,7 @@
 				86187E031FB1F1CF00B43293 /* Main.storyboard in Resources */,
 				8652A5C21FD5D3E400FDED0C /* KShield.png in Resources */,
 				8687050E1FDB2F390040D649 /* DeathPicture.png in Resources */,
+				86DCA7B91FDC32C400684A6D /* lobbyBackground.png in Resources */,
 				860AC6FB1FBF5166009153C6 /* Paladin.png in Resources */,
 				8652A5C81FD5D3FF00FDED0C /* ASword.png in Resources */,
 				86CEC4A11FDB06E1008F0C68 /* swipe (1).png in Resources */,

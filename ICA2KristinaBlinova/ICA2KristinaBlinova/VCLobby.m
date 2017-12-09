@@ -46,9 +46,6 @@
 //Button which opens fighting view controller
 @property (weak, nonatomic) IBOutlet UIButton *fightBtn;
 
-//Label whch appears when u place your hero
-@property (weak, nonatomic) IBOutlet UILabel *placeLbl;
-
 //Stat labels
 @property (weak, nonatomic) IBOutlet UILabel *firstStatLbl;
 @property (weak, nonatomic) IBOutlet UILabel *secondStatLbl;
@@ -69,6 +66,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondName;
 @property (weak, nonatomic) IBOutlet UILabel *thirdName;
 
+@property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 
 @end
 
@@ -137,7 +135,7 @@ NSMutableArray* nameLabels;
     [self enablePlaceMode:YES];
     
     //Label
-    _placeLbl.text=@"Place your hero!";
+    _headerLabel.text=@"Place your hero!";
 }
 
 -(void) weaponPassed
@@ -159,7 +157,7 @@ NSMutableArray* nameLabels;
         _thirdBtn.enabled=NO;
     
     //Label
-    _placeLbl.text=@"Equip your hero!";
+    _headerLabel.text=@"Equip your hero!";
     
 }
 
@@ -204,6 +202,9 @@ NSMutableArray* nameLabels;
     }
     //Reset index
     self.currentHeroID=-1;
+    
+    //Header
+    _headerLabel.text = @"Ready to fight!";
 }
 
 //WEAPONS
@@ -259,7 +260,6 @@ NSMutableArray* nameLabels;
 
 -(void) enablePlaceMode:(BOOL)toEnable
 {
-    _placeLbl.hidden=!toEnable;
     _firstBtn.hidden=!toEnable;
     _secondBtn.hidden=!toEnable;
     _thirdBtn.hidden=!toEnable;
@@ -304,6 +304,8 @@ NSMutableArray* nameLabels;
     
     //Navigation bar
      self.navigationController.navigationBar.hidden = YES;
+    
+    _headerLabel.text = @"Let's scan some heroes!";
 }
 
 - (void)didReceiveMemoryWarning {
