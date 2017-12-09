@@ -12,7 +12,7 @@
 "8d7-cO-JCd.normalTitle" = "Сканировать";
 
 /* Class = "UILabel"; text = "Orcs defeated"; ObjectID = "919-vJ-4i0"; */
-"919-vJ-4i0.text" = "Орк побежден";
+"919-vJ-4i0.text" = "Побед:";
 
 /* Class = "UILabel"; text = "(Str) - (Agl) - (Intl) - (Def) -"; ObjectID = "9Vv-Wb-h7b"; */
 "9Vv-Wb-h7b.text" = "(Сил) - (Лов) - (Интл) - (Защ) -";
@@ -42,7 +42,7 @@
 "PR1-9t-uFm.normalTitle" = "В БОЙ!";
 
 /* Class = "UIButton"; normalTitle = "Return"; ObjectID = "S9G-Jj-b1w"; */
-"S9G-Jj-b1w.normalTitle" = "Отступить";
+"S9G-Jj-b1w.normalTitle" = "Вернуться";
 
 /* Class = "UILabel"; text = "Hero 3"; ObjectID = "Tt4-8o-R7I"; */
 "Tt4-8o-R7I.text" = "Герой 3";
@@ -102,7 +102,7 @@
 "p1H-Y3-Ufy.text" = "Ловкость";
 
 /* Class = "UIButton"; normalTitle = "Fight"; ObjectID = "r9W-ex-1lt"; */
-"r9W-ex-1lt.normalTitle" = "Fight";
+"r9W-ex-1lt.normalTitle" = "В бой!";
 
 /* Class = "UILabel"; text = "Please log in with Facebok so we could recognize you better"; ObjectID = "rLd-Sn-0Wi"; */
 "rLd-Sn-0Wi.text" = "Пожалуйста, подключите ваш аккаунт Facebook";
