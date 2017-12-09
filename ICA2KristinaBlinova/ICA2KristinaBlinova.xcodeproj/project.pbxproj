@@ -60,6 +60,9 @@
 		864296D21FDC8DB60076E05C /* bookI.png in Resources */ = {isa = PBXBuildFile; fileRef = 864296CE1FDC8DA00076E05C /* bookI.png */; };
 		864296D31FDC8DB60076E05C /* sword.png in Resources */ = {isa = PBXBuildFile; fileRef = 864296CF1FDC8DA80076E05C /* sword.png */; };
 		864296D41FDC8DB60076E05C /* beltD.png in Resources */ = {isa = PBXBuildFile; fileRef = 864296D01FDC8DAF0076E05C /* beltD.png */; };
+		864296D91FDC95F00076E05C /* metalicSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296D81FDC95F00076E05C /* metalicSound.mp3 */; };
+		864296DC1FDC97E40076E05C /* audioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 864296DB1FDC97E40076E05C /* audioManager.m */; };
+		864296DE1FDC9E8C0076E05C /* placeHero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 864296DD1FDC9E8C0076E05C /* placeHero.mp3 */; };
 		8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */; };
 		8652A5BE1FD5D00300FDED0C /* enumCodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8652A5BD1FD5D00300FDED0C /* enumCodeType.m */; };
 		8671245D1FCD62ED00EB7CB3 /* FightingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671245C1FCD62ED00EB7CB3 /* FightingTableCell.xib */; };
@@ -141,6 +144,11 @@
 		864296CE1FDC8DA00076E05C /* bookI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookI.png; path = Visuals/Icons/Icons/bookI.png; sourceTree = "<group>"; };
 		864296CF1FDC8DA80076E05C /* sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sword.png; path = Visuals/Icons/Icons/sword.png; sourceTree = "<group>"; };
 		864296D01FDC8DAF0076E05C /* beltD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beltD.png; path = Visuals/Icons/Icons/beltD.png; sourceTree = "<group>"; };
+		864296D61FDC925B0076E05C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		864296D81FDC95F00076E05C /* metalicSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = metalicSound.mp3; path = Sounds/metalicSound.mp3; sourceTree = SOURCE_ROOT; };
+		864296DA1FDC97E40076E05C /* audioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = audioManager.h; sourceTree = "<group>"; };
+		864296DB1FDC97E40076E05C /* audioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = audioManager.m; sourceTree = "<group>"; };
+		864296DD1FDC9E8C0076E05C /* placeHero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = placeHero.mp3; path = Sounds/placeHero.mp3; sourceTree = SOURCE_ROOT; };
 		8652A5B71FD5C1E600FDED0C /* weaponDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weaponDatabase.h; sourceTree = "<group>"; };
 		8652A5B81FD5C1E600FDED0C /* weaponDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weaponDatabase.m; sourceTree = "<group>"; };
 		8652A5BC1FD5D00300FDED0C /* enumCodeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enumCodeType.h; sourceTree = "<group>"; };
@@ -240,6 +248,7 @@
 		86187DEC1FB1F1CF00B43293 = {
 			isa = PBXGroup;
 			children = (
+				864296D71FDC95D70076E05C /* Sounds */,
 				868A9D1E1FD6D1A400AD523E /* Frameworks */,
 				86F49AF01FB9E08A00B5CFE6 /* Sprites */,
 				86187DF71FB1F1CF00B43293 /* ICA2KristinaBlinova */,
@@ -265,6 +274,8 @@
 				86187E011FB1F1CF00B43293 /* Main.storyboard */,
 				86187DF81FB1F1CF00B43293 /* Supporting Files */,
 				864296701FDC79010076E05C /* Localizable.strings */,
+				864296DA1FDC97E40076E05C /* audioManager.h */,
+				864296DB1FDC97E40076E05C /* audioManager.m */,
 			);
 			path = ICA2KristinaBlinova;
 			sourceTree = "<group>";
@@ -340,6 +351,16 @@
 			name = "Utilities and Helpers";
 			sourceTree = "<group>";
 		};
+		864296D71FDC95D70076E05C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				864296D81FDC95F00076E05C /* metalicSound.mp3 */,
+				864296DD1FDC9E8C0076E05C /* placeHero.mp3 */,
+			);
+			name = Sounds;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		8652A5BA1FD5C1EA00FDED0C /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +414,7 @@
 		868A9D1E1FD6D1A400AD523E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				864296D61FDC925B0076E05C /* AVFoundation.framework */,
 				868A9D271FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework */,
 				868A9D251FD6D27F00AD523E /* FBSDKPlacesKit.framework */,
 				868A9D231FD6D26C00AD523E /* FBSDKShareKit.framework */,
@@ -534,6 +556,7 @@
 				864296C41FDC8C710076E05C /* blueBannerpng in Resources */,
 				8642968D1FDC89380076E05C /* Paladin.png in Resources */,
 				864296861FDC89380076E05C /* Amazon.png in Resources */,
+				864296D91FDC95F00076E05C /* metalicSound.mp3 in Resources */,
 				864296A41FDC8A6F0076E05C /* KSword.png in Resources */,
 				864296741FDC83C80076E05C /* NoHero.png in Resources */,
 				864296A51FDC8A6F0076E05C /* DSword.png in Resources */,
@@ -558,6 +581,7 @@
 				864296D21FDC8DB60076E05C /* bookI.png in Resources */,
 				864296941FDC89D50076E05C /* Orc3Dead.png in Resources */,
 				864296AF1FDC8B2C0076E05C /* background2.png in Resources */,
+				864296DE1FDC9E8C0076E05C /* placeHero.mp3 in Resources */,
 				864296981FDC89D50076E05C /* Orc2Dead.png in Resources */,
 				8642968C1FDC89380076E05C /* Archer2.png in Resources */,
 				864296891FDC89380076E05C /* Amazon2.png in Resources */,
@@ -583,6 +607,7 @@
 				86F4F2AE1FBA0C470069F908 /* heroDatabase.m in Sources */,
 				8652A5B91FD5C1E600FDED0C /* weaponDatabase.m in Sources */,
 				86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */,
+				864296DC1FDC97E40076E05C /* audioManager.m in Sources */,
 				86B45B341FCD9B58006021D1 /* orcGenerator.m in Sources */,
 				86F49AFA1FB9E30300B5CFE6 /* VCResult.m in Sources */,
 				86187DFD1FB1F1CF00B43293 /* AppDelegate.m in Sources */,

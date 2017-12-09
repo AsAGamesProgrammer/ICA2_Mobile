@@ -7,16 +7,15 @@
 //
 //
 //---------------------------------------------------------------
-//TODO:
-// Enum class for a type
-// Check for an existing hero before assigning a weapon
-// Sum up stats witht he weapon
-//---------------------------------------------------------------
+
+
+#import <AVFoundation/AVFoundation.h>
 
 #import "VCLobby.h"
 #import "VCFight.h"
 #import "orcGenerator.h"
 #import "Utilities.h"
+#import "audioManager.h"
 
 @interface VCLobby ()
 
@@ -71,6 +70,9 @@
 
 //Utilities
 @property (nonatomic) Utilities* utilityManager;
+
+//Audio player
+@property (nonatomic) audioManager *audioPlayer;
 
 @end
 
@@ -209,6 +211,9 @@ NSMutableArray* nameLabels;
     
     //Header
     _headerLabel.text=NSLocalizedString(@"ReadyToFight", nil);
+    
+    //Audio
+    [_audioPlayer playPlaceHeroAudio];
 }
 
 //WEAPONS
@@ -228,6 +233,9 @@ NSMutableArray* nameLabels;
         //Set status labels
         UILabel* statLabel = statusLabels[atIndex];
         statLabel.text = [self getStatusLabel:atIndex];
+        
+       //Audio
+        [_audioPlayer playPlaceWeaponAudio];
         
     }
     //Reset index
@@ -307,6 +315,10 @@ NSMutableArray* nameLabels;
     _headerLabel.text = NSLocalizedString(@"LetsScan", nil);
     
     _utilityManager = [[Utilities alloc] init];
+    
+    //Audio
+    _audioPlayer = [[audioManager alloc] init];
+    [_audioPlayer initializePlayer];
 }
 
 - (void)didReceiveMemoryWarning {
