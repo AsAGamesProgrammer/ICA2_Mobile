@@ -162,7 +162,7 @@ NSArray* icons;
     {
         //VICTORY
         //Change label text
-        _resultLabel.text=@"Victory";
+        _resultLabel.text=NSLocalizedString(@"Victory", nil);
         
         //Change label/button colours
         self.resultBtn.backgroundColor = [UIColor colorWithRed:(0/255.f) green:(128/255.f) blue:(0/255.f) alpha:1];
@@ -179,7 +179,7 @@ NSArray* icons;
     {
         //DEFEAT
         //Change label text
-        _resultLabel.text=@"Defeat";
+        _resultLabel.text=NSLocalizedString(@"Defeat", nil);
         
         _popupBackgroundImg.image = [UIImage imageNamed:@"screenDeath"];
         

@@ -74,7 +74,7 @@
         [self generateName];
     
     if(_type==Weapon)
-        _heroName.text=@"What a weapon!";
+        _heroName.text=NSLocalizedString(@"WeaponRemark", nil);
     
     //Interactions
     [_facebookLogo setUserInteractionEnabled:YES];

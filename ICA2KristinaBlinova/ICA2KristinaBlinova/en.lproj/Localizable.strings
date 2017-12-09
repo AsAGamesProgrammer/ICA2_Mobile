@@ -9,6 +9,7 @@
 //------------------------------------------------------
 //                       Main menu
 //------------------------------------------------------
+//Used before facebook log in name
 "Welcome" = "Welcome";
 
 //------------------------------------------------------
@@ -28,3 +29,18 @@
 
 //Header banner for scanning encouragement
 "LetsScan" = "Let's scan!";
+
+//------------------------------------------------------
+//                      Fight
+//------------------------------------------------------
+//Result header - Victory
+"Victory" = "Victory";
+
+//Result header - Defeat
+"Defeat" = "Defeat";
+
+//------------------------------------------------------
+//                     Result
+//------------------------------------------------------
+//Header for a weapon name
+"WeaponRemark" = "What a weapon!";

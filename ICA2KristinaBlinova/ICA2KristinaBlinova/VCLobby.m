@@ -248,7 +248,7 @@ NSMutableArray* nameLabels;
     NSString* intlValue =[@(combinedRecord.intelect) stringValue];
     NSString* defValue =[@(combinedRecord.defense) stringValue];
     
-    NSString* localisationString = _headerLabel.text=NSLocalizedString(@"Stats", nil);
+    NSString* localisationString = NSLocalizedString(@"Stats", nil);
     NSString* statString = [NSString stringWithFormat:localisationString, strValue, aglValue, intlValue, defValue];
     
     return statString;
@@ -304,7 +304,7 @@ NSMutableArray* nameLabels;
     //Navigation bar
      self.navigationController.navigationBar.hidden = YES;
     
-    _headerLabel.text = _headerLabel.text=NSLocalizedString(@"LetsScan", nil);
+    _headerLabel.text = NSLocalizedString(@"LetsScan", nil);
     
     _utilityManager = [[Utilities alloc] init];
 }
