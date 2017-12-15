@@ -23,6 +23,20 @@
 
 @implementation VCMainMenu
 
+- (BOOL)shouldAutorotate
+
+{
+    return NO;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+
+{
+    
+    return UIInterfaceOrientationMaskPortrait + UIInterfaceOrientationMaskPortraitUpsideDown;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -44,6 +58,7 @@
         _nameLbl.text = @"Welcome, Warrior!";
         _facebookNotificationLbl.hidden=NO;
     }
+    
     // Do any additional setup after loading the view.
 }
 
