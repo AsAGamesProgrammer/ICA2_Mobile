@@ -152,15 +152,24 @@ NSMutableArray* nameLabels;
     //Check if weapon can be placed
     HeroRecord* heroR = _ownedHeroes[0];
     if(heroR.imageName==nil)
+    {
         _firstBtn.enabled=NO;
+        _firstBtn.alpha = 0.5;
+    }
     
     heroR = _ownedHeroes[1];
     if(heroR.imageName==nil)
+    {
         _secondBtn.enabled=NO;
+        _secondBtn.alpha=0.5;
+    }
     
     heroR = _ownedHeroes[2];
     if(heroR.imageName==nil)
+    {
         _thirdBtn.enabled=NO;
+        _thirdBtn.alpha=0.5;
+    }
     
     //Label
     _headerLabel.text=NSLocalizedString(@"PlaceWeapon", nil);
@@ -197,6 +206,7 @@ NSMutableArray* nameLabels;
         
         //Allow fighting
         _fightBtn.enabled=true;
+        _fightBtn.alpha=1.0;
         
         //Set status labels
         UILabel* statLabel = statusLabels[atIndex];
@@ -275,6 +285,10 @@ NSMutableArray* nameLabels;
     _secondBtn.enabled=YES;
     _thirdBtn.enabled=YES;
     
+    _firstBtn.alpha=1.0;
+    _secondBtn.alpha=1.0;
+    _thirdBtn.alpha=1.0;
+    
     self.navigationController.navigationBar.hidden = YES;
 }
 
@@ -292,6 +306,7 @@ NSMutableArray* nameLabels;
     
     //Disable fighting as no heroes exist
     _fightBtn.enabled=NO;
+    _fightBtn.alpha=0.5;
     
     //Set label to no placing heroes
     [self enablePlaceMode:NO];
