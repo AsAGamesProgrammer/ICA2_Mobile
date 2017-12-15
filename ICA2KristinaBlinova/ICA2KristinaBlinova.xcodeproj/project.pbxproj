@@ -80,6 +80,8 @@
 		868A9D281FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A9D271FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework */; };
 		868E336A1FE423B400310DB4 /* MainIcon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 868E33691FE423B300310DB4 /* MainIcon.ico */; };
 		868E336C1FE4242400310DB4 /* MainIconPNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 868E336B1FE4242400310DB4 /* MainIconPNG.png */; };
+		868E336E1FE424F200310DB4 /* IconHero.png in Resources */ = {isa = PBXBuildFile; fileRef = 868E336D1FE424F200310DB4 /* IconHero.png */; };
+		868E33711FE4262000310DB4 /* settingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 868E33701FE4262000310DB4 /* settingIcon.png */; };
 		86B45B341FCD9B58006021D1 /* orcGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B45B331FCD9B58006021D1 /* orcGenerator.m */; };
 		86C1661E1FBAF98B0089F159 /* VCLobby.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C1661D1FBAF98B0089F159 /* VCLobby.m */; };
 		86C415831FCD6646009C4969 /* FightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C415821FCD6646009C4969 /* FightViewCell.m */; };
@@ -177,6 +179,8 @@
 		868A9D271FD6D2AB00AD523E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = SOURCE_ROOT; };
 		868E33691FE423B300310DB4 /* MainIcon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = MainIcon.ico; path = Visuals/Icons/MainIcon.ico; sourceTree = "<group>"; };
 		868E336B1FE4242400310DB4 /* MainIconPNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MainIconPNG.png; path = Visuals/Icons/MainIconPNG.png; sourceTree = "<group>"; };
+		868E336D1FE424F200310DB4 /* IconHero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconHero.png; path = Visuals/Icons/IconHero.png; sourceTree = "<group>"; };
+		868E33701FE4262000310DB4 /* settingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingIcon.png; path = Visuals/Icons/settingIcon.png; sourceTree = "<group>"; };
 		86B45B321FCD9B58006021D1 /* orcGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orcGenerator.h; sourceTree = "<group>"; };
 		86B45B331FCD9B58006021D1 /* orcGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = orcGenerator.m; sourceTree = "<group>"; };
 		86C1661C1FBAF98B0089F159 /* VCLobby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLobby.h; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 		860DA1321FC33CF1007EEDD2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				868E33701FE4262000310DB4 /* settingIcon.png */,
+				868E336D1FE424F200310DB4 /* IconHero.png */,
 				868E33691FE423B300310DB4 /* MainIcon.ico */,
 				868E336B1FE4242400310DB4 /* MainIconPNG.png */,
 				86CEC4951FDAF29C008F0C68 /* General */,
@@ -582,6 +588,7 @@
 				864296A41FDC8A6F0076E05C /* KSword.png in Resources */,
 				864296E41FDCA33E0076E05C /* swipe.mp3 in Resources */,
 				864296741FDC83C80076E05C /* NoHero.png in Resources */,
+				868E33711FE4262000310DB4 /* settingIcon.png in Resources */,
 				864296E61FDCA3860076E05C /* heroVictory.mp3 in Resources */,
 				864296A51FDC8A6F0076E05C /* DSword.png in Resources */,
 				864296D11FDC8DB60076E05C /* featherA.png in Resources */,
@@ -608,6 +615,7 @@
 				864296D21FDC8DB60076E05C /* bookI.png in Resources */,
 				864296941FDC89D50076E05C /* Orc3Dead.png in Resources */,
 				864296AF1FDC8B2C0076E05C /* background2.png in Resources */,
+				868E336E1FE424F200310DB4 /* IconHero.png in Resources */,
 				864296DE1FDC9E8C0076E05C /* placeHero.mp3 in Resources */,
 				864296981FDC89D50076E05C /* Orc2Dead.png in Resources */,
 				8642968C1FDC89380076E05C /* Archer2.png in Resources */,
