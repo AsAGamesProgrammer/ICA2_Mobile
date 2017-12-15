@@ -319,6 +319,8 @@ NSMutableArray* nameLabels;
     //Audio
     _audioPlayer = [[audioManager alloc] init];
     [_audioPlayer initializePlayer];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

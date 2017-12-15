@@ -280,8 +280,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqm-YE-Cgm">
                                 <rect key="frame" x="20" y="850" width="222" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97906762361526489" green="0.69373601675033569" blue="0.22071775794029236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Place here">
-                                    <color key="titleColor" red="0.13641227937241923" green="0.11245335531378665" blue="0.68496192893401009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.30289274454116821" green="0.25346335768699646" blue="0.31535419821739197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="selectFirst:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="Oo4-8Z-qci"/>
@@ -290,8 +291,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlm-pQ-FgL">
                                 <rect key="frame" x="270" y="850" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97906762361526489" green="0.69373601675033569" blue="0.22071775794029236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Place here">
-                                    <color key="titleColor" red="0.1364122794" green="0.1124533553" blue="0.68496192889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.30289274454116821" green="0.25346335768699646" blue="0.31535419821739197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="selectSecond:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="eEn-pq-Dv1"/>
@@ -300,8 +302,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-aU-i6C">
                                 <rect key="frame" x="519" y="850" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97906762361526489" green="0.69373601675033569" blue="0.22071775794029236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Place here">
-                                    <color key="titleColor" red="0.1364122794" green="0.1124533553" blue="0.68496192889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.30289274454116821" green="0.25346335768699646" blue="0.31535419821739197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="selectThird:" destination="gcQ-fH-y1f" eventType="touchUpInside" id="h63-cd-lp4"/>
@@ -336,10 +339,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9W-ex-1lt">
-                                <rect key="frame" x="285" y="912" width="95" height="59"/>
+                                <rect key="frame" x="270" y="912" width="110" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97906762361526489" green="0.69373601675033569" blue="0.22071775794029236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
-                                <state key="normal" title="Fight"/>
+                                <state key="normal" title="Fight">
+                                    <color key="titleColor" red="0.30289274454116821" green="0.25346335768699646" blue="0.31535419821739197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="57r-Hv-Rkl" kind="show" identifier="fightSegue" id="Bhb-rg-ofy"/>
                                 </connections>
@@ -356,18 +362,6 @@
                                 <rect key="frame" x="589" y="639" width="159" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d7-cO-JCd">
-                                <rect key="frame" x="371" y="913" width="128" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Scan"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Uq1-I7-518"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hero 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBR-eI-GYE">
                                 <rect key="frame" x="38" y="261" width="192" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -407,6 +401,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d7-cO-JCd">
+                                <rect key="frame" x="371" y="912" width="128" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97906762359999999" green="0.69373601679999997" blue="0.22071775790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" red="0.30289274449999998" green="0.2534633577" blue="0.31535419819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Uq1-I7-518"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99715182300000005" blue="0.98767629749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -694,6 +703,7 @@
         <image name="uuIDsh.jpg" width="1200" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Uq1-I7-518"/>
         <segue reference="u0L-Dm-4cG"/>
     </inferredMetricsTieBreakers>
 </document>
