@@ -14,9 +14,10 @@
 
 @interface VCFight ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *heroImg;
-@property (nonatomic) int currentHeroNumber;
-@property (nonatomic) int totalHeroNumber;
+//Hero information
+@property (weak, nonatomic) IBOutlet UIImageView *heroImg;      //avatar
+@property (nonatomic) int currentHeroNumber;                    //id of a hero used for swipes
+@property (nonatomic) int totalHeroNumber;                      //total number of heroes at fighting
 
 //Connection to a table
 @property (weak, nonatomic) IBOutlet UITableView *statTable;
@@ -24,16 +25,18 @@
 //Pop up wth the fight result
 @property (weak, nonatomic) IBOutlet UIView *victoryView;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
-@property (weak, nonatomic) IBOutlet UIButton *resultBtn;
-@property (weak, nonatomic) IBOutlet UIImageView *defeatedOrc;
+@property (weak, nonatomic) IBOutlet UIButton *resultBtn;               //Button to go back to the lobby
+@property (weak, nonatomic) IBOutlet UIImageView *defeatedOrc;          //Image of a respective orc on the ground
 @property (weak, nonatomic) IBOutlet UIImageView *popupBackgroundImg;
 @property (weak, nonatomic) IBOutlet UIImageView *mainBackgroundImg;
 
+//Orc information
+@property (nonatomic) BOOL orcDead;                              //a flag to say if orc is dead or not
+@property (weak, nonatomic) IBOutlet UIImageView *orcImg;        //image of an orc
 
-@property (nonatomic) BOOL orcDead;
-@property (weak, nonatomic) IBOutlet UIImageView *orcImg;
-@property (weak, nonatomic) IBOutlet UILabel *battleNumberLabel;
-@property (weak, nonatomic) IBOutlet UILabel *heroNameLabel;
+//Labels
+@property (weak, nonatomic) IBOutlet UILabel *battleNumberLabel; //Banner label
+@property (weak, nonatomic) IBOutlet UILabel *heroNameLabel;     //Hero name label
 
 //Buttons
 @property (weak, nonatomic) IBOutlet UIButton *fightBtn;
@@ -96,6 +99,8 @@ NSArray* icons;
 }
 
 //------------------GESTURES-----------------
+//Gestures are used to swap between heroes
+
 //Swipe right
 - (IBAction)swipeHeroRight:(UISwipeGestureRecognizer *)sender
 {
@@ -134,6 +139,7 @@ NSArray* icons;
     [self changeHeroOnSwipe];
 }
 
+//Change hero
 -(void) changeHeroOnSwipe
 {
     HeroRecord* record = _heroes[_currentHeroNumber];

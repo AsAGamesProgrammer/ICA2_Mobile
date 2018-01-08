@@ -29,19 +29,14 @@
     return NO;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
-
-{
-    
-    return UIInterfaceOrientationMaskPortrait + UIInterfaceOrientationMaskPortraitUpsideDown;
-    
-}
-
+//VIEW DID LOAD
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Creates a facebook log in button
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    // Optional: Place the button in the center of your view.
+    
+    //Places the button in the center of the view
     loginButton.center = CGPointMake(self.view.frame.size.width /2, self.view.frame.size.height - 40);
     loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
     [self.view addSubview:loginButton];
@@ -49,6 +44,7 @@
     //Set itself as a delegate
     loginButton.delegate = self;
     
+    //Check if user is logged into a facebook
     if ([FBSDKAccessToken currentAccessToken])
     {
         [self setFacebookName];
@@ -66,29 +62,30 @@
 //          LOG IN TO FACEBOOK ACTIONS
 //---------------------------------------------------
 
+//LOGIN
 - (void)  loginButton:(FBSDKLoginButton *)loginButton
 didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                 error:(NSError *)error
 {
-    //use your custom code here
-    //redirect after successful login
-    // User is logged in, do work such as go to next view controller.
+    //If user is logged in - set a name
     [self setFacebookName];
 }
 
+//LOGOUT
 - (void) loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
 {
-    //use your custom code here
-    //redirect after successful logout
+    //After logout pop a warning
     _nameLbl.text = @"Welcome, Warrior!";
     _facebookNotificationLbl.hidden=NO;
 }
 
+//WARNING
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+//SET FACEBOOK NAME
 -(void) setFacebookName
 {
     [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters: @{@"fields": @"id, name"}]

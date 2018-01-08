@@ -128,7 +128,16 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *urlAsString = @"https://uinames.com/api/?region=india";
         NSError *error;
+        
         NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:urlAsString]];
+        
+        //Exception
+        if(data==nil)
+        {
+            _heroName.text = @"Bob";
+            return;
+        }
+        
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
 
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -196,17 +205,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-//SEGUE
-//-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if([segue.identifier isEqualToString:@"keepSegue"])
-//    {
-//        VCLobby *keepViewController = [segue destinationViewController];
-//        //resultViewController.strengthValue = @"5";
-//        keepViewController.currentHeroID= self.index;
-//    }
-//}
 
 
 /*
