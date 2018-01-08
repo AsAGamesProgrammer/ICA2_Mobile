@@ -6,6 +6,12 @@
 //  Copyright © 2017 BLINOVA, KRISTINA. All rights reserved.
 //
 
+//--------------------------------------------------------------------
+//                          OVERVIEW
+// Collection of all the heroes.
+// Further development: can be moved to SQLite or MySQL
+//--------------------------------------------------------------------
+
 #import <Foundation/Foundation.h>
 #import "GeneralRecord.h"
 

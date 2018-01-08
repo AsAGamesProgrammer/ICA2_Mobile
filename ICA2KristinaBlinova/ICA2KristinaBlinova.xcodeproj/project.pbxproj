@@ -438,6 +438,17 @@
 			name = TableDesign;
 			sourceTree = "<group>";
 		};
+		867D917220038F9B00A708A2 /* Record class */ = {
+			isa = PBXGroup;
+			children = (
+				86F4F2B01FBA0C680069F908 /* GeneralRecord.m */,
+				86F4F2AF1FBA0C680069F908 /* GeneralRecord.h */,
+				868705051FDB20F80040D649 /* HeroRecord.m */,
+				868705041FDB20F80040D649 /* HeroRecord.h */,
+			);
+			name = "Record class";
+			sourceTree = "<group>";
+		};
 		868A9D1E1FD6D1A400AD523E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,8 +467,6 @@
 			children = (
 				86F4F2AD1FBA0C470069F908 /* heroDatabase.m */,
 				86F4F2AC1FBA0C470069F908 /* heroDatabase.h */,
-				868705041FDB20F80040D649 /* HeroRecord.h */,
-				868705051FDB20F80040D649 /* HeroRecord.m */,
 			);
 			name = HeroRecords;
 			sourceTree = "<group>";
@@ -476,11 +485,10 @@
 		86B45B351FCD9B8E006021D1 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				867D917220038F9B00A708A2 /* Record class */,
 				8652A5BA1FD5C1EA00FDED0C /* Weapons */,
 				86B45B2D1FCD9A78006021D1 /* HeroRecords */,
 				86B45B2E1FCD9AB6006021D1 /* OrcRecords */,
-				86F4F2AF1FBA0C680069F908 /* GeneralRecord.h */,
-				86F4F2B01FBA0C680069F908 /* GeneralRecord.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";

@@ -21,13 +21,19 @@
 
 @interface VCResult ()
 
+//Stat labels
 @property (weak, nonatomic) IBOutlet UILabel *strLbl;
 @property (weak, nonatomic) IBOutlet UILabel *agilLbl;
 @property (weak, nonatomic) IBOutlet UILabel *intlLbl;
 @property (weak, nonatomic) IBOutlet UILabel *defLbl;
+
+//Index label
 @property (weak, nonatomic) IBOutlet UILabel *indxLbl;
+
+//Avatar of a charater or weapon
 @property (weak, nonatomic) IBOutlet UIImageView *characterPreview;
 
+//Hero or weapon record
 @property (weak, nonatomic) GeneralRecord* heroR;
 
 //Header label
@@ -125,6 +131,7 @@
 //This s done not on the main queue
 -(void) generateName
 {
+    //Load on a separate queue block
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *urlAsString = @"https://uinames.com/api/?region=india";
         NSError *error;
@@ -138,8 +145,10 @@
             return;
         }
         
+        //Interpret json data
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
 
+        //Assign heroes name on a main queue
         dispatch_async(dispatch_get_main_queue(), ^{
         _heroName.text = [json objectForKey: @"name"];
         });
@@ -160,6 +169,7 @@
     //Generate a full record
     HeroRecord* heroRecord = [[HeroRecord alloc] init];
     
+    //Assign hero stats and img
     heroRecord.strength = _heroR.strength;
     heroRecord.agility = _heroR.agility;
     heroRecord.intelect = _heroR.intelect;
@@ -167,6 +177,7 @@
     heroRecord.name = _heroName.text;
     heroRecord.imageName = _heroR.imageName;
     
+    //Pass information to a lobby
     VCLobby* keepViewController = (VCLobby*)(self.navigationController.viewControllers[1]);
     keepViewController.currentHeroID=self.index;
     keepViewController.passedHero = heroRecord;

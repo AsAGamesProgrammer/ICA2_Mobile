@@ -6,6 +6,11 @@
 //  Copyright © 2017 BLINOVA, KRISTINA. All rights reserved.
 //
 
+//--------------------------------------------------------------------
+//                          OVERVIEW
+// Unique table cell design to hold label - picture - label
+//--------------------------------------------------------------------
+
 #import <UIKit/UIKit.h>
 
 @interface FightViewCell : UITableViewCell

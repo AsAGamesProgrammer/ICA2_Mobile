@@ -14,11 +14,13 @@
 
 -(orcRecord*) getNextOrc
 {
-    srand(time(NULL));
+    //Randomise vlues
+    srand((int)time(NULL));
 
     //DEFAULT RECORD------------------------------------
     orcRecord *newRecord = [[orcRecord alloc]init];
     
+    //Set stats
     newRecord.indx = 1;
     newRecord.strength=0;
     newRecord.intelect= 0;
@@ -26,8 +28,10 @@
     newRecord.defense=0;
 
     //RANDOM STAT---------------------------------------
+    //Choose a random stat which will be increased
     int randomStat = rand() %4;
     
+    //Interpret random value and randomly increase stat
     switch(randomStat)
     {
         case 0:
@@ -51,6 +55,7 @@
     }
     
     //RANDOM IMAGE---------------------------------------
+    //Choose a random image out of 3
     int randomImg = rand()%3;
     
     switch(randomImg)

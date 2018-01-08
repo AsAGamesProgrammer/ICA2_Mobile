@@ -28,7 +28,7 @@ NSArray *arrayWeapons;
 
 
 
-//Create one hero
+//Create one weapon
 -(GeneralRecord*) createAHero
 :(NSInteger)str
 :(NSInteger)agl
@@ -46,6 +46,7 @@ NSArray *arrayWeapons;
     
 }
 
+//Query the database by id to get a weapon
 -(GeneralRecord*) getWeaponByIndex:(int)index
 {
     [self createHeroes];

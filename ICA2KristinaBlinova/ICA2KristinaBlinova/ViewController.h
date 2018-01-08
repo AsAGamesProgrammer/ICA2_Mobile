@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "enumCodeType.h"
 
+//--------------------------------------------------------------------
+//                          OVERVIEW
+//               Scanning view controller
+//--------------------------------------------------------------------
+
 @interface ViewController : UIViewController
 
 

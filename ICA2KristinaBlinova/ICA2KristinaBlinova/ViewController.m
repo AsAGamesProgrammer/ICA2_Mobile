@@ -62,6 +62,10 @@
     [_captureSession addOutput:captureMetadataOutput];
     
     //CODE TYES
+    //!!!
+    // Aplication is capable of recognising ALL the code types however as there was no use for them in my game idea
+    // only qr and barcodes are used
+    //!!!
     dispatch_queue_t dispacthQueue;
     dispacthQueue = dispatch_queue_create("myQueue", NULL);
     [captureMetadataOutput setMetadataObjectsDelegate:self queue:dispacthQueue];
@@ -146,7 +150,7 @@
          AVMetadataObjectTypeInterleaved2of5Code,
          */
         
-        
+        //Checking metadata against barcode types
         if(([[metadataObj type] isEqualToString:AVMetadataObjectTypeUPCECode]) ||
            ([[metadataObj type] isEqualToString:AVMetadataObjectTypeEAN8Code]) ||
            ([[metadataObj type] isEqualToString:AVMetadataObjectTypeEAN13Code])||
@@ -158,10 +162,9 @@
            ([[metadataObj type] isEqualToString:AVMetadataObjectTypeInterleaved2of5Code]))
         {
 
-            //[_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
             
             //ALGORITHM
-            
+            //Converts result string into an ID
             NSString* result = [metadataObj stringValue];
             int weaponIdx=0;
             for(int i=0; i<[result length]-1; i++)
@@ -196,21 +199,6 @@
             });
         }
         
-        //---------------------
-        //      AZTEC
-        //---------------------
-        
-//        if([[metadataObj type] isEqualToString:AVMetadataObjectTypeAztecCode]) //check if an oject read is a valid qr code
-//        {
-//
-//            //Proccess QR code on the main thread
-//            //Status label with QR value
-//            [_statusLbl performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
-//
-//            //Video capture and display
-//            [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-//
-//        }
     }
 }
 

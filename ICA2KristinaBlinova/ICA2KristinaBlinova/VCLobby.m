@@ -34,7 +34,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *secondStripe;
 @property (weak, nonatomic) IBOutlet UIImageView *thirdStripe;
 
-//Buttons
+//Buttons for palcing heroes/weapons
 @property (weak, nonatomic) IBOutlet UIButton *firstBtn;
 @property (weak, nonatomic) IBOutlet UIButton *secondBtn;
 @property (weak, nonatomic) IBOutlet UIButton *thirdBtn;
@@ -58,7 +58,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *defeatedOrcLbl;
 @property (nonatomic) NSInteger defeatedOrcNumber;
 
-//Type passed
+//Type passed - weapon or hero
 @property (nonatomic) RecordTypes typePassed;
 
 //Name labels
@@ -66,6 +66,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondName;
 @property (weak, nonatomic) IBOutlet UILabel *thirdName;
 
+//Banner label
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 
 //Utilities
@@ -90,7 +91,6 @@ NSMutableArray* nameLabels;
 //--------------------------------------------------------
 - (IBAction)selectFirst:(UIButton *)sender
 {
-    //HERO
     if(_typePassed == Hero)
     {
         _firstStripe.hidden=NO;
@@ -135,6 +135,7 @@ NSMutableArray* nameLabels;
 //--------------------------------------------------------
 //                  PUBLIC FUNCTIONALITY
 //--------------------------------------------------------
+//Recived a hero from the result view
 -(void) heroPassed
 {
     _typePassed=Hero;
@@ -144,6 +145,7 @@ NSMutableArray* nameLabels;
     _headerLabel.text=NSLocalizedString(@"PlaceHero", nil);
 }
 
+//Receive a weapon fromt the result view controller
 -(void) weaponPassed
 {
     _typePassed = Weapon;
@@ -176,6 +178,7 @@ NSMutableArray* nameLabels;
     
 }
 
+//Defeated an orc msg from the fighting view controller
 -(void) orcDefeated
 {
     _defeatedOrcNumber++;
@@ -252,6 +255,7 @@ NSMutableArray* nameLabels;
     self.currentHeroID=-1;
 }
 
+//Update stats
 -(NSString*) getStatusLabel:(int)atIndex
 {
     GeneralRecord* heroR = _ownedHeroes[atIndex];
@@ -275,6 +279,7 @@ NSMutableArray* nameLabels;
 //                     INTERFACE
 //--------------------------------------------------------
 
+//Enabeles/Disables "place here" buttons
 -(void) enablePlaceMode:(BOOL)toEnable
 {
     _firstBtn.hidden=!toEnable;
@@ -338,15 +343,19 @@ NSMutableArray* nameLabels;
     
 }
 
+//WARNING
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+//PREPARE FOR SEGUE
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //Play a click sound
     [_audioPlayer playClick];
     
+    //If moving to a fighting iew controller
     if([segue.identifier isEqualToString:@"fightSegue"])
     {
         VCFight *fightViewController = [segue destinationViewController];
@@ -380,7 +389,7 @@ NSMutableArray* nameLabels;
             }
         }
         
-        
+        //If heroes exist
         if(existingHeroes.count>0)
             fightViewController.heroes= existingHeroes;
         

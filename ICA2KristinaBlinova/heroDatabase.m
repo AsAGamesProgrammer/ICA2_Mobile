@@ -47,7 +47,6 @@ NSArray *array;
 }
 
 //Return a hero by index
-//TODO: try creating heroes differently e.g. database, not on every call
 -(GeneralRecord*) getHeroByIndex:(int)index
 {
     [self createHeroes];

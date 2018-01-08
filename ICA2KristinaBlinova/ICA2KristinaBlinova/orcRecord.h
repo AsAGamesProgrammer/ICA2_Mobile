@@ -8,8 +8,15 @@
 
 #import "GeneralRecord.h"
 
+//--------------------------------------------------------------------
+//                          OVERVIEW
+// This clas sis used to store orcrecords
+// Class inherits from the GENRAL RECORD class
+//--------------------------------------------------------------------
+
 @interface orcRecord : GeneralRecord
 
+//Image of a dead orc
 @property (nonatomic) NSString* deathImg;
 
 @end

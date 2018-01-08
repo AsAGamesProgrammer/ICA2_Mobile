@@ -6,6 +6,11 @@
 //  Copyright © 2017 BLINOVA, KRISTINA. All rights reserved.
 //
 
+//--------------------------------------------------------------------
+//                          OVERVIEW
+// This is an audio player class which holds and plays sounds
+//--------------------------------------------------------------------
+
 #import <Foundation/Foundation.h>
 
 @interface audioManager : NSObject
